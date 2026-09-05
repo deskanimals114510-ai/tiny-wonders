@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>犬猫の年齢・体重かんたん換算ツール | Tiny Wonders</title>
+<meta name="description" content="愛犬・愛猫の年齢は人間でいうと何歳?体重は?サイズ別の早見表とかんたん比率計算で無料換算。犬種サイズ(小型・中型・大型・超大型)にも対応した年齢早見表ツールです。">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="犬猫の年齢・体重かんたん換算ツール | Tiny Wonders">
+<meta property="og:description" content="愛犬・愛猫の年齢は人間でいうと何歳?体重は?サイズ別の早見表とかんたん比率計算で無料換算できます。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/nenrei-taiju.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/nenrei-taiju.html">
+<!-- TODO: og-image.png(1200x630目安)ができたらog:image/twitter:imageを追加してください -->
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="犬猫の年齢・体重かんたん換算ツール">
+<meta name="twitter:description" content="愛犬・愛猫の年齢や体重を人間でいうとどのくらいか無料で換算できます。">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="analytics.js"></script>
+<script src="theme-toggle.js"></script>
+</head>
+<body class="page-tool">
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact hero--split">
+    <img class="hero-illustration" src="images/journal-spread.jpg" alt="肉球のスタンプと押し花が飾られたノートのイラスト" width="600" height="400">
+    <div class="hero-text">
+      <a class="back-link" href="index.html">← Tiny Wonders</a>
+      <h1><span class="grad-text">年齢・体重かんたん換算</span></h1>
+      <p class="lead">
+        愛犬・愛猫の年齢や体重を、人間でいうとどのくらいか換算できます。<br>
+        <span class="lead-en">Convert your dog or cat's age and weight into human terms.</span>
+      </p>
+    </div>
+  </header>
+
+  <main class="tool-main">
+
+    <div class="tool-tabs" role="tablist">
+      <button type="button" class="tool-tab is-active" data-tab="age">年齢換算</button>
+      <button type="button" class="tool-tab" data-tab="weight">体重換算</button>
+    </div>
+
+    <section class="tool-panel is-active" data-panel="age">
+      <form id="age-form" class="tool-card">
+        <fieldset class="field-group">
+          <legend>どっち?</legend>
+          <div class="pill-radio-group">
+            <label class="pill-radio">
+              <input type="radio" name="age-species" value="dog" checked>
+              <span>🐶 犬</span>
+            </label>
+            <label class="pill-radio">
+              <input type="radio" name="age-species" value="cat">
+              <span>🐱 猫</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="field" id="age-dog-size-field">
+          <label for="age-dog-size">サイズ(体重の目安)</label>
+          <select id="age-dog-size" name="age-dog-size">
+            <option value="small">小型犬(〜10kg目安)</option>
+            <option value="medium" selected>中型犬(10〜25kg目安)</option>
+            <option value="large">大型犬(25〜40kg目安)</option>
+            <option value="giant">超大型犬(40kg〜目安)</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="age-years">年齢(年)</label>
+            <input type="number" id="age-years" min="0" max="30" step="1" value="2" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="age-months">(+ヶ月)</label>
+            <input type="number" id="age-months" min="0" max="11" step="1" value="0" inputmode="numeric">
+          </div>
+        </div>
+
+        <button type="submit" class="link-btn tool-submit">人間の年齢に換算する</button>
+      </form>
+
+      <div id="age-result" class="result-box" hidden></div>
+    </section>
+
+    <section class="tool-panel" data-panel="weight">
+      <form id="weight-form" class="tool-card">
+        <fieldset class="field-group">
+          <legend>どっち?</legend>
+          <div class="pill-radio-group">
+            <label class="pill-radio">
+              <input type="radio" name="weight-species" value="dog" checked>
+              <span>🐶 犬</span>
+            </label>
+            <label class="pill-radio">
+              <input type="radio" name="weight-species" value="cat">
+              <span>🐱 猫</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label class="checkbox-label">
+            <input type="checkbox" id="weight-unit-lb">
+            ポンド(lb)で入力する
+          </label>
+        </div>
+
+        <div class="field">
+          <label for="weight-current">現在の体重</label>
+          <input type="number" id="weight-current" min="0" step="0.1" placeholder="例: 12" inputmode="decimal">
+        </div>
+
+        <div class="field">
+          <label for="weight-standard">標準・目標体重(わかれば)</label>
+          <input type="number" id="weight-standard" min="0" step="0.1" placeholder="例: 10" inputmode="decimal">
+        </div>
+
+        <div class="field">
+          <label for="weight-ref-human">比較する人間の体重(kg)</label>
+          <input type="number" id="weight-ref-human" min="1" step="1" value="60" inputmode="numeric">
+        </div>
+
+        <button type="submit" class="link-btn tool-submit">体重を換算する</button>
+      </form>
+
+      <div id="weight-result" class="result-box" hidden></div>
+    </section>
+
+    <p class="tool-disclaimer">
+      本ツールの数値は一般的な早見表・比率をもとにした参考値です。犬種・個体差・健康状態により実際とは異なります。健康上の判断は必ず獣医師にご相談ください。
+    </p>
+
+    <div class="related-tools">
+      <div class="article-nav">
+        <a class="link-btn link-btn-secondary" href="zatsugaku/inu-roka.html">犬はなぜ早く年をとる?</a>
+        <a class="link-btn link-btn-secondary" href="zatsugaku/neko-nenrei.html">猫の年齢換算のなぜ</a>
+        <a class="link-btn link-btn-secondary" href="zatsugaku/hyojun-taiju.html">標準体重の決まり方</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>このツールはAIの支援を受けて制作されています。</p>
+    <p>Built with AI assistance.</p>
+  </footer>
+
+</div>
+
+<script src="nenrei-taiju.js"></script>
+</body>
+</html>

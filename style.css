@@ -1,0 +1,697 @@
+/*
+  Tiny Wonders — 北欧ナチュラル系の「引き算」デザイン。
+  色数を絞り(ニュートラル+単色アクセントのみ)、装飾は最小限に。
+  紙の質感(ドットグリッド)以外の装飾要素(マスキングテープ等)は廃止し、
+  余白・タイポグラフィ・イラストでブランドの個性を出す。
+
+  配色の根拠(2026-09-05、5名レビューで確定):
+  背景はMidjourneyイラストの色調(ダスティローズ/パープル)から彩度を大きく落として
+  抽出した暖色ニュートラル(ブラッシュグレージュ)。彩度を落とすことで「癒し」の
+  心理効果(色相よりも低彩度・高明度が効く)を保ちつつ、暖色イラストとの
+  色温度の衝突を避ける。アクセント(ボタン・リンク等の触れる部分)はダスティティール
+  (寒色)を維持し、暖色の器+寒色の差し色という配色構造で統一。
+*/
+
+:root {
+  --paper: #f3eeec;
+  --paper-deep: #e3d6d1;
+  --surface: #fefcfb;
+  --ink: #362f2d;
+  --ink-soft: #7a6e68;
+  --accent: #52717a;
+  --accent-deep: #3a4f56;
+  --accent-tint: #dbe6e8;
+  --line: #cbb8b2;
+  --shadow-soft: 0 8px 22px rgba(40, 25, 20, 0.08);
+  --shadow-lift: 0 14px 30px rgba(40, 25, 20, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #221d1c;
+    --paper-deep: #2e2725;
+    --surface: #282221;
+    --ink: #ece5e1;
+    --ink-soft: #ab9c95;
+    --accent: #8fb3ba;
+    --accent-deep: #b9d5da;
+    --accent-tint: #2f3d3f;
+    --line: #4a3f3b;
+    --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.35);
+    --shadow-lift: 0 16px 34px rgba(0, 0, 0, 0.45);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #221d1c;
+  --paper-deep: #2e2725;
+  --surface: #282221;
+  --ink: #ece5e1;
+  --ink-soft: #ab9c95;
+  --accent: #8fb3ba;
+  --accent-deep: #b9d5da;
+  --accent-tint: #2f3d3f;
+  --line: #4a3f3b;
+  --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.35);
+  --shadow-lift: 0 16px 34px rgba(0, 0, 0, 0.45);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image: radial-gradient(var(--paper-deep) 1px, transparent 1px);
+  background-size: 22px 22px;
+  position: relative;
+}
+
+#app {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px 28px;
+}
+
+.page-home #app { max-width: 900px; }
+
+@media (min-width: 640px) {
+  #app { padding: 56px 32px 40px; }
+}
+
+.grad-text { color: var(--accent-deep); }
+
+/* ---- サイトのしるし(paw mark) ---- */
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+.brand-mark svg { width: 100%; height: 100%; }
+
+/* ---- ライト/ダーク切り替えボタン ---- */
+.theme-toggle {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 20;
+  width: 38px;
+  height: 38px;
+  padding: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--accent-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+}
+.theme-toggle svg { width: 100%; height: 100%; }
+.theme-toggle:hover { background: var(--accent-tint); }
+
+/* ---- ヒーロー ---- */
+.hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.hero h1 {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 4px 0 14px;
+  color: var(--ink);
+}
+.hero .lead {
+  color: var(--ink-soft);
+  line-height: 1.85;
+  font-size: 0.92rem;
+  margin: 0;
+}
+.hero .lead-en {
+  font-size: 0.8rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.hero-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 260px;
+  margin: 0 auto 20px;
+  border-radius: 12px;
+}
+.hero-compact .hero-illustration {
+  max-width: 200px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 640px) {
+  .hero--split {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    text-align: left;
+    margin-bottom: 44px;
+  }
+  .hero--split .hero-text { flex: 1; }
+  .hero--split .hero-illustration {
+    order: 2;
+    width: 240px;
+    max-width: 240px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+  .hero-compact.hero--split { margin-bottom: 34px; }
+  .hero-compact.hero--split .hero-illustration { width: 170px; max-width: 170px; }
+}
+
+/* ---- カード共通 ---- */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+@media (min-width: 640px) {
+  .page-home .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .page-home .wonder-card--primary { grid-column: 1 / -1; }
+}
+
+/* ---- ポータルナビ・セクション(トップページ、増えるコンテンツ向け) ---- */
+.portal-nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  background: var(--paper);
+  padding: 12px 0 18px;
+  margin: 0 0 8px;
+  border-bottom: 1px solid var(--line);
+}
+.portal-nav a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  text-decoration: none;
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  white-space: nowrap;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.portal-nav a:hover { border-color: var(--accent); background: var(--accent-tint); }
+
+.portal-section { margin: 40px 0; scroll-margin-top: 74px; }
+.portal-section:first-of-type { margin-top: 28px; }
+.portal-section:last-of-type { margin-bottom: 0; }
+.portal-section-title {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+
+.wonder-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  transition: box-shadow 0.15s ease;
+}
+.wonder-card:hover { box-shadow: var(--shadow-lift); }
+
+.wonder-card--primary {
+  border-top: 3px solid var(--accent);
+  background: linear-gradient(var(--accent-tint), var(--accent-tint)) top / 100% 3px no-repeat, var(--surface);
+}
+
+.card-icon {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 10px;
+  color: var(--accent-deep);
+}
+.card-icon svg { width: 100%; height: 100%; }
+
+.wonder-card h2 {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+.card-tagline {
+  color: var(--ink-soft);
+  line-height: 1.75;
+  font-size: 0.86rem;
+  margin: 0 0 20px;
+}
+.tagline-en {
+  font-size: 0.76rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-url {
+  font-family: monospace;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  word-break: break-all;
+  margin: -10px 0 18px;
+}
+
+.card-embed {
+  margin: 4px 0 20px;
+  display: flex;
+  justify-content: center;
+}
+.card-embed iframe,
+.card-embed .instagram-media {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+/* ---- 一覧プレビュー(増えても破綻しない、記事一覧セクション用) ---- */
+.preview-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 26px;
+  box-shadow: var(--shadow-soft);
+}
+.preview-intro {
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  line-height: 1.75;
+  margin: 0 0 18px;
+}
+.preview-rows {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--line);
+}
+.preview-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--ink);
+}
+.preview-row-icon {
+  display: inline-flex;
+  width: 26px;
+  height: 26px;
+  color: var(--accent-deep);
+  flex-shrink: 0;
+}
+.preview-row-icon svg { width: 100%; height: 100%; }
+.preview-row-text { flex: 1; min-width: 0; }
+.preview-row-text strong {
+  display: block;
+  font-family: "Zen Old Mincho", serif;
+  font-size: 0.94rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.preview-row-text span {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.preview-row:hover .preview-row-text strong { color: var(--accent-deep); }
+.preview-more { margin-top: 18px; text-align: center; }
+
+/* ---- ボタン ---- */
+.link-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--surface);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: background 0.15s ease;
+  border: none;
+  cursor: pointer;
+}
+.link-btn:hover { background: var(--accent-deep); }
+.link-btn-secondary {
+  background: transparent;
+  color: var(--accent-deep);
+  border: 1px solid var(--accent);
+}
+.link-btn-secondary:hover { background: var(--accent-tint); }
+
+.site-footer {
+  margin-top: 32px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.site-footer p {
+  font-size: 0.68rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0 0 6px;
+}
+
+@media (min-width: 520px) {
+  .wonder-card { padding: 34px 32px; }
+}
+
+/* ---- ツールページ共通 ---- */
+.back-link {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  text-decoration: none;
+  margin-bottom: 14px;
+}
+.back-link:hover { text-decoration: underline; }
+
+.hero-compact { margin-bottom: 22px; }
+.hero-compact h1 { font-size: 1.4rem; }
+
+.tool-main {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex: 1;
+}
+
+.tool-tabs {
+  display: flex;
+  gap: 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 5px;
+}
+.tool-tab {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 12px;
+  border-radius: 7px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.tool-tab.is-active {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+.tool-panel { display: none; }
+.tool-panel.is-active { display: block; }
+
+.tool-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 26px 22px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field-group { border: none; padding: 0; margin: 0; }
+.field-group legend {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  padding: 0 0 8px;
+}
+
+.pill-radio-group { display: flex; gap: 10px; }
+.pill-radio {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.pill-radio input {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  cursor: pointer;
+}
+.pill-radio span {
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  font-weight: 700;
+  color: var(--ink-soft);
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+.pill-radio input:checked + span {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  background: var(--accent-tint);
+}
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field[hidden] { display: none; }
+.field-row { display: flex; gap: 12px; }
+.field-row .field { flex: 1; }
+
+.field label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+.field input[type="number"],
+.field select {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1rem;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+}
+.field input[type="number"]:focus,
+.field select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+}
+.checkbox-label input { width: 16px; height: 16px; accent-color: var(--accent); }
+
+.tool-submit {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.result-box {
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: var(--shadow-soft);
+}
+.result-headline {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+.result-headline strong { color: var(--accent-deep); font-size: 1.45rem; }
+.result-sub {
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin: 0 0 10px;
+}
+.result-sub strong { color: var(--accent-deep); }
+.result-note {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  opacity: 0.9;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tool-disclaimer {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  line-height: 1.75;
+  text-align: center;
+  margin: 4px 0 0;
+}
+
+@media (min-width: 520px) {
+  .tool-card { padding: 32px 30px; }
+}
+
+/* ---- 記事本文(雑学・ざんねん共通) ---- */
+.article-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 28px 22px;
+  box-shadow: var(--shadow-soft);
+}
+.article-card h2 {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin: 24px 0 10px;
+  color: var(--ink);
+}
+.article-card h2:first-child { margin-top: 0; }
+.article-card p {
+  font-size: 0.92rem;
+  line-height: 1.9;
+  margin: 0 0 14px;
+  color: var(--ink);
+}
+.article-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 380px;
+  margin: 0 auto 22px;
+  border-radius: 12px;
+}
+
+.article-lead {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  line-height: 1.8;
+  margin: 0 0 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.related-tools {
+  margin-top: 26px;
+  text-align: center;
+}
+.related-tools .link-btn { display: inline-block; }
+
+.article-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.article-nav .link-btn-secondary { font-size: 0.8rem; padding: 10px 18px; }
+
+@media (min-width: 520px) {
+  .article-card { padding: 34px 32px; }
+}
+
+/* ---- 記事一覧ページ(雑学ハブ・ざんねんハブ) ---- */
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.article-list-item {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px 22px;
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+  color: var(--ink);
+  transition: box-shadow 0.15s ease;
+}
+.article-list-item:hover { box-shadow: var(--shadow-lift); }
+.article-list-item .article-icon {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  margin-bottom: 8px;
+  color: var(--accent-deep);
+}
+.article-list-item .article-icon svg { width: 100%; height: 100%; }
+.article-list-item h2 {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.article-list-item p {
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---- アクセシビリティ ---- */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wonder-card,
+  .article-list-item,
+  .link-btn,
+  .preview-row {
+    transition: none;
+  }
+}
