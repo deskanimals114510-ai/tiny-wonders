@@ -3,32 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tiny Wonders</title>
-<meta name="description" content="AIで作った、ちょっと不思議で可愛いものたち。Small things made with AI, all a little bit magical.">
+<title>Tiny Wonders | 犬猫の年齢・体重換算と動物雑学</title>
+<meta name="description" content="犬猫の年齢・体重をかんたん換算できる無料ツールと、犬猫の「なぜ?」がわかる雑学記事、動物のざんねんな習性を紹介するAI制作のポータルサイトです。">
 
 <!-- OGP (Instagram/TikTok bio, LINE等) -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Tiny Wonders">
-<meta property="og:description" content="AIで作った、ちょっと不思議で可愛いものたち。Small things made with AI, all a little bit magical.">
+<meta property="og:title" content="Tiny Wonders | 犬猫の年齢・体重換算と動物雑学">
+<meta property="og:description" content="犬猫の年齢・体重をかんたん換算できる無料ツールと、犬猫の「なぜ?」がわかる雑学記事、動物のざんねんな習性を紹介するAI制作のポータルサイトです。">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
 <link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/">
-<!-- TODO: og:image/twitter:image用に images/hero-dog-cat.jpg を1200x630にクロップした版を作成し追加してください -->
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tiny Wonders">
-<meta name="twitter:description" content="Small things made with AI, all a little bit magical.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tiny Wonders | 犬猫の年齢・体重換算と動物雑学">
+<meta name="twitter:description" content="犬猫の年齢・体重をかんたん換算できる無料ツールと、動物雑学記事のポータルサイト。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script src="analytics.js"></script>
+<script defer src="analytics.js"></script>
 <script src="theme-toggle.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization",
+      "name": "Tiny Wonders",
+      "url": "https://deskanimals114510-ai.github.io/tiny-wonders/",
+      "sameAs": ["https://www.instagram.com/desk.animals114510/", "https://x.com/deskanimalslab"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website",
+      "name": "Tiny Wonders",
+      "url": "https://deskanimals114510-ai.github.io/tiny-wonders/",
+      "inLanguage": "ja",
+      "publisher": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization" }
+    }
+  ]
+}
+</script>
 </head>
 <body class="page-home">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
 <button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
 
 <div id="app">
@@ -60,7 +84,7 @@
     <a href="#family">Desk Animalsファミリー</a>
   </nav>
 
-  <main>
+  <main id="main-content">
 
     <section class="portal-section" id="tools">
       <h2 class="portal-section-title">計算ツール</h2>
@@ -220,8 +244,9 @@
   </main>
 
   <footer class="site-footer">
-    <p>このサイトで紹介しているコンテンツはすべてAIで制作されています。</p>
-    <p>Everything introduced on this site is 100% AI-generated.</p>
+    <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
+    <p>This site's content is produced with AI assistance.</p>
+    <p><a href="privacy/index.html">プライバシーポリシー・運営者情報</a></p>
   </footer>
 
 </div>

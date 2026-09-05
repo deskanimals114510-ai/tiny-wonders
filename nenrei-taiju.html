@@ -13,22 +13,36 @@
 <meta property="og:locale" content="ja_JP">
 <meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/nenrei-taiju.html">
 <link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/nenrei-taiju.html">
-<!-- TODO: og-image.png(1200x630目安)ができたらog:image/twitter:imageを追加してください -->
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="犬猫の年齢・体重かんたん換算ツール">
 <meta name="twitter:description" content="愛犬・愛猫の年齢や体重を人間でいうとどのくらいか無料で換算できます。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script src="analytics.js"></script>
+<script defer src="analytics.js"></script>
 <script src="theme-toggle.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "犬猫の年齢・体重かんたん換算ツール",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/nenrei-taiju.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (Web)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+  "description": "愛犬・愛猫の年齢や体重を人間でいうとどのくらいか無料で換算できるWebツール。"
+}
+</script>
 </head>
 <body class="page-tool">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
 <button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
 
 <div id="app">
@@ -36,7 +50,7 @@
   <header class="hero hero-compact hero--split">
     <img class="hero-illustration" src="images/journal-spread.jpg" alt="肉球のスタンプと押し花が飾られたノートのイラスト" width="600" height="400">
     <div class="hero-text">
-      <a class="back-link" href="index.html">← Tiny Wonders</a>
+      <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="index.html">← Tiny Wonders</a></nav>
       <h1><span class="grad-text">年齢・体重かんたん換算</span></h1>
       <p class="lead">
         愛犬・愛猫の年齢や体重を、人間でいうとどのくらいか換算できます。<br>
@@ -45,7 +59,7 @@
     </div>
   </header>
 
-  <main class="tool-main">
+  <main class="tool-main" id="main-content">
 
     <div class="tool-tabs" role="tablist">
       <button type="button" class="tool-tab is-active" data-tab="age">年齢換算</button>
@@ -69,6 +83,43 @@
         </fieldset>
 
         <div class="field" id="age-dog-size-field">
+          <label for="age-dog-breed">犬種(わかれば選ぶとサイズが自動で決まります)</label>
+          <select id="age-dog-breed">
+            <option value="">選択しない(下のサイズを直接選ぶ)</option>
+            <optgroup label="小型犬(〜10kg目安)">
+              <option data-size="small">チワワ</option>
+              <option data-size="small">トイプードル</option>
+              <option data-size="small">ポメラニアン</option>
+              <option data-size="small">ミニチュアダックスフンド</option>
+              <option data-size="small">ヨークシャーテリア</option>
+              <option data-size="small">マルチーズ</option>
+              <option data-size="small">パピヨン</option>
+              <option data-size="small">シーズー</option>
+              <option data-size="small">キャバリア・キング・チャールズ・スパニエル</option>
+            </optgroup>
+            <optgroup label="中型犬(10〜25kg目安)">
+              <option data-size="medium">柴犬</option>
+              <option data-size="medium">フレンチブルドッグ</option>
+              <option data-size="medium">ウェルシュ・コーギー</option>
+              <option data-size="medium">ビーグル</option>
+              <option data-size="medium">ボーダーコリー</option>
+              <option data-size="medium">日本スピッツ</option>
+              <option data-size="medium">アメリカン・コッカー・スパニエル</option>
+            </optgroup>
+            <optgroup label="大型犬(25〜40kg目安)">
+              <option data-size="large">ゴールデン・レトリバー</option>
+              <option data-size="large">ラブラドール・レトリバー</option>
+              <option data-size="large">秋田犬</option>
+              <option data-size="large">シベリアン・ハスキー</option>
+              <option data-size="large">ダルメシアン</option>
+            </optgroup>
+            <optgroup label="超大型犬(40kg〜目安)">
+              <option data-size="giant">グレート・デーン</option>
+              <option data-size="giant">セント・バーナード</option>
+              <option data-size="giant">バーニーズ・マウンテン・ドッグ</option>
+              <option data-size="giant">グレート・ピレニーズ</option>
+            </optgroup>
+          </select>
           <label for="age-dog-size">サイズ(体重の目安)</label>
           <select id="age-dog-size" name="age-dog-size">
             <option value="small">小型犬(〜10kg目安)</option>
@@ -143,6 +194,28 @@
       本ツールの数値は一般的な早見表・比率をもとにした参考値です。犬種・個体差・健康状態により実際とは異なります。健康上の判断は必ず獣医師にご相談ください。
     </p>
 
+    <details class="lookup-table-details">
+      <summary>早見表を見る(犬サイズ別・猫)</summary>
+      <div class="lookup-table-wrap">
+        <table class="lookup-table">
+          <caption>犬猫の年齢早見表(人間でいう年齢の目安)</caption>
+          <thead>
+            <tr><th scope="col">実年齢</th><th scope="col">小型犬</th><th scope="col">中型犬</th><th scope="col">大型犬</th><th scope="col">超大型犬</th><th scope="col">猫</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">1歳</th><td>15歳</td><td>15歳</td><td>15歳</td><td>14歳</td><td>18歳</td></tr>
+            <tr><th scope="row">2歳</th><td>24歳</td><td>24歳</td><td>24歳</td><td>22歳</td><td>24歳</td></tr>
+            <tr><th scope="row">3歳</th><td>28歳</td><td>28歳</td><td>29歳</td><td>29歳</td><td>28歳</td></tr>
+            <tr><th scope="row">5歳</th><td>36歳</td><td>37歳</td><td>39歳</td><td>45歳</td><td>36歳</td></tr>
+            <tr><th scope="row">7歳</th><td>44歳</td><td>47歳</td><td>50歳</td><td>60歳</td><td>44歳</td></tr>
+            <tr><th scope="row">10歳</th><td>56歳</td><td>60歳</td><td>66歳</td><td>82歳</td><td>56歳</td></tr>
+            <tr><th scope="row">12歳</th><td>64歳</td><td>69歳</td><td>76歳</td><td>96歳</td><td>64歳</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="tool-disclaimer" style="margin-top:12px;">サイズ区分は体重目安(小型:〜10kg、中型:10〜25kg、大型:25〜40kg、超大型:40kg〜)による早見表・比率をもとにした参考値です。上記フォームでは月齢も含めた詳細な換算ができます。</p>
+    </details>
+
     <div class="related-tools">
       <div class="article-nav">
         <a class="link-btn link-btn-secondary" href="zatsugaku/inu-roka.html">犬はなぜ早く年をとる?</a>
@@ -154,8 +227,14 @@
   </main>
 
   <footer class="site-footer">
-    <p>このツールはAIの支援を受けて制作されています。</p>
-    <p>Built with AI assistance.</p>
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+    </div>
+    <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
+    <p>This site's content is produced with AI assistance.</p>
+    <p><a href="privacy/index.html">プライバシーポリシー・運営者情報</a></p>
   </footer>
 
 </div>

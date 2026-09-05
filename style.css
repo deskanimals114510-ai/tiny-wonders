@@ -17,7 +17,7 @@
   --paper-deep: #e3d6d1;
   --surface: #fefcfb;
   --ink: #362f2d;
-  --ink-soft: #7a6e68;
+  --ink-soft: #6f6259;
   --accent: #52717a;
   --accent-deep: #3a4f56;
   --accent-tint: #dbe6e8;
@@ -145,7 +145,6 @@ body {
 .hero .lead-en {
   font-size: 0.8rem;
   font-style: italic;
-  opacity: 0.85;
 }
 
 .hero-illustration {
@@ -278,7 +277,6 @@ body {
 .tagline-en {
   font-size: 0.76rem;
   font-style: italic;
-  opacity: 0.85;
 }
 .card-links {
   display: flex;
@@ -496,6 +494,10 @@ body {
   color: var(--accent-deep);
   background: var(--accent-tint);
 }
+.pill-radio input:focus-visible + span {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
 
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field[hidden] { display: none; }
@@ -612,14 +614,33 @@ body {
   border-radius: 12px;
 }
 
+.article-source {
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin: -6px 0 14px;
+}
+.article-source a { color: var(--accent-deep); }
+.article-source em { font-style: italic; }
+
 .article-lead {
   font-size: 0.85rem;
   color: var(--ink-soft);
-  font-style: italic;
   line-height: 1.8;
   margin: 0 0 20px;
   padding-bottom: 18px;
   border-bottom: 1px solid var(--line);
+}
+.article-lead .lead-ja {
+  display: block;
+  font-weight: 700;
+  color: var(--ink);
+  font-style: normal;
+  margin-bottom: 6px;
+}
+.article-lead .lead-en {
+  display: block;
+  font-style: italic;
 }
 
 .related-tools {
@@ -686,6 +707,98 @@ button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
+
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 8px;
+  z-index: 100;
+  background: var(--accent);
+  color: var(--surface);
+  padding: 10px 18px;
+  border-radius: 0 0 8px 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ---- フッター送客CTA(全記事・ツールページ共通) ---- */
+.footer-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 18px;
+}
+.footer-cta .link-btn-secondary {
+  font-size: 0.78rem;
+  padding: 9px 16px;
+}
+
+/* ---- 記事のシェア導線 ---- */
+.share-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+.share-row .link-btn-secondary {
+  font-size: 0.8rem;
+  padding: 9px 16px;
+}
+
+/* ---- パンくず(視覚的にはback-linkのまま、ランドマークのみ付与) ---- */
+.breadcrumb-nav { display: contents; }
+
+/* ---- 換算ツールの早見表(静的、クロール可能な一次コンテンツ) ---- */
+.lookup-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 4px;
+}
+.lookup-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+.lookup-table caption {
+  text-align: left;
+  font-weight: 700;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+}
+.lookup-table th,
+.lookup-table td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.lookup-table th {
+  background: var(--accent-tint);
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+.lookup-table-details {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 16px;
+  box-shadow: var(--shadow-soft);
+}
+.lookup-table-details summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--accent-deep);
+  font-family: "Zen Old Mincho", serif;
+  font-size: 0.98rem;
+}
+.lookup-table-details[open] summary { margin-bottom: 14px; }
 
 @media (prefers-reduced-motion: reduce) {
   .wonder-card,

@@ -126,10 +126,30 @@
   function initTabs() {
     var tabButtons = document.querySelectorAll(".tool-tab");
     var panels = document.querySelectorAll(".tool-panel");
+
+    tabButtons.forEach(function (btn) {
+      var target = btn.getAttribute("data-tab");
+      var panel = document.querySelector('.tool-panel[data-panel="' + target + '"]');
+      if (panel && !panel.id) panel.id = "tool-panel-" + target;
+      btn.setAttribute("role", "tab");
+      btn.setAttribute("aria-selected", btn.classList.contains("is-active") ? "true" : "false");
+      btn.setAttribute("tabindex", btn.classList.contains("is-active") ? "0" : "-1");
+      if (panel) btn.setAttribute("aria-controls", panel.id);
+    });
+    panels.forEach(function (p) {
+      p.setAttribute("role", "tabpanel");
+      if (!p.id) p.id = "tool-panel-" + p.getAttribute("data-panel");
+    });
+
     tabButtons.forEach(function (btn) {
       btn.addEventListener("click", function () {
         var target = btn.getAttribute("data-tab");
-        tabButtons.forEach(function (b) { b.classList.toggle("is-active", b === btn); });
+        tabButtons.forEach(function (b) {
+          var active = b === btn;
+          b.classList.toggle("is-active", active);
+          b.setAttribute("aria-selected", active ? "true" : "false");
+          b.setAttribute("tabindex", active ? "0" : "-1");
+        });
         panels.forEach(function (p) {
           p.classList.toggle("is-active", p.getAttribute("data-panel") === target);
         });
@@ -143,6 +163,7 @@
     var yearsInput = document.getElementById("age-years");
     var monthsInput = document.getElementById("age-months");
     var sizeSelect = document.getElementById("age-dog-size");
+    var breedSelect = document.getElementById("age-dog-breed");
     var resultBox = document.getElementById("age-result");
     var form = document.getElementById("age-form");
 
@@ -159,6 +180,14 @@
       r.addEventListener("change", refreshSizeVisibility);
     });
     refreshSizeVisibility();
+
+    if (breedSelect) {
+      breedSelect.addEventListener("change", function () {
+        var option = breedSelect.options[breedSelect.selectedIndex];
+        var size = option ? option.getAttribute("data-size") : "";
+        if (size) sizeSelect.value = size;
+      });
+    }
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
