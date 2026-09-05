@@ -208,7 +208,7 @@ body {
   gap: 8px;
   justify-content: center;
   background: var(--paper);
-  padding: 12px 0 18px;
+  padding: 12px 56px 18px 0;
   margin: 0 0 8px;
   border-bottom: 1px solid var(--line);
 }
