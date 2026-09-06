@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -67,8 +67,20 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-hana.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/neko-gorogoro.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/zannen/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -93,6 +105,12 @@
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/zannen/panda-taberu.html</loc>
     <lastmod>2026-09-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://deskanimals114510-ai.github.io/tiny-wonders/zannen/inu-kusa.html</loc>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
