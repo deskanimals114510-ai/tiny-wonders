@@ -1,56 +1,72 @@
 /*
-  Tiny Wonders — 北欧ナチュラル系の「引き算」デザイン。
-  色数を絞り(ニュートラル+単色アクセントのみ)、装飾は最小限に。
-  紙の質感(ドットグリッド)以外の装飾要素(マスキングテープ等)は廃止し、
-  余白・タイポグラフィ・イラストでブランドの個性を出す。
+  Tiny Wonders — 「どうぶつ絵とき帖」= 昭和〜平成の図鑑・博物画をモチーフにした
+  トリビア・エンタメメディアのデザイン(2026-09-06、軸再定義に伴うフル再デザイン)。
 
-  配色の根拠(2026-09-05、5名レビューで確定):
-  背景はMidjourneyイラストの色調(ダスティローズ/パープル)から彩度を大きく落として
-  抽出した暖色ニュートラル(ブラッシュグレージュ)。彩度を落とすことで「癒し」の
-  心理効果(色相よりも低彩度・高明度が効く)を保ちつつ、暖色イラストとの
-  色温度の衝突を避ける。アクセント(ボタン・リンク等の触れる部分)はダスティティール
-  (寒色)を維持し、暖色の器+寒色の差し色という配色構造で統一。
+  配色の根拠: 経年した図鑑の紙(マスタード寄りのパーチメント)を土台に、
+  カテゴリごとに標本ラベル色を持たせる「図鑑の分類色」構造を採用。
+  雑学=発見(森の緑)/ざんねん=愛嬌(素焼きのテラコッタ)を色で区別し、
+  ボタン等の共通UIは書物の金箔押しを思わせるマスタードで統一する。
+  カードは現代的なソフトシャドウをやめ、図版に貼るラベルのような
+  細い二重罫線(hairline)で「標本・図版」らしさを出す。
 */
 
 :root {
-  --paper: #f3eeec;
-  --paper-deep: #e3d6d1;
-  --surface: #fefcfb;
-  --ink: #362f2d;
-  --ink-soft: #6f6259;
-  --accent: #52717a;
-  --accent-deep: #3a4f56;
-  --accent-tint: #dbe6e8;
-  --line: #cbb8b2;
-  --shadow-soft: 0 8px 22px rgba(40, 25, 20, 0.08);
-  --shadow-lift: 0 14px 30px rgba(40, 25, 20, 0.12);
+  --paper: #f2e8cf;
+  --paper-deep: #e4d3a6;
+  --surface: #fffbf1;
+  --ink: #2b2521;
+  --ink-soft: #7a6a4f;
+  --accent: #c98a2e;
+  --accent-deep: #9c6a1c;
+  --accent-tint: #f2e0b8;
+  --line: #cbb27a;
+  --zatsugaku: #3f6b52;
+  --zatsugaku-tint: #dde8df;
+  --zannen: #bf5a2c;
+  --zannen-tint: #f3ddce;
+  --accent-hover: #dba13f;
+  --on-accent: #2b2521;
+  --shadow-soft: 0 8px 22px rgba(60, 40, 10, 0.08);
+  --shadow-lift: 0 14px 30px rgba(60, 40, 10, 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #221d1c;
-    --paper-deep: #2e2725;
-    --surface: #282221;
-    --ink: #ece5e1;
-    --ink-soft: #ab9c95;
-    --accent: #8fb3ba;
-    --accent-deep: #b9d5da;
-    --accent-tint: #2f3d3f;
-    --line: #4a3f3b;
+    --paper: #211c16;
+    --paper-deep: #2c2519;
+    --surface: #2a2419;
+    --ink: #ede4d2;
+    --ink-soft: #b3a486;
+    --accent: #e0ab5c;
+    --accent-deep: #f0c886;
+    --accent-tint: #4a3a1f;
+    --line: #4d4128;
+    --zatsugaku: #7fa88d;
+    --zatsugaku-tint: #2c3a30;
+    --zannen: #d98a5c;
+    --zannen-tint: #4a3020;
+    --accent-hover: #eabb78;
+    --on-accent: #241f18;
     --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.35);
     --shadow-lift: 0 16px 34px rgba(0, 0, 0, 0.45);
   }
 }
 :root[data-theme="dark"] {
-  --paper: #221d1c;
-  --paper-deep: #2e2725;
-  --surface: #282221;
-  --ink: #ece5e1;
-  --ink-soft: #ab9c95;
-  --accent: #8fb3ba;
-  --accent-deep: #b9d5da;
-  --accent-tint: #2f3d3f;
-  --line: #4a3f3b;
+  --paper: #211c16;
+  --paper-deep: #2c2519;
+  --surface: #2a2419;
+  --ink: #ede4d2;
+  --ink-soft: #b3a486;
+  --accent: #e0ab5c;
+  --accent-deep: #f0c886;
+  --accent-tint: #4a3a1f;
+  --line: #4d4128;
+  --zatsugaku: #7fa88d;
+  --zatsugaku-tint: #2c3a30;
+  --zannen: #d98a5c;
+  --zannen-tint: #4a3020;
+  --accent-hover: #eabb78;
+  --on-accent: #241f18;
   --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.35);
   --shadow-lift: 0 16px 34px rgba(0, 0, 0, 0.45);
 }
@@ -63,7 +79,7 @@ html, body {
 }
 
 body {
-  font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: "Zen Maru Gothic", "Hiragino Sans", "Yu Gothic", sans-serif;
   color: var(--ink);
   background-color: var(--paper);
   background-image: radial-gradient(var(--paper-deep) 1px, transparent 1px);
@@ -129,7 +145,7 @@ body {
   margin-bottom: 32px;
 }
 .hero h1 {
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Shippori Mincho", serif;
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -153,11 +169,43 @@ body {
   height: auto;
   max-width: 260px;
   margin: 0 auto 20px;
-  border-radius: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  box-shadow: 0 0 0 4px var(--surface), 0 0 0 5px var(--line);
 }
 .hero-compact .hero-illustration {
   max-width: 200px;
   margin-bottom: 16px;
+}
+
+/* ---- 図鑑カテゴリの標本ラベル(雑学=緑/ざんねん=テラコッタ) ---- */
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 3px 11px 3px 9px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+}
+.category-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+.category-badge--zatsugaku {
+  color: var(--zatsugaku);
+  background: var(--zatsugaku-tint);
+}
+.category-badge--zannen {
+  color: var(--zannen);
+  background: var(--zannen-tint);
 }
 
 @media (min-width: 640px) {
@@ -229,7 +277,7 @@ body {
 .portal-section:first-of-type { margin-top: 28px; }
 .portal-section:last-of-type { margin-bottom: 0; }
 .portal-section-title {
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Shippori Mincho", serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--ink);
@@ -265,7 +313,7 @@ body {
 .wonder-card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 28px 24px;
   box-shadow: var(--shadow-soft);
   text-align: center;
@@ -288,7 +336,7 @@ body {
 .card-icon svg { width: 100%; height: 100%; }
 
 .wonder-card h3 {
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Shippori Mincho", serif;
   font-size: 1.15rem;
   font-weight: 700;
   margin: 0 0 10px;
@@ -335,7 +383,7 @@ body {
 .preview-card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 26px;
   box-shadow: var(--shadow-soft);
 }
@@ -370,7 +418,7 @@ body {
 .preview-row-text { flex: 1; min-width: 0; }
 .preview-row-text strong {
   display: block;
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Shippori Mincho", serif;
   font-size: 0.94rem;
   font-weight: 700;
   margin-bottom: 3px;
@@ -382,17 +430,21 @@ body {
   line-height: 1.5;
 }
 .preview-row:hover .preview-row-text strong { color: var(--accent-deep); }
+#zatsugaku .preview-row-icon { color: var(--zatsugaku); }
+#zatsugaku .preview-row:hover .preview-row-text strong { color: var(--zatsugaku); }
+#zannen .preview-row-icon { color: var(--zannen); }
+#zannen .preview-row:hover .preview-row-text strong { color: var(--zannen); }
 .preview-more { margin-top: 18px; text-align: center; }
 
 /* ---- ボタン ---- */
 .link-btn {
   display: inline-block;
   background: var(--accent);
-  color: var(--surface);
+  color: var(--on-accent);
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 8px;
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -400,7 +452,7 @@ body {
   border: none;
   cursor: pointer;
 }
-.link-btn:hover { background: var(--accent-deep); }
+.link-btn:hover { background: var(--accent-hover); }
 .link-btn-secondary {
   background: transparent;
   color: var(--accent-deep);
@@ -436,6 +488,7 @@ body {
 }
 .back-link:hover { text-decoration: underline; }
 
+.article-badge-row { margin: 0 0 10px; }
 .hero-compact { margin-bottom: 22px; }
 .hero-compact h1 { font-size: 1.4rem; }
 .article-date { font-size: 0.8rem; color: var(--ink-soft); margin-top: 6px; }
@@ -461,7 +514,7 @@ body {
   background: transparent;
   padding: 10px 12px;
   border-radius: 7px;
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   color: var(--ink-soft);
@@ -470,7 +523,7 @@ body {
 }
 .tool-tab.is-active {
   background: var(--accent);
-  color: var(--surface);
+  color: var(--on-accent);
 }
 
 .tool-panel { display: none; }
@@ -479,7 +532,7 @@ body {
 .tool-card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 26px 22px;
   box-shadow: var(--shadow-soft);
   display: flex;
@@ -539,7 +592,7 @@ body {
 }
 .field input[type="number"],
 .field select {
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 1rem;
   padding: 10px 14px;
   border-radius: 8px;
@@ -572,13 +625,13 @@ body {
 .checklist-card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 22px;
   box-shadow: var(--shadow-soft);
   margin-bottom: 18px;
 }
 .checklist-card h2 {
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Shippori Mincho", serif;
   font-size: 1.05rem;
   margin: 0 0 14px;
   color: var(--ink);
@@ -653,12 +706,12 @@ body {
 .result-box {
   background: var(--surface);
   border: 1px solid var(--accent);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 22px;
   box-shadow: var(--shadow-soft);
 }
 .result-headline {
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Shippori Mincho", serif;
   font-size: 1.25rem;
   font-weight: 700;
   margin: 0 0 10px;
@@ -684,7 +737,7 @@ body {
 }
 .life-stage-badge.is-senior {
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 .result-note {
   font-size: 0.75rem;
@@ -707,12 +760,12 @@ body {
 .weight-log {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 18px 20px;
   margin-top: 16px;
 }
 .weight-log-title {
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Shippori Mincho", serif;
   font-size: 0.95rem;
   font-weight: 700;
   margin: 0 0 10px;
@@ -766,12 +819,12 @@ body {
 .article-card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 28px 22px;
   box-shadow: var(--shadow-soft);
 }
 .article-card h2 {
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Shippori Mincho", serif;
   font-size: 1.08rem;
   font-weight: 700;
   margin: 24px 0 10px;
@@ -790,7 +843,9 @@ body {
   height: auto;
   max-width: 380px;
   margin: 0 auto 22px;
-  border-radius: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  box-shadow: 0 0 0 4px var(--surface), 0 0 0 5px var(--line);
 }
 
 .article-source {
@@ -873,7 +928,7 @@ body {
   display: block;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 20px 22px;
   box-shadow: var(--shadow-soft);
   text-decoration: none;
@@ -890,7 +945,7 @@ body {
 }
 .article-list-item .article-icon svg { width: 100%; height: 100%; }
 .article-list-item h2 {
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Shippori Mincho", serif;
   font-size: 1.02rem;
   font-weight: 700;
   margin: 0 0 6px;
@@ -915,7 +970,7 @@ button:focus-visible {
   left: 8px;
   z-index: 100;
   background: var(--accent);
-  color: var(--surface);
+  color: var(--on-accent);
   padding: 10px 18px;
   border-radius: 0 0 8px 8px;
   font-size: 0.82rem;
@@ -988,7 +1043,7 @@ button:focus-visible {
 .lookup-table-details {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 18px 16px;
   box-shadow: var(--shadow-soft);
 }
@@ -996,7 +1051,7 @@ button:focus-visible {
   cursor: pointer;
   font-weight: 700;
   color: var(--accent-deep);
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Shippori Mincho", serif;
   font-size: 0.98rem;
 }
 .lookup-table-details[open] summary { margin-bottom: 14px; }
