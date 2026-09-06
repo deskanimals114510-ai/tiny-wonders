@@ -152,6 +152,15 @@ body {
   margin: 4px 0 14px;
   color: var(--ink);
 }
+.hero-tagline {
+  display: block;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
 .hero .lead {
   color: var(--ink-soft);
   line-height: 1.85;
@@ -1010,6 +1019,12 @@ button:focus-visible {
 
 /* ---- パンくず(視覚的にはback-linkのまま、ランドマークのみ付与) ---- */
 .breadcrumb-nav { display: contents; }
+.breadcrumb-sep {
+  display: inline-block;
+  margin: 0 6px;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
 
 /* ---- 換算ツールの早見表(静的、クロール可能な一次コンテンツ) ---- */
 .lookup-table-wrap {
