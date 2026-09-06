@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="0J0w_U9KWunnJqs_cK5Oh1yQ9owq_4TMpYkJdkPbA4E" />
+<title>犬猫の防災手帳チェックリスト | Tiny Wonders</title>
+<meta name="description" content="もしもの時に困らないための、犬猫の防災準備チェックリスト。持ち出し品・日頃の備え・避難時の心構えの3項目にまとめ、チェックした内容はブラウザに保存、印刷して手帳にもできます。">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="犬猫の防災手帳チェックリスト | Tiny Wonders">
+<meta property="og:description" content="もしもの時に困らないための、犬猫の防災準備チェックリストです。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/bousai-checklist.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/bousai-checklist.html">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="犬猫の防災手帳チェックリスト">
+<meta name="twitter:description" content="もしもの時に困らないための、犬猫の防災準備チェックリストです。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer src="analytics.js"></script>
+<script defer src="bousai-checklist.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "犬猫の防災手帳チェックリスト",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/bousai-checklist.html",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+  "isPartOf": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tiny Wonders", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
+    { "@type": "ListItem", "position": 2, "name": "犬猫の防災手帳チェックリスト", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/bousai-checklist.html" }
+  ]
+}
+</script>
+</head>
+<body class="page-tool">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle no-print" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav no-print" aria-label="パンくずリスト"><a class="back-link" href="index.html">← Tiny Wonders</a></nav>
+    <h1><span class="grad-text">犬猫の防災手帳チェックリスト</span></h1>
+    <p class="lead">
+      もしもの時に困らないために、日頃からできる備えをまとめました。<br>
+      <span class="lead-en">A checklist to help you prepare your dog or cat for emergencies.</span>
+    </p>
+  </header>
+
+  <main class="tool-main" id="main-content">
+
+    <div class="checklist-card">
+      <h2>持ち出し品</h2>
+      <ul class="checklist-group">
+        <li class="checklist-item"><label><input type="checkbox" id="c1"> フード・水(5日分が目安)</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c2"> 常備薬・療法食(かかりつけ医に相談し多めに確保)</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c3"> リード・ハーネス(予備も1つ)</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c4"> キャリーバッグ・クレート</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c5"> 首輪+迷子札</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c6"> 排泄用品(ペットシーツ・うんち袋)</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c7"> 健康手帳・ワクチン接種証明のコピー</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c8"> はぐれた時のためのペットの写真</label></li>
+      </ul>
+    </div>
+
+    <div class="checklist-card">
+      <h2>日頃の備え</h2>
+      <ul class="checklist-group">
+        <li class="checklist-item"><label><input type="checkbox" id="c9"> マイクロチップの登録</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c10"> 狂犬病予防接種・各種ワクチン接種</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c11"> キャリーバッグ・クレートに慣れさせておく</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c12"> 「待て」「おいで」等の基本的なしつけ</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c13"> 不妊・去勢手術(発情期のストレス軽減にも)</label></li>
+      </ul>
+    </div>
+
+    <div class="checklist-card">
+      <h2>避難時の心構え</h2>
+      <ul class="checklist-group">
+        <li class="checklist-item"><label><input type="checkbox" id="c14"> 「同行避難」と「同伴避難」の違いを知っておく(同行=一緒に避難所まで行く、同伴=避難所でも一緒に過ごせる、は別物)</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c15"> お住まいの自治体・避難所のペット受け入れ方針を事前に確認しておく</label></li>
+        <li class="checklist-item"><label><input type="checkbox" id="c16"> 避難先でのマナー(ケージ管理・鳴き声・アレルギーのある方への配慮)を意識する</label></li>
+      </ul>
+    </div>
+
+    <button type="button" id="checklist-print" class="link-btn tool-submit no-print">このページを印刷する</button>
+
+    <p class="tool-disclaimer no-print">
+      チェック内容はこの端末のブラウザにのみ保存されます(サーバーには送信されません)。内容は一般的な防災ガイドラインを参考にした目安であり、お住まいの地域の防災情報も合わせてご確認ください。
+    </p>
+
+    <div class="related-tools no-print">
+      <a class="link-btn" href="nenrei-taiju.html">犬猫の年齢・体重を換算してみる</a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer no-print">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
+    <p>This site's content is produced with AI assistance.</p>
+    <p><a href="privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

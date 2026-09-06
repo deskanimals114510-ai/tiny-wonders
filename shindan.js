@@ -80,6 +80,15 @@
     return score;
   }
 
+  function buildShareRow(text, url) {
+    var tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) + "&url=" + encodeURIComponent(url);
+    var lineUrl = "https://social-plugins.line.me/lineit/share?url=" + encodeURIComponent(url);
+    return '<div class="share-row">' +
+      '<a class="link-btn-secondary" href="' + tweetUrl + '" target="_blank" rel="noopener">Xでシェア</a>' +
+      '<a class="link-btn-secondary" href="' + lineUrl + '" target="_blank" rel="noopener">LINEでシェア</a>' +
+      '</div>';
+  }
+
   function bestMatch(answers, breeds) {
     var best = breeds[0];
     var bestScore = -1;
@@ -106,11 +115,15 @@
         answers.push(checked ? checked.value : "A");
       }
       var match = bestMatch(answers, breeds);
+      var speciesLabel = species === "dog" ? "犬種" : "猫種";
+      var shareText = speciesLabel + "診断で「" + match.name + "タイプ」でした! | Tiny Wonders";
+      var pageUrl = "https://deskanimals114510-ai.github.io/tiny-wonders/shindan.html";
       resultBox.innerHTML =
         '<p class="result-sub">あなたと相性が良いのは...</p>' +
         '<p class="result-headline"><strong>' + match.name + '</strong></p>' +
         '<p class="result-note">' + match.desc + '</p>' +
-        '<p class="result-note">※簡易的な相性の目安です。実際の性格には個体差があります。</p>';
+        '<p class="result-note">※簡易的な相性の目安です。実際の性格には個体差があります。</p>' +
+        buildShareRow(shareText, pageUrl);
       resultBox.hidden = false;
       resultBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
       if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "breed_quiz", species: species, result: match.name });

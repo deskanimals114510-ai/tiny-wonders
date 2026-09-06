@@ -105,6 +105,15 @@
     return "normal";
   }
 
+  function buildShareRow(text, url) {
+    var tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) + "&url=" + encodeURIComponent(url);
+    var lineUrl = "https://social-plugins.line.me/lineit/share?url=" + encodeURIComponent(url);
+    return '<div class="share-row">' +
+      '<a class="link-btn-secondary" href="' + tweetUrl + '" target="_blank" rel="noopener">Xでシェア</a>' +
+      '<a class="link-btn-secondary" href="' + lineUrl + '" target="_blank" rel="noopener">LINEでシェア</a>' +
+      '</div>';
+  }
+
   window.PetCalc = {
     dogHumanAge: dogHumanAge,
     catHumanAge: catHumanAge,
@@ -209,13 +218,66 @@
       }
 
       var rounded = Math.round(humanAge);
+      var animalLabel = species === "dog" ? "愛犬" : "愛猫";
+      var shareText = animalLabel + "(" + sizeLabel + ")は人間でいうと約" + rounded + "歳でした! | Tiny Wonders";
+      var pageUrl = "https://deskanimals114510-ai.github.io/tiny-wonders/nenrei-taiju.html";
       resultBox.innerHTML =
         '<p class="result-headline">人間でいうと約 <strong>' + rounded + '歳</strong></p>' +
         '<p class="result-sub">' + sizeLabel + ' ・ 実年齢 ' + years + '歳' + (months ? months + 'ヶ月' : '') + 'の場合の目安</p>' +
-        '<p class="result-note">※犬種・体格・個体差により実際の老化スピードは異なります。あくまで参考値としてご覧ください。</p>';
+        '<p class="result-note">※犬種・体格・個体差により実際の老化スピードは異なります。あくまで参考値としてご覧ください。</p>' +
+        buildShareRow(shareText, pageUrl);
       resultBox.hidden = false;
       if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "age_calc", species: species });
     });
+  }
+
+  var WEIGHT_LOG_KEY = "tinywonders-weight-log";
+  var WEIGHT_LOG_MAX = 20;
+
+  function loadWeightLog() {
+    try {
+      var raw = localStorage.getItem(WEIGHT_LOG_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) { return []; }
+  }
+
+  function saveWeightLog(log) {
+    try { localStorage.setItem(WEIGHT_LOG_KEY, JSON.stringify(log)); } catch (e) {}
+  }
+
+  function todayLabel() {
+    var d = new Date();
+    return d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
+  }
+
+  function renderWeightLog() {
+    var container = document.getElementById("weight-log");
+    if (!container) return;
+    var log = loadWeightLog();
+    if (log.length === 0) {
+      container.hidden = true;
+      container.innerHTML = "";
+      return;
+    }
+    var sorted = log.slice().sort(function (a, b) { return b.ts - a.ts; });
+    var rows = sorted.map(function (entry, i) {
+      var diffText = "";
+      if (i < sorted.length - 1) {
+        var diff = entry.kg - sorted[i + 1].kg;
+        if (Math.abs(diff) >= 0.01) {
+          diffText = '<span class="weight-log-diff">(' + (diff > 0 ? "+" : "") + diff.toFixed(1) + "kg)</span>";
+        }
+      }
+      return '<li class="weight-log-row" data-index="' + log.indexOf(entry) + '">' +
+        '<span class="weight-log-date">' + entry.date + '</span>' +
+        '<span class="weight-log-value">' + entry.kg.toFixed(1) + 'kg ' + diffText + '</span>' +
+        '<button type="button" class="weight-log-delete" aria-label="この記録を削除">×</button>' +
+        '</li>';
+    });
+    container.innerHTML =
+      '<p class="weight-log-title">わが子の体重ノート</p>' +
+      '<ul class="weight-log-list">' + rows.join("") + '</ul>';
+    container.hidden = false;
   }
 
   function initWeightTool() {
@@ -226,6 +288,22 @@
     var refInput = document.getElementById("weight-ref-human");
     var unitToggle = document.getElementById("weight-unit-lb");
     var resultBox = document.getElementById("weight-result");
+    var logContainer = document.getElementById("weight-log");
+
+    renderWeightLog();
+
+    if (logContainer) {
+      logContainer.addEventListener("click", function (e) {
+        var btn = e.target.closest(".weight-log-delete");
+        if (!btn) return;
+        var row = btn.closest(".weight-log-row");
+        var index = parseInt(row.getAttribute("data-index"), 10);
+        var log = loadWeightLog();
+        log.splice(index, 1);
+        saveWeightLog(log);
+        renderWeightLog();
+      });
+    }
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -251,10 +329,12 @@
         : window.PetCalc.kgToLb(currentKg).toFixed(2) + ' lb';
       lines.push('<p class="result-headline">' + currentRaw + (useLb ? 'lb' : 'kg') + ' は約 <strong>' + altUnit + '</strong></p>');
 
+      var shareText = null;
       if (standardKg) {
         var human = window.PetCalc.humanEquivalentWeight(currentKg, standardKg, refHuman);
         if (human) {
           lines.push('<p class="result-sub">標準体重(' + standardRaw + (useLb ? 'lb' : 'kg') + ')と比べると、体重' + Math.round(refHuman) + 'kgのヒトでいうと約 <strong>' + human.toFixed(1) + 'kg</strong> 相当の変化イメージです。</p>');
+          shareText = "うちの子の体重、ヒトでいうと約" + human.toFixed(1) + "kg相当でした! | Tiny Wonders";
         }
         var note = window.PetCalc.weightConditionNote(currentKg, standardKg);
         if (note === "over") {
@@ -269,9 +349,26 @@
       }
 
       lines.push('<p class="result-note">※あくまで参考値です。健康上の判断は自己判断せず獣医師にご相談ください。</p>');
+      lines.push('<button type="button" class="link-btn-secondary weight-log-save">この記録をノートに残す</button>');
+      if (shareText) {
+        lines.push(buildShareRow(shareText, "https://deskanimals114510-ai.github.io/tiny-wonders/nenrei-taiju.html"));
+      }
       resultBox.innerHTML = lines.join("");
       resultBox.hidden = false;
       if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "weight_calc", has_standard: !!standardKg });
+
+      var saveBtn = resultBox.querySelector(".weight-log-save");
+      if (saveBtn) {
+        saveBtn.addEventListener("click", function () {
+          var log = loadWeightLog();
+          log.push({ date: todayLabel(), ts: Date.now(), kg: currentKg });
+          if (log.length > WEIGHT_LOG_MAX) log = log.slice(log.length - WEIGHT_LOG_MAX);
+          saveWeightLog(log);
+          renderWeightLog();
+          saveBtn.disabled = true;
+          saveBtn.textContent = "ノートに記録しました";
+        });
+      }
     });
 
     speciesRadios.forEach(function (r) {
