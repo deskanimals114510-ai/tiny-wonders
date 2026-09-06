@@ -166,6 +166,20 @@
     });
   }
 
+  var DOG_SENIOR_AGE = { small: 10, medium: 8, large: 7, giant: 6 };
+  var CAT_SENIOR_AGE = 7;
+
+  function lifeStage(ageYears, species, size) {
+    if (ageYears < 1) {
+      return { label: species === "dog" ? "子犬期" : "子猫期", isSenior: false };
+    }
+    var seniorAge = species === "dog" ? (DOG_SENIOR_AGE[size] || 8) : CAT_SENIOR_AGE;
+    if (ageYears >= seniorAge) {
+      return { label: "シニア期", isSenior: true };
+    }
+    return { label: species === "dog" ? "成犬期" : "成猫期", isSenior: false };
+  }
+
   function initAgeTool() {
     var speciesRadios = document.querySelectorAll('input[name="age-species"]');
     var sizeField = document.getElementById("age-dog-size-field");
@@ -219,15 +233,22 @@
 
       var rounded = Math.round(humanAge);
       var animalLabel = species === "dog" ? "愛犬" : "愛猫";
-      var shareText = animalLabel + "(" + sizeLabel + ")は人間でいうと約" + rounded + "歳でした! | Tiny Wonders";
+      var stage = lifeStage(ageYears, species, species === "dog" ? sizeSelect.value : null);
+      var shareText = animalLabel + "(" + sizeLabel + ")は人間でいうと約" + rounded + "歳、" + stage.label + "でした! | Tiny Wonders";
       var pageUrl = "https://deskanimals114510-ai.github.io/tiny-wonders/nenrei-taiju.html";
+      var stageLine = '<p class="result-sub"><span class="life-stage-badge' + (stage.isSenior ? " is-senior" : "") + '">' + stage.label + '</span></p>';
+      var seniorLink = stage.isSenior
+        ? '<p class="result-note"><a href="zatsugaku/shinia-sign.html">シニア期のはじまりサインをチェックしてみる →</a></p>'
+        : '';
       resultBox.innerHTML =
         '<p class="result-headline">人間でいうと約 <strong>' + rounded + '歳</strong></p>' +
+        stageLine +
         '<p class="result-sub">' + sizeLabel + ' ・ 実年齢 ' + years + '歳' + (months ? months + 'ヶ月' : '') + 'の場合の目安</p>' +
         '<p class="result-note">※犬種・体格・個体差により実際の老化スピードは異なります。あくまで参考値としてご覧ください。</p>' +
+        seniorLink +
         buildShareRow(shareText, pageUrl);
       resultBox.hidden = false;
-      if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "age_calc", species: species });
+      if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "age_calc", species: species, life_stage: stage.label });
     });
   }
 

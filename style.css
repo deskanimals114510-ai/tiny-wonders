@@ -587,6 +587,29 @@ body {
   text-decoration-color: var(--accent);
 }
 
+.checklist-why {
+  margin: 4px 0 0 28px;
+}
+.checklist-why summary {
+  font-size: 0.76rem;
+  color: var(--accent-deep);
+  cursor: pointer;
+  list-style: none;
+}
+.checklist-why summary::-webkit-details-marker { display: none; }
+.checklist-why summary::before {
+  content: "▸ ";
+}
+.checklist-why[open] summary::before {
+  content: "▾ ";
+}
+.checklist-why p {
+  margin: 4px 0 0;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
 @media print {
   .no-print { display: none !important; }
   body { background: #fff; color: #000; }
@@ -598,6 +621,7 @@ body {
   .checklist-item label:has(input:checked) {
     color: #000;
   }
+  .checklist-why { display: none; }
 }
 
 .result-box {
@@ -622,6 +646,20 @@ body {
   margin: 0 0 10px;
 }
 .result-sub strong { color: var(--accent-deep); }
+
+.life-stage-badge {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: var(--accent-tint);
+  color: var(--accent-deep);
+}
+.life-stage-badge.is-senior {
+  background: var(--accent);
+  color: #fff;
+}
 .result-note {
   font-size: 0.75rem;
   color: var(--ink-soft);
@@ -756,6 +794,28 @@ body {
 .article-lead .lead-en {
   display: block;
   font-style: italic;
+}
+
+.trivia-box {
+  margin-top: 24px;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background: var(--accent-tint);
+  border-left: 3px solid var(--accent);
+}
+.trivia-box-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--accent-deep);
+  margin-bottom: 6px;
+}
+.trivia-box p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink);
+  line-height: 1.7;
 }
 
 .related-tools {

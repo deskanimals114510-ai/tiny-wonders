@@ -5,14 +5,46 @@
   "use strict";
 
   var TYPES = [
-    { name: "太陽タイプ", desc: "元気いっぱいで、そこにいるだけで場を明るくする。", descEn: "A ray of sunshine, full of energy and always brightening the room." },
-    { name: "まんまるタイプ", desc: "おっとりマイペースで、そばにいるだけで癒される。", descEn: "Round and gentle, easygoing and calming just by being nearby." },
-    { name: "きらきらタイプ", desc: "好奇心旺盛で、いつも新しいものに目を輝かせる。", descEn: "Sparkly and curious, always chasing the next new thing." },
-    { name: "そよ風タイプ", desc: "おだやかでマイペース、争いごとが苦手。", descEn: "A gentle breeze, calm and easygoing, avoids conflict." },
-    { name: "わんぱくタイプ", desc: "元気があり余っていて、いたずら好き。", descEn: "A little troublemaker, bursting with energy and mischief." },
-    { name: "ミステリアスタイプ", desc: "気まぐれでつかみどころがない、でもそこが魅力。", descEn: "Mysterious and moody, unpredictable, and that's the charm." },
-    { name: "あまえんぼうタイプ", desc: "甘えん坊で、いつも誰かのそばにいたい。", descEn: "A total cuddle-bug, always wants to be close to someone." },
-    { name: "しっかり者タイプ", desc: "落ち着きがあり、頼れる存在。", descEn: "Calm and dependable, the reliable one of the group." }
+    {
+      name: "太陽タイプ",
+      desc: "元気いっぱいで、そこにいるだけで場を明るくするタイプ。人にも他の動物にも物怖じせず、初めての場所でもすぐに馴染んでしまう社交的な一面があります。ボール遊びや追いかけっこなど、体をたくさん動かす遊びとの相性が抜群です。",
+      descEn: "A ray of sunshine, full of energy and always brightening the room. Outgoing and fearless, quick to feel at home in new places or around new faces. Loves games that involve lots of running and chasing."
+    },
+    {
+      name: "まんまるタイプ",
+      desc: "おっとりマイペースで、そばにいるだけで癒される存在。急かされるのが苦手で、自分のペースでゆったり過ごす時間を大切にします。ブラッシングやなでなでなど、静かなスキンシップを好む傾向があります。",
+      descEn: "Round and gentle, easygoing and calming just by being nearby. Prefers a slow, unhurried pace and doesn't like being rushed. Enjoys quiet affection like brushing and gentle petting."
+    },
+    {
+      name: "きらきらタイプ",
+      desc: "好奇心旺盛で、いつも新しいものに目を輝かせるタイプ。初めて見るおもちゃや知らない匂いにすぐ気づき、探検するのが大好きです。知育トイやパズル系のおもちゃで刺激を与えると、いきいきとした表情を見せてくれるでしょう。",
+      descEn: "Sparkly and curious, always chasing the next new thing. Quick to notice new toys or unfamiliar scents and loves to explore. Puzzle toys and brain games are a great match."
+    },
+    {
+      name: "そよ風タイプ",
+      desc: "おだやかでマイペース、争いごとが苦手なタイプ。他の動物や人に対してもおっとり構えていて、無理に自己主張することはあまりありません。落ち着いた環境と、決まった生活リズムを好む傾向があります。",
+      descEn: "A gentle breeze, calm and easygoing, avoids conflict. Rarely pushes its own agenda around others, staying relaxed instead. Thrives on a calm environment and a steady daily routine."
+    },
+    {
+      name: "わんぱくタイプ",
+      desc: "元気があり余っていて、いたずら好きなタイプ。目を離したすきにティッシュを取り出したり、物を落として遊んだりと、飼い主を飽きさせません。有り余るエネルギーを発散できる遊び道具をたくさん用意してあげると喜びます。",
+      descEn: "A little troublemaker, bursting with energy and mischief. Might unroll the tissue paper or bat things off the table the moment you look away. Plenty of toys to burn off that energy will keep everyone happy."
+    },
+    {
+      name: "ミステリアスタイプ",
+      desc: "気まぐれでつかみどころがない、でもそこが魅力のタイプ。今日は甘えてきたと思えば、明日はどこかツンとした態度を見せることも。予測できない一面こそが、このタイプならではの奥深い魅力です。",
+      descEn: "Mysterious and moody, unpredictable, and that's the charm. Might be affectionate one day and aloof the next. That unpredictability is exactly what makes this type so intriguing."
+    },
+    {
+      name: "あまえんぼうタイプ",
+      desc: "甘えん坊で、いつも誰かのそばにいたいタイプ。留守番中は少し寂しがり屋な一面もあり、帰宅すると全力で出迎えてくれることが多いです。たっぷりスキンシップの時間を取ってあげると、より安心して過ごせるでしょう。",
+      descEn: "A total cuddle-bug, always wants to be close to someone. Might get a little lonely when left alone, but greets you enthusiastically when you're back. Plenty of cuddle time helps this type feel most at ease."
+    },
+    {
+      name: "しっかり者タイプ",
+      desc: "落ち着きがあり、頼れる存在のタイプ。新しい環境の変化にも比較的動じにくく、飼い主のことをよく観察している賢さも持ち合わせています。一貫したルールのもとで安定した生活リズムを作ってあげると、その良さがさらに発揮されます。",
+      descEn: "Calm and dependable, the reliable one of the group. Adapts well to change and often seems to be quietly observing everything. A consistent routine helps bring out the best in this type."
+    }
   ];
 
   function buildShareRow(text, url) {
