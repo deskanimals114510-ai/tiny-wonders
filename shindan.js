@@ -142,6 +142,49 @@
     return best;
   }
 
+  var SHINDAN_LOG_KEY = "tinywonders-shindan-log";
+  var SHINDAN_LOG_MAX = 20;
+
+  function loadShindanLog() {
+    try {
+      var raw = localStorage.getItem(SHINDAN_LOG_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) { return []; }
+  }
+
+  function saveShindanLog(log) {
+    try { localStorage.setItem(SHINDAN_LOG_KEY, JSON.stringify(log)); } catch (e) {}
+  }
+
+  function todayLabel() {
+    var d = new Date();
+    return d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
+  }
+
+  function renderShindanLog() {
+    var container = document.getElementById("shindan-log");
+    if (!container) return;
+    var log = loadShindanLog();
+    if (log.length === 0) {
+      container.hidden = true;
+      container.innerHTML = "";
+      return;
+    }
+    var sorted = log.slice().sort(function (a, b) { return b.ts - a.ts; });
+    var rows = sorted.map(function (entry) {
+      var icon = entry.species === "dog" ? "🐶" : "🐱";
+      return '<li class="record-log-row" data-index="' + log.indexOf(entry) + '">' +
+        '<span class="record-log-date">' + entry.date + '</span>' +
+        '<span class="record-log-value">' + icon + ' ' + entry.breed + '</span>' +
+        '<button type="button" class="record-log-delete" aria-label="この記録を削除">×</button>' +
+        '</li>';
+    });
+    container.innerHTML =
+      '<p class="record-log-title">犬種・猫種診断ログ</p>' +
+      '<ul class="record-log-list">' + rows.join("") + '</ul>';
+    container.hidden = false;
+  }
+
   function initQuiz(species, breeds) {
     var form = document.getElementById(species + "-quiz-form");
     var resultBox = document.getElementById(species + "-quiz-result");
@@ -163,16 +206,45 @@
         '<p class="result-headline"><strong>' + match.name + '</strong></p>' +
         '<p class="result-note">' + match.desc + '</p>' +
         '<p class="result-note">※簡易的な相性の目安です。実際の性格には個体差があります。</p>' +
+        '<button type="button" class="link-btn-secondary record-log-save">この結果をログに残す</button>' +
         buildShareRow(shareText, pageUrl);
       resultBox.hidden = false;
       resultBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
       if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "breed_quiz", species: species, result: match.name });
+
+      var saveBtn = resultBox.querySelector(".record-log-save");
+      if (saveBtn) {
+        saveBtn.addEventListener("click", function () {
+          var log = loadShindanLog();
+          log.push({ date: todayLabel(), ts: Date.now(), species: species, breed: match.name });
+          if (log.length > SHINDAN_LOG_MAX) log = log.slice(log.length - SHINDAN_LOG_MAX);
+          saveShindanLog(log);
+          renderShindanLog();
+          saveBtn.disabled = true;
+          saveBtn.textContent = "ログに記録しました";
+        });
+      }
     });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
     initQuiz("dog", DOG_BREEDS);
     initQuiz("cat", CAT_BREEDS);
+    renderShindanLog();
+
+    var shindanLogContainer = document.getElementById("shindan-log");
+    if (shindanLogContainer) {
+      shindanLogContainer.addEventListener("click", function (e) {
+        var btn = e.target.closest(".record-log-delete");
+        if (!btn) return;
+        var row = btn.closest(".record-log-row");
+        var index = parseInt(row.getAttribute("data-index"), 10);
+        var log = loadShindanLog();
+        log.splice(index, 1);
+        saveShindanLog(log);
+        renderShindanLog();
+      });
+    }
 
     var tabButtons = document.querySelectorAll(".tool-tab");
     var panels = document.querySelectorAll(".tool-panel");

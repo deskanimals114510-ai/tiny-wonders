@@ -748,30 +748,30 @@ body {
 }
 .result-note:last-child { margin-bottom: 0; }
 
-.weight-log-save {
+.record-log-save {
   display: inline-block;
   margin: 4px 0 0;
 }
-.weight-log-save:disabled {
+.record-log-save:disabled {
   opacity: 0.6;
   cursor: default;
 }
 
-.weight-log {
+.record-log {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 18px 20px;
   margin-top: 16px;
 }
-.weight-log-title {
+.record-log-title {
   font-family: "Shippori Mincho", serif;
   font-size: 0.95rem;
   font-weight: 700;
   margin: 0 0 10px;
   color: var(--ink);
 }
-.weight-log-list {
+.record-log-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -779,7 +779,7 @@ body {
   flex-direction: column;
   gap: 8px;
 }
-.weight-log-row {
+.record-log-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -788,11 +788,11 @@ body {
   padding-bottom: 8px;
   border-bottom: 1px solid var(--line);
 }
-.weight-log-row:last-child { border-bottom: none; padding-bottom: 0; }
-.weight-log-date { color: var(--ink-soft); flex-shrink: 0; }
-.weight-log-value { flex-grow: 1; text-align: right; color: var(--ink); }
-.weight-log-diff { color: var(--accent-deep); font-size: 0.78rem; }
-.weight-log-delete {
+.record-log-row:last-child { border-bottom: none; padding-bottom: 0; }
+.record-log-date { color: var(--ink-soft); flex-shrink: 0; }
+.record-log-value { flex-grow: 1; text-align: right; color: var(--ink); }
+.record-log-diff { color: var(--accent-deep); font-size: 0.78rem; }
+.record-log-delete {
   background: none;
   border: none;
   color: var(--ink-soft);
@@ -801,7 +801,7 @@ body {
   line-height: 1;
   padding: 2px 4px;
 }
-.weight-log-delete:hover { color: var(--accent-deep); }
+.record-log-delete:hover { color: var(--accent-deep); }
 
 .tool-disclaimer {
   font-size: 0.72rem;

@@ -286,18 +286,18 @@
       if (i < sorted.length - 1) {
         var diff = entry.kg - sorted[i + 1].kg;
         if (Math.abs(diff) >= 0.01) {
-          diffText = '<span class="weight-log-diff">(' + (diff > 0 ? "+" : "") + diff.toFixed(1) + "kg)</span>";
+          diffText = '<span class="record-log-diff">(' + (diff > 0 ? "+" : "") + diff.toFixed(1) + "kg)</span>";
         }
       }
-      return '<li class="weight-log-row" data-index="' + log.indexOf(entry) + '">' +
-        '<span class="weight-log-date">' + entry.date + '</span>' +
-        '<span class="weight-log-value">' + entry.kg.toFixed(1) + 'kg ' + diffText + '</span>' +
-        '<button type="button" class="weight-log-delete" aria-label="この記録を削除">×</button>' +
+      return '<li class="record-log-row" data-index="' + log.indexOf(entry) + '">' +
+        '<span class="record-log-date">' + entry.date + '</span>' +
+        '<span class="record-log-value">' + entry.kg.toFixed(1) + 'kg ' + diffText + '</span>' +
+        '<button type="button" class="record-log-delete" aria-label="この記録を削除">×</button>' +
         '</li>';
     });
     container.innerHTML =
-      '<p class="weight-log-title">わが子の体重ノート</p>' +
-      '<ul class="weight-log-list">' + rows.join("") + '</ul>';
+      '<p class="record-log-title">わが子の体重ノート</p>' +
+      '<ul class="record-log-list">' + rows.join("") + '</ul>';
     container.hidden = false;
   }
 
@@ -315,9 +315,9 @@
 
     if (logContainer) {
       logContainer.addEventListener("click", function (e) {
-        var btn = e.target.closest(".weight-log-delete");
+        var btn = e.target.closest(".record-log-delete");
         if (!btn) return;
-        var row = btn.closest(".weight-log-row");
+        var row = btn.closest(".record-log-row");
         var index = parseInt(row.getAttribute("data-index"), 10);
         var log = loadWeightLog();
         log.splice(index, 1);
@@ -370,7 +370,7 @@
       }
 
       lines.push('<p class="result-note">※あくまで参考値です。健康上の判断は自己判断せず獣医師にご相談ください。</p>');
-      lines.push('<button type="button" class="link-btn-secondary weight-log-save">この記録をノートに残す</button>');
+      lines.push('<button type="button" class="link-btn-secondary record-log-save">この記録をノートに残す</button>');
       if (shareText) {
         lines.push(buildShareRow(shareText, "https://deskanimals114510-ai.github.io/tiny-wonders/nenrei-taiju.html"));
       }
@@ -378,7 +378,7 @@
       resultBox.hidden = false;
       if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "weight_calc", has_standard: !!standardKg });
 
-      var saveBtn = resultBox.querySelector(".weight-log-save");
+      var saveBtn = resultBox.querySelector(".record-log-save");
       if (saveBtn) {
         saveBtn.addEventListener("click", function () {
           var log = loadWeightLog();

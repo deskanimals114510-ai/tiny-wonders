@@ -64,11 +64,69 @@
     return sum;
   }
 
+  var NAMAE_LOG_KEY = "tinywonders-namae-log";
+  var NAMAE_LOG_MAX = 20;
+
+  function loadNamaeLog() {
+    try {
+      var raw = localStorage.getItem(NAMAE_LOG_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) { return []; }
+  }
+
+  function saveNamaeLog(log) {
+    try { localStorage.setItem(NAMAE_LOG_KEY, JSON.stringify(log)); } catch (e) {}
+  }
+
+  function todayLabel() {
+    var d = new Date();
+    return d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
+  }
+
+  function renderNamaeLog() {
+    var container = document.getElementById("namae-log");
+    if (!container) return;
+    var log = loadNamaeLog();
+    if (log.length === 0) {
+      container.hidden = true;
+      container.innerHTML = "";
+      return;
+    }
+    var sorted = log.slice().sort(function (a, b) { return b.ts - a.ts; });
+    var rows = sorted.map(function (entry) {
+      return '<li class="record-log-row" data-index="' + log.indexOf(entry) + '">' +
+        '<span class="record-log-date">' + entry.date + '</span>' +
+        '<span class="record-log-value">' + entry.name + ' → ' + entry.type + '</span>' +
+        '<button type="button" class="record-log-delete" aria-label="この記録を削除">×</button>' +
+        '</li>';
+    });
+    container.innerHTML =
+      '<p class="record-log-title">なまえ診断ログ</p>' +
+      '<ul class="record-log-list">' + rows.join("") + '</ul>';
+    container.hidden = false;
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var form = document.getElementById("namae-form");
     var input = document.getElementById("namae-input");
     var resultBox = document.getElementById("namae-result");
+    var logContainer = document.getElementById("namae-log");
     if (!form) return;
+
+    renderNamaeLog();
+
+    if (logContainer) {
+      logContainer.addEventListener("click", function (e) {
+        var btn = e.target.closest(".record-log-delete");
+        if (!btn) return;
+        var row = btn.closest(".record-log-row");
+        var index = parseInt(row.getAttribute("data-index"), 10);
+        var log = loadNamaeLog();
+        log.splice(index, 1);
+        saveNamaeLog(log);
+        renderNamaeLog();
+      });
+    }
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -90,9 +148,23 @@
         '<p class="result-headline"><strong>' + type.name + '</strong></p>' +
         '<p class="result-note">' + type.desc + '<br><span class="tagline-en">' + type.descEn + '</span></p>' +
         '<p class="result-note">※音の響きから連想する遊び感覚の簡易診断です。実際の性格には個体差があります。</p>' +
+        '<button type="button" class="link-btn-secondary record-log-save">この結果をログに残す</button>' +
         buildShareRow(shareText, pageUrl);
       resultBox.hidden = false;
       if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "namae_shindan", species: species, result: type.name });
+
+      var saveBtn = resultBox.querySelector(".record-log-save");
+      if (saveBtn) {
+        saveBtn.addEventListener("click", function () {
+          var log = loadNamaeLog();
+          log.push({ date: todayLabel(), ts: Date.now(), name: name, type: type.name });
+          if (log.length > NAMAE_LOG_MAX) log = log.slice(log.length - NAMAE_LOG_MAX);
+          saveNamaeLog(log);
+          renderNamaeLog();
+          saveBtn.disabled = true;
+          saveBtn.textContent = "ログに記録しました";
+        });
+      }
     });
   });
 })();
