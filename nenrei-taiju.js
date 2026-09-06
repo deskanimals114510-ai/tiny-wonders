@@ -214,6 +214,7 @@
         '<p class="result-sub">' + sizeLabel + ' ・ 実年齢 ' + years + '歳' + (months ? months + 'ヶ月' : '') + 'の場合の目安</p>' +
         '<p class="result-note">※犬種・体格・個体差により実際の老化スピードは異なります。あくまで参考値としてご覧ください。</p>';
       resultBox.hidden = false;
+      if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "age_calc", species: species });
     });
   }
 
@@ -267,8 +268,10 @@
         lines.push('<p class="result-note">標準体重を入力すると、人間換算した体重イメージも表示されます。</p>');
       }
 
+      lines.push('<p class="result-note">※あくまで参考値です。健康上の判断は自己判断せず獣医師にご相談ください。</p>');
       resultBox.innerHTML = lines.join("");
       resultBox.hidden = false;
+      if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "weight_calc", has_standard: !!standardKg });
     });
 
     speciesRadios.forEach(function (r) {

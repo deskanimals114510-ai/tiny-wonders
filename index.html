@@ -24,10 +24,62 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script defer src="analytics.js"></script>
-<script src="theme-toggle.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +151,7 @@
               <ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/>
             </svg>
           </div>
-          <h2>犬猫の年齢・体重かんたん換算</h2>
+          <h3>犬猫の年齢・体重かんたん換算</h3>
           <p class="card-tagline">
             愛犬・愛猫の年齢や体重を、人間でいうとどのくらいか無料で換算できます。<br>
             <span class="tagline-en">Free tool: convert your dog or cat's age &amp; weight into human terms.</span>
@@ -116,7 +168,7 @@
               <path d="M14.6 9.4l-1.8 4.8-4.8 1.8 1.8-4.8z"/>
             </svg>
           </div>
-          <h2>犬種・猫種かんたん診断</h2>
+          <h3>犬種・猫種かんたん診断</h3>
           <p class="card-tagline">
             5つの質問で、あなたと相性の良い犬種・猫種をひとつ診断します。<br>
             <span class="tagline-en">Answer 5 questions to find your best-match dog or cat breed.</span>
@@ -204,7 +256,7 @@
               <path d="M10.2 8.6l6 3.4-6 3.4z" fill="currentColor" stroke="none"/>
             </svg>
           </div>
-          <h2>Desk Animals</h2>
+          <h3>Desk Animals</h3>
           <p class="card-tagline">
             デスクの上に、縮んだ野生動物たち。100%AI生成。<br>
             <span class="tagline-en">Wild animals, shrunk to desk-size. 100% AI-generated.</span>
@@ -228,7 +280,7 @@
               <path d="M14.6 9.4l-1.8 4.8-4.8 1.8 1.8-4.8z"/>
             </svg>
           </div>
-          <h2>性格・恋愛・仕事タイプ診断</h2>
+          <h3>性格・恋愛・仕事タイプ診断</h3>
           <p class="card-tagline">
             AIとチャットしながら3分で診断。動物・天気・乗り物でタイプがわかります。<br>
             <span class="tagline-en">A 3-min AI chat quiz — find your animal, weather &amp; vehicle type.</span>
@@ -245,7 +297,7 @@
               <path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/>
             </svg>
           </div>
-          <h2>黒曜診断</h2>
+          <h3>黒曜診断</h3>
           <p class="card-tagline">
             生年月日から四柱推命ベースで占う無料鑑定。占い師「黒曜先生」が本質をズバッと一言で。<br>
             <span class="tagline-en">A free BaZi-based reading from your birth date — sharp, one-line verdicts from fortune teller Kokuyo-sensei.</span>
@@ -253,6 +305,23 @@
           <p class="card-url">deskanimals114510-ai.github.io/kokuyo-shindan</p>
           <div class="card-links">
             <a class="link-btn" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">占ってもらう</a>
+          </div>
+        </div>
+
+        <div class="wonder-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21c-4-3.5-8-6.7-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 4.3-4 7.5-8 11z"/>
+            </svg>
+          </div>
+          <h3>相性診断</h3>
+          <p class="card-tagline">
+            性格診断の結果コードから、気になる相手との相性を占う招待型診断。<br>
+            <span class="tagline-en">See your compatibility with someone, based on your personality quiz results.</span>
+          </p>
+          <p class="card-url">deskanimals114510-ai.github.io/aisho-shindan</p>
+          <div class="card-links">
+            <a class="link-btn" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性を見てみる</a>
           </div>
         </div>
       </div>

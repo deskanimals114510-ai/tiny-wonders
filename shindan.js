@@ -109,9 +109,11 @@
       resultBox.innerHTML =
         '<p class="result-sub">あなたと相性が良いのは...</p>' +
         '<p class="result-headline"><strong>' + match.name + '</strong></p>' +
-        '<p class="result-note">' + match.desc + '</p>';
+        '<p class="result-note">' + match.desc + '</p>' +
+        '<p class="result-note">※簡易的な相性の目安です。実際の性格には個体差があります。</p>';
       resultBox.hidden = false;
       resultBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      if (window.TWTrack) window.TWTrack("tool_complete", { tool_name: "breed_quiz", species: species, result: match.name });
     });
   }
 
