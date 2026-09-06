@@ -236,6 +236,32 @@ body {
   margin: 0 0 18px;
 }
 
+.portal-section--compact { margin: 26px 0; }
+.portal-section-title-sub {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.chip-row .link-btn-secondary {
+  font-size: 0.78rem;
+  padding: 8px 16px;
+}
+
+.card-embed--compact {
+  max-width: 320px;
+  margin: 0 auto 14px;
+}
+
 .wonder-card {
   background: var(--surface);
   border: 1px solid var(--line);
