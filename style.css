@@ -757,6 +757,67 @@ body {
 }
 .result-note:last-child { margin-bottom: 0; }
 
+.quiz-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 18px;
+}
+.quiz-progress {
+  font-size: 0.78rem;
+  color: var(--accent-deep);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 10px;
+}
+.quiz-question {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.1rem;
+  color: var(--ink);
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+.quiz-choice-row {
+  display: flex;
+  gap: 12px;
+}
+.quiz-choice {
+  flex: 1;
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.quiz-choice:hover {
+  background: var(--accent-tint);
+  border-color: var(--accent);
+}
+.quiz-feedback-headline {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.quiz-feedback-headline.is-correct { color: var(--zatsugaku); }
+.quiz-feedback-headline.is-wrong { color: var(--zannen); }
+#quiz-feedback-link {
+  display: inline-block;
+  margin: 4px 0 14px;
+}
+#quiz-next {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+}
+
 .record-log-save {
   display: inline-block;
   margin: 4px 0 0;
