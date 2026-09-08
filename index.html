@@ -29,6 +29,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script defer src="analytics.js"></script>
+<script defer src="trivia-data.js"></script>
 <script>
 // ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
 // 保存がなければOS設定(prefers-color-scheme)に従う。
@@ -134,11 +135,20 @@
   <nav class="portal-nav" aria-label="カテゴリ">
     <a href="#zatsugaku">豆知識</a>
     <a href="#zannen">ざんねん習性</a>
+    <a href="matome/index.html">まとめ</a>
     <a href="#tools">ツール</a>
     <a href="#family">Desk Animalsファミリー</a>
   </nav>
 
   <main id="main-content">
+
+    <section class="portal-section portal-section--compact" id="today-trivia">
+      <h2 class="portal-section-title-sub">今日のプチ雑学</h2>
+      <a class="trivia-box trivia-today-link" id="today-trivia-card" href="matome/index.html">
+        <span class="trivia-box-label" id="today-trivia-badge">豆知識・毎日更新</span>
+        <p><strong id="today-trivia-title">読み込み中…</strong><br><span id="today-trivia-teaser"></span></p>
+      </a>
+    </section>
 
     <section class="portal-section" id="zatsugaku">
       <h2 class="portal-section-title">犬猫のなぜ?豆知識</h2>
@@ -245,5 +255,55 @@
 
 </div>
 <script async src="https://www.instagram.com/embed.js"></script>
+<script>
+// 「今日のプチ雑学」ウィジェット。日付をシードにした疑似乱数で全記事から1本選び、
+// 同じ日は誰が見ても同じ記事、日が変われば別の記事に切り替わる(zatsugaku-quiz.jsと同じ方式)。
+(function () {
+  "use strict";
+
+  function hashString(str) {
+    var h = 0;
+    for (var i = 0; i < str.length; i++) {
+      h = (Math.imul(31, h) + str.charCodeAt(i)) | 0;
+    }
+    return h >>> 0;
+  }
+
+  function mulberry32(seed) {
+    return function () {
+      seed |= 0;
+      seed = (seed + 0x6D2B79F5) | 0;
+      var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  function todaySeed(salt) {
+    var d = new Date();
+    var key = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate() + "-" + salt;
+    return hashString(key);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var pool = window.TW_TRIVIA;
+    if (!pool || !pool.length) return;
+
+    var rng = mulberry32(todaySeed("today-trivia"));
+    var pick = pool[Math.floor(rng() * pool.length)];
+
+    var card = document.getElementById("today-trivia-card");
+    var badge = document.getElementById("today-trivia-badge");
+    var title = document.getElementById("today-trivia-title");
+    var teaser = document.getElementById("today-trivia-teaser");
+    if (!card || !pick) return;
+
+    card.href = pick.path;
+    badge.textContent = (pick.category === "zannen" ? "ざんねん習性" : "豆知識") + "・毎日更新";
+    title.textContent = pick.title;
+    teaser.textContent = pick.teaser;
+  });
+})();
+</script>
 </body>
 </html>

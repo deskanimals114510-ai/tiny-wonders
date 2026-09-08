@@ -990,6 +990,16 @@ body {
   color: var(--ink);
   line-height: 1.7;
 }
+.trivia-today-link {
+  display: block;
+  margin-top: 0;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.15s ease;
+}
+.trivia-today-link:hover { box-shadow: var(--shadow-lift); }
+.trivia-today-link p { color: var(--ink); }
+.trivia-today-link strong { font-family: "Shippori Mincho", serif; font-size: 1rem; }
 
 .related-tools {
   margin-top: 26px;

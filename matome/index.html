@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>動物雑学まとめ | Tiny Wonders</title>
+<meta name="description" content="Tiny Wondersの全記事(犬猫のなぜ?豆知識15本+動物のざんねんな習性8本、計23本)を一覧できるまとめページです。気になるタイトルから好きな記事にジャンプできます。">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="動物雑学まとめ | Tiny Wonders">
+<meta property="og:description" content="犬猫・動物の「なぜ?」と「ざんねん」、全23記事をまとめて一覧できるページです。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/matome/">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/matome/">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="動物雑学まとめ | Tiny Wonders">
+<meta name="twitter:description" content="犬猫・動物の「なぜ?」と「ざんねん」、全23記事をまとめて一覧できるページです。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../analytics.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "動物雑学まとめ",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/matome/",
+  "isPartOf": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tiny Wonders", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
+    { "@type": "ListItem", "position": 2, "name": "動物雑学まとめ", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/matome/" }
+  ]
+}
+</script>
+</head>
+<body class="page-article">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="../index.html">← Tiny Wonders</a></nav>
+    <h1><span class="grad-text">動物雑学まとめ</span></h1>
+    <p class="lead">
+      犬猫の「なぜ?」と、動物たちの「ざんねん」。全23記事をここから一気に読めます。<br>
+      <span class="lead-en">Every "why" and "oh no" article on Tiny Wonders, all in one place.</span>
+    </p>
+  </header>
+
+  <main class="tool-main" id="main-content">
+
+    <h2 class="portal-section-title-sub" id="zatsugaku"><span class="category-badge category-badge--zatsugaku">豆知識</span> 犬猫のなぜ?豆知識(15本)</h2>
+    <div class="article-list">
+      <a class="article-list-item" href="../zatsugaku/inu-roka.html"><h2>犬はなぜ人間より早く年をとるの?</h2><p>子犬期の急成長と、体の大きさによる老化スピードの違いを解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/neko-nenrei.html"><h2>猫の年齢換算、1年目だけ「18歳」なのはなぜ?</h2><p>早見表で1歳と2歳の伸び方が違って見える理由を解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/hyojun-taiju.html"><h2>愛犬・愛猫の「標準体重」はどう決まる?</h2><p>体重だけでなく体型で見る「ボディコンディションスコア」の考え方を紹介します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/shinia-sign.html"><h2>うちの子、いつからシニア?犬猫の「高齢期」のはじまりサイン</h2><p>体格別のシニア期の目安と、見逃しやすい5つの初期サインを解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/neko-shippo.html"><h2>猫のしっぽが教えてくれること。動きでわかる7つの気持ち</h2><p>ピンと立てる、ふくらませる、ゆっくり振るなど、7つの動きから読み解く猫の気持ちを解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/inu-hana.html"><h2>犬はなぜ鼻がこんなに良いの?</h2><p>受容体の数の違いから、探知犬として活躍できる理由まで、犬の嗅覚の秘密を解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/neko-gorogoro.html"><h2>猫はなぜゴロゴロ喉を鳴らすの?</h2><p>甘えている時だけじゃない、ゴロゴロ音に隠された意外な役割を解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/kanmouki.html"><h2>犬や猫はなぜ秋にごっそり毛が抜けるの?</h2><p>春と秋で目的が逆になる換毛の仕組みと、ダブルコート・シングルコートの違いを解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/neko-hatsujou.html"><h2>猫はなぜ日照時間で恋の季節を知るの?</h2><p>メラトニンが日の長さを伝える仕組みと、シカや犬との違いを解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/inu-akubi.html"><h2>犬はなぜ人のあくびがうつるの?</h2><p>東京大学の研究が明かした、飼い主との絆と共感のふしぎな関係を解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/neko-hige.html"><h2>猫はなぜヒゲで隙間の広さがわかるの?</h2><p>顔まわりに円を描くヒゲと、根元の神経が作る高感度センサーを解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/neko-kotatsu.html"><h2>猫はなぜ冬にコタツで丸くなるの?</h2><p>高めの平熱・砂漠出身という進化の背景・低温やけどの注意点を解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/inu-panting.html"><h2>犬はなぜ夏に舌を出してハアハアするの?</h2><p>汗腺が足の裏にしかない犬が、唾液の気化熱で体を冷やす仕組みを解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/kafun.html"><h2>犬や猫の花粉症は、なぜ鼻ではなく肌に出るの?</h2><p>犬1995年・猫2000年ごろに確認された動物の花粉症と、症状が皮膚に出る理由を解説します。</p></a>
+      <a class="article-list-item" href="../zatsugaku/toumin.html"><h2>冬眠する動物はなぜ春に目を覚ますの?</h2><p>気温・日照・体内時計が重なって働く目覚めの仕組みと、クマの「本当は冬眠じゃない」謎を解説します。</p></a>
+    </div>
+
+    <h2 class="portal-section-title-sub" id="zannen" style="margin-top:36px;"><span class="category-badge category-badge--zannen">ざんねん習性</span> 動物のざんねんな習性(8本)</h2>
+    <div class="article-list">
+      <a class="article-list-item" href="../zannen/inu-guruguru.html"><h2>犬はなぜうんちの前にぐるぐる回るの?</h2><p>実は方角にまでこだわっていた、という笑ってしまう研究結果があります。</p></a>
+      <a class="article-list-item" href="../zannen/neko-hako.html"><h2>猫はなぜ明らかに小さすぎる箱に入りたがるの?</h2><p>「もし入れるなら、座る」猫の宿命と、テープの四角にも反応する不思議。</p></a>
+      <a class="article-list-item" href="../zannen/neko-rakka.html"><h2>猫の「高所は平気」は実は危険信号?</h2><p>驚異の立ち直り反射と、「中くらいの高さが一番危ない」というふしぎな事実。</p></a>
+      <a class="article-list-item" href="../zannen/panda-taberu.html"><h2>パンダはなぜ1日14時間も食べ続けるの?</h2><p>クマ科なのに笹しか消化できない、という体を張った「ざんねん」設計。</p></a>
+      <a class="article-list-item" href="../zannen/inu-kusa.html"><h2>犬はなぜ草を食べるの?</h2><p>消化に良いわけでもないのに、なぜかむしゃむしゃ。理由はまだはっきりしていません。</p></a>
+      <a class="article-list-item" href="../zannen/koala-suimin.html"><h2>コアラはなぜ1日20時間も眠り続けるの?</h2><p>低栄養で毒素まで含むユーカリのせいで、寝るしかなくなった省エネ生活。</p></a>
+      <a class="article-list-item" href="../zannen/fukurou.html"><h2>フクロウはなぜ首が270度も回るの?</h2><p>目玉が固定されて動かせないという弱点を、頸椎14個と特殊な血管システムで力技カバー。</p></a>
+      <a class="article-list-item" href="../zannen/rakko.html"><h2>ラッコはなぜ大量に食べ続けなければならないの?</h2><p>皮下脂肪を持たない体を、毛皮の空気層と体重の2〜3割の食事量で力技カバー。</p></a>
+    </div>
+
+    <div class="related-tools">
+      <a class="link-btn" href="../zatsugaku-quiz.html">動物雑学○×クイズで力試し</a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/?utm_source=tiny-wonders&utm_medium=referral&utm_campaign=cross_site" target="_blank" rel="noopener">🔬 Desk Animals Lab</a>
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>本記事は一般的な情報提供を目的としたもので、獣医学的な診断・助言に代わるものではありません。</p>
+    <p>This content is for general information only and is not veterinary advice.</p>
+    <p><a href="../privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
