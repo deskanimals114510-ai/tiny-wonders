@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ラッコはなぜ大量に食べ続けなければならないの? | Tiny Wonders</title>
+<meta name="description" content="ラッコは海の哺乳類なのに皮下脂肪を持ちません。毛皮の空気層で保温し、体重の2〜3割を毎日食べ続けて体温を作り出す「ざんねん」な体の仕組みと、水族館で手をつないで眠る本当の理由を紹介します。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="ラッコはなぜ大量に食べ続けなければならないの?">
+<meta property="og:description" content="海獣なのに脂肪をため込めない、という体を張った「ざんねん」設計を、毛皮と大食いで力技カバー。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/zannen/rakko.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/zannen/rakko.html">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-zannen-rakko.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ラッコはなぜ大量に食べ続けなければならないの?">
+<meta name="twitter:description" content="海獣なのに脂肪をため込めない、という体を張った「ざんねん」設計を、毛皮と大食いで力技カバー。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-zannen-rakko.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../analytics.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ラッコはなぜ大量に食べ続けなければならないの?",
+  "description": "海獣なのに脂肪をため込めない、という体を張った「ざんねん」設計を、毛皮と大食いで力技カバー。",
+  "image": "https://deskanimals114510-ai.github.io/tiny-wonders/images/zannen-rakko.jpg",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/zannen/rakko.html",
+  "inLanguage": "ja",
+  "isPartOf": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website" },
+  "publisher": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization" },
+  "datePublished": "2026-09-09T00:00:00+09:00",
+  "dateModified": "2026-09-09T00:00:00+09:00"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tiny Wonders", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
+    { "@type": "ListItem", "position": 2, "name": "動物のざんねんな習性", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/zannen/" },
+    { "@type": "ListItem", "position": 3, "name": "ラッコはなぜ大量に食べ続けなければならないの?", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/zannen/rakko.html" }
+  ]
+}
+</script>
+</head>
+<body class="page-article">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="../index.html">Tiny Wonders</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a class="back-link" href="index.html">動物のざんねんな習性</a></nav>
+    <p class="article-badge-row"><span class="category-badge category-badge--zannen">ざんねん習性</span></p>
+    <h1><span class="grad-text">ラッコはなぜ大量に食べ続けなければならないの?</span></h1>
+    <p class="article-date">公開日: 2026年9月9日 / 更新日: 2026年9月9日</p>
+  </header>
+
+  <main class="tool-main" id="main-content">
+    <article class="article-card article-card--zannen">
+      <img class="article-illustration" src="../images/zannen-rakko.jpg" alt="貝を抱えて仰向けに浮かぶラッコのイラスト" width="800" height="600">
+
+      <p class="article-lead">
+        <span class="lead-ja">海獣なのに脂肪をため込めない、という体を張った「ざんねん」設計を、毛皮と大食いで力技カバー。</span>
+        <span class="lead-en">Why do sea otters have to eat so much? They're the only marine mammals with no blubber at all, so they burn through food just to stay warm.</span>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>海の哺乳類なのに、皮下脂肪がない</h2>
+      <p>
+        アザラシやクジラといった海の哺乳類は、冷たい海水の中でも体温を保てるよう、皮下脂肪と呼ばれる分厚い脂肪の層を体にまとっています。ところがラッコには、この皮下脂肪がほとんどありません。同じように冷たい海で暮らしているにもかかわらず、他の海獣たちが当たり前に備えている「天然の断熱材」を持たずに生まれてきたのです。冷たい水の中で暮らす動物としては、なんとも「ざんねん」な体のつくりと言わざるを得ません。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>頼みの綱は、ダウンジャケットのような毛皮</h2>
+      <p>
+        皮下脂肪の代わりにラッコが頼っているのが、密度の高い二層構造の毛皮です。この毛皮は皮膚のすぐそばに空気の層を閉じ込める仕組みになっていて、ちょうどダウンジャケットを着ているように体を冷たい海水から守ってくれます。ただし、この毛皮には弱点があります。汚れたり毛が絡まったりすると水をはじく力が失われ、体がずぶ濡れになって断熱効果が一気に落ちてしまうのです。そのためラッコにとって、毛皮を清潔に保つ毛づくろいは欠かせない仕事になっています。一枚の上着に命を預けている、ちょっと「ざんねん」で健気な暮らしです。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>体重の2〜3割を、ひたすら食べ続ける</h2>
+      <p>
+        脂肪をため込めないということは、エネルギーの蓄えがないということでもあります。ラッコは体温を生み出すために、常に大量のエネルギーを燃やし続けなければならず、その代謝量は非常に高くなっています。その結果、1日に食べる量はなんと自分の体重の2〜3割ほどにも達し、これはただ体を温めるためだけに費やされるものです。しかもこれだけ食べても、脂肪として蓄えることができないため太ることはなく、すべてが熱になって消えていきます。食べても食べても身につかない、なんとも「ざんねん」な燃費の体なのです。
+      </p>
+
+      <div class="trivia-box">
+        <span class="trivia-box-label">豆知識プラスワン</span>
+        <p>ラッコといえば、手をつないで眠る姿が有名ですよね。野生では、寝ている間に流されないよう海面の昆布に体を巻きつけてから眠りますが、昆布のない水族館の水槽では、その代わりに仲間と手をつないだり、飼育員さんの手に手を伸ばしたりして流されないようにしているのだそうです。愛情表現というより流され防止の本能ですが、大食いに追われる「ざんねん」な日々の中で、その姿はやっぱりとびきり可愛らしく見えます。</p>
+      </div>
+    </article>
+
+    <div class="related-tools">
+      <a class="link-btn" href="../nenrei-taiju.html">愛犬・愛猫の年齢を換算してみる</a>
+      <div class="article-nav">
+        <a class="link-btn link-btn-secondary" href="fukurou.html">フクロウの首270度の謎へ</a>
+        <a class="link-btn link-btn-secondary" href="panda-taberu.html">パンダの大食いの謎へ</a>
+      </div>
+    </div>
+    <div class="share-row">
+      <a class="link-btn-secondary" href="https://twitter.com/intent/tweet?text=%E3%83%A9%E3%83%83%E3%82%B3%E3%81%AF%E3%81%AA%E3%81%9C%E5%A4%A7%E9%87%8F%E3%81%AB%E9%A3%9F%E3%81%B9%E7%B6%9A%E3%81%91%E3%81%AA%E3%81%91%E3%82%8C%E3%81%B0%E3%81%AA%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%3F%20%7C%20Tiny%20Wonders&url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fzannen%2Frakko.html" target="_blank" rel="noopener">Xでシェア</a>
+      <a class="link-btn-secondary" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fzannen%2Frakko.html" target="_blank" rel="noopener">LINEでシェア</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/?utm_source=tiny-wonders&utm_medium=referral&utm_campaign=cross_site" target="_blank" rel="noopener">🔬 Desk Animals Lab</a>
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>本記事は一般的な情報提供を目的としたもので、獣医学的な診断・助言に代わるものではありません。</p>
+    <p>This content is for general information only and is not veterinary advice.</p>
+    <p><a href="../privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

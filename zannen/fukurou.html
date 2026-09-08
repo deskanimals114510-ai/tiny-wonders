@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>フクロウはなぜ首が270度も回るの? | Tiny Wonders</title>
+<meta name="description" content="フクロウの目は筒型で頭蓋骨に固定され、まったく動かせません。この「ざんねん」な弱点を、人間の倍(14個)の頸椎と特殊な血管システムで力技カバーする仕組みと、静音飛行のセレーション構造・新幹線への応用も紹介します。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="フクロウはなぜ首が270度も回るの?">
+<meta property="og:description" content="目玉がまったく動かせない、という弱点を首の可動域だけで押し切った力技の「ざんねん」設計。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/zannen/fukurou.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/zannen/fukurou.html">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-zannen-fukurou.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="フクロウはなぜ首が270度も回るの?">
+<meta name="twitter:description" content="目玉がまったく動かせない、という弱点を首の可動域だけで押し切った力技の「ざんねん」設計。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-zannen-fukurou.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../analytics.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "フクロウはなぜ首が270度も回るの?",
+  "description": "目玉がまったく動かせない、という弱点を首の可動域だけで押し切った力技の「ざんねん」設計。",
+  "image": "https://deskanimals114510-ai.github.io/tiny-wonders/images/zannen-fukurou.jpg",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/zannen/fukurou.html",
+  "inLanguage": "ja",
+  "isPartOf": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website" },
+  "publisher": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization" },
+  "datePublished": "2026-09-09T00:00:00+09:00",
+  "dateModified": "2026-09-09T00:00:00+09:00"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tiny Wonders", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
+    { "@type": "ListItem", "position": 2, "name": "動物のざんねんな習性", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/zannen/" },
+    { "@type": "ListItem", "position": 3, "name": "フクロウはなぜ首が270度も回るの?", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/zannen/fukurou.html" }
+  ]
+}
+</script>
+</head>
+<body class="page-article">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="../index.html">Tiny Wonders</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a class="back-link" href="index.html">動物のざんねんな習性</a></nav>
+    <p class="article-badge-row"><span class="category-badge category-badge--zannen">ざんねん習性</span></p>
+    <h1><span class="grad-text">フクロウはなぜ首が270度も回るの?</span></h1>
+    <p class="article-date">公開日: 2026年9月9日 / 更新日: 2026年9月9日</p>
+  </header>
+
+  <main class="tool-main" id="main-content">
+    <article class="article-card article-card--zannen">
+      <img class="article-illustration" src="../images/zannen-fukurou.jpg" alt="夜の森の枝で首をひねって振り返るフクロウのイラスト" width="800" height="600">
+
+      <p class="article-lead">
+        <span class="lead-ja">目玉がまったく動かせない、という弱点を首の可動域だけで押し切った力技の「ざんねん」設計。</span>
+        <span class="lead-en">Why can an owl turn its head 270 degrees? Its tube-shaped eyes are locked in place and can't move at all, so the neck has to do all the looking.</span>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>目玉が筒型で、眼窩に固定されたまま動かない</h2>
+      <p>
+        フクロウの目は、多くの動物のような球形ではなく、筒(円筒)のような形をしています。しかもその筒型の目玉は、頭蓋骨の眼窩にがっちりと固定されていて、左右や上下に動かすことがまったくできません。私たちが視線だけを横に流したり、ちらっと上を見たりするような動きが、フクロウには一切できないのです。ただし、この固定された筒型の目は、夜の狩りで獲物までの距離や奥行きを正確に測るのに役立っており、まったくの欠点というわけではありません。とはいえ「横を見たければ顔ごと向ける」しかないという不便さは、なかなかの「ざんねん」ポイントです。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>目が動かないなら、首を270度回せばいい</h2>
+      <p>
+        動かない目を補うためにフクロウが取った方法は、首そのものを大きく回すことでした。その可動域は片側におよそ270度。ほぼ真後ろどころか、さらにその先まで顔を向けられる計算です。この極端な回転を支えているのが首の骨の数で、人間の頸椎が7個なのに対し、フクロウは14個と、ちょうど2倍もあります。目玉が動かないという弱点を、首の骨を倍にして力技で解決したわけで、「目を動かす」というごく普通の機能を丸ごと首に肩代わりさせている、なんとも「ざんねん」で逞しい設計です。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>力技のカバーにも、さらに追加の工夫が必要だった</h2>
+      <p>
+        ところが、首を270度も回すこと自体が、本来なら体にとって大問題です。多くの動物がそこまで首をひねれば、血管が引き伸ばされて脳への血流が途絶え、脳卒中のような危険にさらされてしまいます。ジョンズ・ホプキンス大学の研究によると、フクロウは血液を一時的に溜めておける特別な血管の仕組みを持っており、極端に首を回している間も脳への血流が途切れないようになっているのだそうです。目が動かない弱点を首でカバーし、そのカバーにさらに専用の血管システムまで用意する。「ざんねん」の上に工夫を重ねた、フクロウの体の健気さが伝わってきます。
+      </p>
+
+      <div class="trivia-box">
+        <span class="trivia-box-label">豆知識プラスワン</span>
+        <p>一方でフクロウには、ざんねんとは正反対の特技もあります。羽の外側の縁にあるギザギザ(セレーション)が翼の上の空気の流れを整えて乱流を抑え、羽の表面のビロードのような細かい毛が羽同士の擦れる音を消し、さらにふわふわの体と体重に対して大きな翼、ゆっくりした羽ばたきが合わさって、ほぼ無音で飛ぶことができるのです。このセレーションの仕組みは、日本の新幹線のパンタグラフ(集電装置)の騒音を減らす設計にも応用されています。</p>
+      </div>
+    </article>
+
+    <div class="related-tools">
+      <a class="link-btn" href="../nenrei-taiju.html">愛犬・愛猫の年齢を換算してみる</a>
+      <div class="article-nav">
+        <a class="link-btn link-btn-secondary" href="koala-suimin.html">コアラの眠り続ける理由へ</a>
+        <a class="link-btn link-btn-secondary" href="rakko.html">ラッコの大食いの謎へ</a>
+      </div>
+    </div>
+    <div class="share-row">
+      <a class="link-btn-secondary" href="https://twitter.com/intent/tweet?text=%E3%83%95%E3%82%AF%E3%83%AD%E3%82%A6%E3%81%AF%E3%81%AA%E3%81%9C%E9%A6%96%E3%81%8C270%E5%BA%A6%E3%82%82%E5%9B%9E%E3%82%8B%E3%81%AE%3F%20%7C%20Tiny%20Wonders&url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fzannen%2Ffukurou.html" target="_blank" rel="noopener">Xでシェア</a>
+      <a class="link-btn-secondary" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fzannen%2Ffukurou.html" target="_blank" rel="noopener">LINEでシェア</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/?utm_source=tiny-wonders&utm_medium=referral&utm_campaign=cross_site" target="_blank" rel="noopener">🔬 Desk Animals Lab</a>
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>本記事は一般的な情報提供を目的としたもので、獣医学的な診断・助言に代わるものではありません。</p>
+    <p>This content is for general information only and is not veterinary advice.</p>
+    <p><a href="../privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
