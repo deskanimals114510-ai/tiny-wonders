@@ -243,6 +243,49 @@
     return pool.slice(0, Math.min(QUIZ_LENGTH, pool.length));
   }
 
+  var STATS_KEY = "tinywonders-quiz-stats";
+
+  function dateKey(d) {
+    return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+  }
+
+  function loadStats() {
+    try {
+      var raw = window.localStorage.getItem(STATS_KEY);
+      return raw ? JSON.parse(raw) : { lastDate: null, streak: 0, bestScore: 0, totalPlays: 0 };
+    } catch (e) {
+      return { lastDate: null, streak: 0, bestScore: 0, totalPlays: 0 };
+    }
+  }
+
+  function saveStats(stats) {
+    try {
+      window.localStorage.setItem(STATS_KEY, JSON.stringify(stats));
+    } catch (e) {
+      // localStorageが使えない環境(プライベートブラウジング等)では記録をスキップ
+    }
+  }
+
+  function recordResult(score, total) {
+    var stats = loadStats();
+    var today = new Date();
+    var todayKey = dateKey(today);
+    var yesterdayKey = dateKey(new Date(today.getTime() - 24 * 60 * 60 * 1000));
+
+    if (stats.lastDate === todayKey) {
+      // 同日中の再挑戦: streakは維持、ベストスコアのみ更新対象
+    } else if (stats.lastDate === yesterdayKey) {
+      stats.streak = (stats.streak || 0) + 1;
+    } else {
+      stats.streak = 1;
+    }
+    stats.lastDate = todayKey;
+    stats.bestScore = Math.max(stats.bestScore || 0, score);
+    stats.totalPlays = (stats.totalPlays || 0) + 1;
+    saveStats(stats);
+    return stats;
+  }
+
   function buildShareRow(text, url) {
     var tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) + "&url=" + encodeURIComponent(url);
     var lineUrl = "https://social-plugins.line.me/lineit/share?url=" + encodeURIComponent(url);
@@ -269,6 +312,7 @@
     var quizCard = document.querySelector(".quiz-card");
     var resultBox = document.getElementById("quiz-result");
     var scoreHeadlineEl = document.getElementById("quiz-score-headline");
+    var streakNoteEl = document.getElementById("quiz-streak-note");
     var retryBtn = document.getElementById("quiz-retry");
     var shareContainer = document.getElementById("quiz-share");
 
@@ -300,9 +344,18 @@
 
     function finishQuiz() {
       quizCard.hidden = true;
-      var text = "動物雑学○×クイズで" + questions.length + "問中" + score + "問正解でした! | Tiny Wonders";
+      var stats = recordResult(score, questions.length);
+      var isBest = score === stats.bestScore && score > 0;
+      var text = "動物雑学○×クイズで" + questions.length + "問中" + score + "問正解でした!" +
+        (stats.streak > 1 ? "(連続" + stats.streak + "日挑戦中)" : "") + " | Tiny Wonders";
       var url = "https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku-quiz.html";
       scoreHeadlineEl.innerHTML = questions.length + "問中<strong>" + score + "問</strong>正解でした!";
+      if (streakNoteEl) {
+        var streakParts = [];
+        if (stats.streak > 1) streakParts.push("🔥 連続" + stats.streak + "日挑戦中");
+        streakParts.push("自己ベスト " + stats.bestScore + "/" + questions.length + (isBest ? "(更新!)" : ""));
+        streakNoteEl.textContent = streakParts.join(" ・ ");
+      }
       shareContainer.innerHTML = buildShareRow(text, url);
       resultBox.hidden = false;
       resultBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
