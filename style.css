@@ -1164,6 +1164,80 @@ button:focus-visible {
 }
 .lookup-table-details[open] summary { margin-bottom: 14px; }
 
+/* ---- 都道府県タイルマップ(犬密度ランキング記事専用) ---- */
+.mitsudo-map-wrap {
+  margin: 0 auto 10px;
+  max-width: 460px;
+}
+.mitsudo-map {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 2px;
+}
+.mitsudo-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 3px;
+  font-size: 0.52rem;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--ink);
+  padding: 1px;
+  overflow: hidden;
+}
+.mitsudo-tile--q1 { background: color-mix(in srgb, var(--zatsugaku) 12%, var(--surface)); }
+.mitsudo-tile--q2 { background: color-mix(in srgb, var(--zatsugaku) 32%, var(--surface)); }
+.mitsudo-tile--q3 { background: color-mix(in srgb, var(--zatsugaku) 52%, var(--surface)); }
+.mitsudo-tile--q4 { background: color-mix(in srgb, var(--zatsugaku) 72%, var(--surface)); color: var(--surface); }
+.mitsudo-tile--q5 { background: color-mix(in srgb, var(--zatsugaku) 92%, var(--surface)); color: var(--surface); }
+.mitsudo-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 10px 0 22px;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+.mitsudo-legend-scale {
+  display: flex;
+  gap: 2px;
+}
+.mitsudo-legend-scale span {
+  display: block;
+  width: 16px;
+  height: 12px;
+  border-radius: 2px;
+}
+.mitsudo-bar-list { margin: 0 0 22px; }
+.mitsudo-bar-row {
+  display: grid;
+  grid-template-columns: 6.5em 1fr 3.5em;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+}
+.mitsudo-bar-label { color: var(--ink); white-space: nowrap; }
+.mitsudo-bar-track {
+  background: var(--paper-deep);
+  border-radius: 4px;
+  height: 14px;
+  overflow: hidden;
+}
+.mitsudo-bar-fill {
+  height: 100%;
+  background: var(--zatsugaku);
+  border-radius: 4px;
+}
+.mitsudo-bar-value {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .wonder-card,
   .article-list-item,

@@ -20,6 +20,7 @@ window.TW_TRIVIA = [
   { category: "zatsugaku", title: "冬眠する動物はなぜ春に目を覚ますの?", teaser: "気温・日照・体内時計が重なって働く目覚めの仕組みと、クマの「本当は冬眠じゃない」謎を解説します。", path: "zatsugaku/toumin.html" },
   { category: "zatsugaku", title: "犬や猫はなぜ秋になると食欲が増すの?", teaser: "気温が下がると体は脂肪を燃やして熱をつくる、体温維持のための自然な仕組みを解説します。", path: "zatsugaku/aki-shokuyoku.html" },
   { category: "zatsugaku", title: "エゾシカはなぜ秋に恋の季節を迎えるの?", teaser: "猫とは正反対、日が短くなる秋に動き出す「短日繁殖動物」の一年がかりの恋の準備を解説します。", path: "zatsugaku/shika.html" },
+  { category: "zatsugaku", title: "都道府県別・犬の登録頭数ランキング! 人口あたりで一番多いのはどこ?", teaser: "厚労省・総務省の公式統計から算出した、人口あたりの犬密度ランキング47都道府県。1位は香川県という結果に。", path: "zatsugaku/inu-mitsudo.html" },
 
   { category: "zannen", title: "犬はなぜうんちの前にぐるぐる回るの?", teaser: "実は方角にまでこだわっていた、という笑ってしまう研究結果があります。", path: "zannen/inu-guruguru.html" },
   { category: "zannen", title: "猫はなぜ明らかに小さすぎる箱に入りたがるの?", teaser: "「もし入れるなら、座る」猫の宿命と、テープの四角にも反応する不思議。", path: "zannen/neko-hako.html" },

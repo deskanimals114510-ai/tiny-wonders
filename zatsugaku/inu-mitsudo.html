@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>都道府県別・犬の登録頭数ランキング! 人口あたりで一番多いのはどこ? | Tiny Wonders</title>
+<meta name="description" content="厚生労働省と総務省の公式統計から、人口1000人あたりの犬の登録頭数を47都道府県すべてで算出。1位は香川県、四国・東海勢が上位を占め、大都市圏は軒並み下位という結果を地図とグラフで紹介します。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="都道府県別・犬の登録頭数ランキング! 人口あたりで一番多いのはどこ?">
+<meta property="og:description" content="厚労省・総務省の公式統計から算出した、人口あたりの犬密度ランキング47都道府県。1位は香川県、大都市圏は軒並み下位という結果に。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-mitsudo.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-mitsudo.html">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="都道府県別・犬の登録頭数ランキング! 人口あたりで一番多いのはどこ?">
+<meta name="twitter:description" content="厚労省・総務省の公式統計から算出した、人口あたりの犬密度ランキング47都道府県。1位は香川県、大都市圏は軒並み下位という結果に。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../analytics.js"></script>
+<script defer src="inu-mitsudo-data.js"></script>
+<script defer src="inu-mitsudo.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "都道府県別・犬の登録頭数ランキング! 人口あたりで一番多いのはどこ?",
+  "description": "厚労省・総務省の公式統計から算出した、人口あたりの犬密度ランキング47都道府県。1位は香川県、大都市圏は軒並み下位という結果に。",
+  "image": "https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-mitsudo.html",
+  "inLanguage": "ja",
+  "isPartOf": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website" },
+  "publisher": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization" },
+  "datePublished": "2026-09-11T00:00:00+09:00",
+  "dateModified": "2026-09-11T00:00:00+09:00",
+  "citation": "厚生労働省「衛生行政報告例」令和5年度統計表(犬の登録頭数)、総務省統計局「人口推計」2024年10月1日現在(都道府県別総人口)"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tiny Wonders", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
+    { "@type": "ListItem", "position": 2, "name": "犬猫のなぜ?豆知識", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/" },
+    { "@type": "ListItem", "position": 3, "name": "都道府県別・犬の登録頭数ランキング! 人口あたりで一番多いのはどこ?", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-mitsudo.html" }
+  ]
+}
+</script>
+</head>
+<body class="page-article">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="../index.html">Tiny Wonders</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a class="back-link" href="index.html">犬猫のなぜ?豆知識</a></nav>
+    <p class="article-badge-row"><span class="category-badge category-badge--zatsugaku">豆知識</span></p>
+    <h1><span class="grad-text">都道府県別・犬の登録頭数ランキング! 人口あたりで一番多いのはどこ?</span></h1>
+    <p class="article-date">公開日: 2026年9月11日 / 更新日: 2026年9月11日</p>
+  </header>
+
+  <main class="tool-main" id="main-content">
+    <article class="article-card">
+
+      <p class="article-lead">
+        <span class="lead-ja">犬の登録頭数を人口1000人あたりで比べると、1位は香川県。四国・東海の各県が上位を占める一方、東京都をはじめとする大都市圏は軒並み下位という、はっきりした地域差が見えてきました。</span>
+        <span class="lead-en">Which prefecture has the most dogs per capita? We crunched Japan's official dog registration and population data for all 47 prefectures — and found a clear regional pattern.</span>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></span>結果:犬の「密度」がもっとも高いのは香川県</h2>
+      <p>
+        全国47都道府県それぞれで「人口1000人あたりの犬の登録頭数」を算出し、色の濃さで並べたのが下の地図です。色が濃いほど、人口に対して犬の登録頭数が多いことを示しています。1位の香川県は人口1000人あたり75.5頭で、最下位の山形県(36.8頭)のおよそ2倍。同じ日本国内でも、地域によってこれほど差があるのは意外ではないでしょうか。
+      </p>
+
+      <div class="mitsudo-map-wrap">
+        <div class="mitsudo-map" id="mitsudo-map" role="img" aria-label="都道府県別の犬密度を色の濃さで示した日本地図。数値は本文下の表を参照してください。"></div>
+      </div>
+      <div class="mitsudo-legend">
+        <span>少ない</span>
+        <span class="mitsudo-legend-scale">
+          <span class="mitsudo-tile--q1"></span>
+          <span class="mitsudo-tile--q2"></span>
+          <span class="mitsudo-tile--q3"></span>
+          <span class="mitsudo-tile--q4"></span>
+          <span class="mitsudo-tile--q5"></span>
+        </span>
+        <span>多い</span>
+      </div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v14"/></svg></span>上位10県・下位10県の顔ぶれ</h2>
+      <p>
+        上位10県を見ると、香川・愛媛・徳島・高知の四国4県すべてがランクインしているのが目立ちます。三重・岐阜・愛知・静岡といった東海勢も上位に食い込んでおり、「四国・東海に犬が多い」という傾向がはっきり出ました。
+      </p>
+      <div class="mitsudo-bar-list" id="mitsudo-top10"></div>
+      <p>
+        反対に下位10県には、東京都・神奈川県こそ入っていないものの、新潟・秋田・山形といった東北・北陸勢と、単身世帯や集合住宅が多い都市部が名を連ねています。
+      </p>
+      <div class="mitsudo-bar-list" id="mitsudo-worst10"></div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"/><path d="M12 8v4l3 2"/></svg></span>なぜ四国・東海に集中しているのか</h2>
+      <p>
+        今回のデータだけで断定的な理由づけはできませんが、いくつかの要因が重なっていると考えられます。ひとつは住環境です。一戸建てや庭付き住宅の割合が高い地方は、大都市の集合住宅に比べて犬を飼いやすい傾向があります。もうひとつは登録率の違いです。犬の登録は法律上の義務ですが、都市部より地方の方が近隣の目が届きやすく、登録の徹底度が高い可能性も考えられます。東京都や大阪府のような大都市圏が軒並み下位に沈んでいるのは、人口の分母が大きいことに加え、こうした要因が影響していそうです。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16M6 19V9l6-5 6 5v10M9 19v-6h6v6"/></svg></span>データの出典と算出方法</h2>
+      <p>
+        犬の登録頭数は厚生労働省「衛生行政報告例」令和5年度統計表(2024年3月31日時点)、人口は総務省統計局「人口推計」(2024年10月1日現在)を使用し、「犬の登録頭数 ÷ 総人口 × 1000」で算出しました。47都道府県の登録頭数を合計すると6,054,519頭となり、統計表内の全国計と一致することを確認しています。犬データと人口データの時点に約7か月のズレがある点、また「登録頭数」は法律上の登録制度に基づく数字であり、未登録の犬は反映されない点にはご留意ください。
+      </p>
+      <p class="article-source">
+        出典: 厚生労働省「衛生行政報告例」(<a href="https://www.e-stat.go.jp/stat-search/files?toukei=00450027" target="_blank" rel="noopener">e-Stat</a>)/ 総務省統計局「人口推計」(<a href="https://www.stat.go.jp/data/jinsui/2024np/index.html" target="_blank" rel="noopener">統計局ホームページ</a>)
+      </p>
+
+      <details class="lookup-table-details">
+        <summary>47都道府県すべてのランキングを見る</summary>
+        <div class="lookup-table-wrap">
+          <table class="lookup-table">
+            <caption>都道府県別・人口1000人あたりの犬登録頭数ランキング(多い順)</caption>
+            <thead>
+              <tr><th>順位</th><th>都道府県</th><th>登録頭数</th><th>1000人あたり</th></tr>
+            </thead>
+            <tbody id="mitsudo-table-body"></tbody>
+          </table>
+        </div>
+      </details>
+
+      <div class="trivia-box">
+        <span class="trivia-box-label">豆知識プラスワン</span>
+        <p>実はこの手のランキング、猫版は作れません。犬の登録は狂犬病予防法という法律で義務づけられ全国統計が整備されている一方、猫の飼育には登録義務がなく、都道府県別の正確な飼育数を示す公式統計が存在しないためです。今回のランキングが犬だけを対象にしているのは、そうした制度の違いによるものです。</p>
+      </div>
+    </article>
+
+    <div class="related-tools">
+      <a class="link-btn" href="../bousai-checklist.html">犬猫の防災チェックリストを見る</a>
+      <div class="article-nav">
+        <a class="link-btn link-btn-secondary" href="../shindan.html">犬種・猫種かんたん診断へ</a>
+        <a class="link-btn link-btn-secondary" href="inu-roka.html">犬はなぜ早く年をとる?へ</a>
+      </div>
+    </div>
+    <div class="share-row">
+      <a class="link-btn-secondary" href="https://twitter.com/intent/tweet?text=%E9%83%BD%E9%81%93%E5%BA%9C%E7%9C%8C%E5%88%A5%E3%83%BB%E7%8A%AC%E3%81%AE%E7%99%BB%E9%8C%B2%E9%A0%AD%E6%95%B0%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%20%7C%20Tiny%20Wonders&url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fzatsugaku%2Finu-mitsudo.html" target="_blank" rel="noopener">Xでシェア</a>
+      <a class="link-btn-secondary" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fzatsugaku%2Finu-mitsudo.html" target="_blank" rel="noopener">LINEでシェア</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/?utm_source=tiny-wonders&utm_medium=referral&utm_campaign=cross_site" target="_blank" rel="noopener">🔬 Desk Animals Lab</a>
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
+    <p>This site's content is produced with AI assistance.</p>
+    <p>本記事は公開統計データをもとにした参考情報であり、公式見解を示すものではありません。</p>
+    <p>This content is a reference analysis based on public statistics, not an official government publication.</p>
+    <p><a href="../privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
