@@ -18,6 +18,8 @@ window.TW_TRIVIA = [
   { category: "zatsugaku", title: "犬はなぜ夏に舌を出してハアハアするの?", teaser: "汗腺が足の裏にしかない犬が、唾液の気化熱で体を冷やす仕組みを解説します。", path: "zatsugaku/inu-panting.html" },
   { category: "zatsugaku", title: "犬や猫の花粉症は、なぜ鼻ではなく肌に出るの?", teaser: "犬1995年・猫2000年ごろに確認された動物の花粉症と、症状が皮膚に出る理由を解説します。", path: "zatsugaku/kafun.html" },
   { category: "zatsugaku", title: "冬眠する動物はなぜ春に目を覚ますの?", teaser: "気温・日照・体内時計が重なって働く目覚めの仕組みと、クマの「本当は冬眠じゃない」謎を解説します。", path: "zatsugaku/toumin.html" },
+  { category: "zatsugaku", title: "犬や猫はなぜ秋になると食欲が増すの?", teaser: "気温が下がると体は脂肪を燃やして熱をつくる、体温維持のための自然な仕組みを解説します。", path: "zatsugaku/aki-shokuyoku.html" },
+  { category: "zatsugaku", title: "エゾシカはなぜ秋に恋の季節を迎えるの?", teaser: "猫とは正反対、日が短くなる秋に動き出す「短日繁殖動物」の一年がかりの恋の準備を解説します。", path: "zatsugaku/shika.html" },
 
   { category: "zannen", title: "犬はなぜうんちの前にぐるぐる回るの?", teaser: "実は方角にまでこだわっていた、という笑ってしまう研究結果があります。", path: "zannen/inu-guruguru.html" },
   { category: "zannen", title: "猫はなぜ明らかに小さすぎる箱に入りたがるの?", teaser: "「もし入れるなら、座る」猫の宿命と、テープの四角にも反応する不思議。", path: "zannen/neko-hako.html" },
@@ -26,5 +28,8 @@ window.TW_TRIVIA = [
   { category: "zannen", title: "犬はなぜ草を食べるの?", teaser: "消化に良いわけでもないのに、なぜかむしゃむしゃ。理由はまだはっきりしていません。", path: "zannen/inu-kusa.html" },
   { category: "zannen", title: "コアラはなぜ1日20時間も眠り続けるの?", teaser: "低栄養で毒素まで含むユーカリのせいで、寝るしかなくなった省エネ生活。", path: "zannen/koala-suimin.html" },
   { category: "zannen", title: "フクロウはなぜ首が270度も回るの?", teaser: "目玉が固定されて動かせないという弱点を、頸椎14個と特殊な血管システムで力技カバー。", path: "zannen/fukurou.html" },
-  { category: "zannen", title: "ラッコはなぜ大量に食べ続けなければならないの?", teaser: "皮下脂肪を持たない体を、毛皮の空気層と体重の2〜3割の食事量で力技カバー。", path: "zannen/rakko.html" }
+  { category: "zannen", title: "ラッコはなぜ大量に食べ続けなければならないの?", teaser: "皮下脂肪を持たない体を、毛皮の空気層と体重の2〜3割の食事量で力技カバー。", path: "zannen/rakko.html" },
+  { category: "zannen", title: "ナマケモノはなぜ命がけで週に1回しかトイレに行かないの?", teaser: "週1回のトイレに全エネルギーの約8%を注ぎ込む、命がけの「ざんねん」な排泄事情。", path: "zannen/namakemono.html" },
+  { category: "zannen", title: "キリンはなぜ横になってほとんど眠らないの?", teaser: "野生では横になって眠る時間が一晩わずか8.6分、長すぎる首と脚が招いた「ざんねん」な睡眠事情。", path: "zannen/kirin.html" },
+  { category: "zannen", title: "タコはなぜ泳ぐと心臓が1つ止まってしまうの?", teaser: "3つある心臓のうち全身担当の1つが、泳ぐと止まってしまう「ざんねん」な体の仕組み。", path: "zannen/tako.html" }
 ];
