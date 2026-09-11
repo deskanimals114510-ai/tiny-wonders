@@ -269,6 +269,10 @@ body {
   border-bottom: 1px solid var(--line);
 }
 .portal-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  box-sizing: border-box;
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--accent-deep);
@@ -310,6 +314,10 @@ body {
   justify-content: center;
 }
 .chip-row .link-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  box-sizing: border-box;
   font-size: 0.78rem;
   padding: 8px 16px;
 }
