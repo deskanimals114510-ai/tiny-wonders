@@ -509,6 +509,15 @@ body {
 .hero-compact { margin-bottom: 22px; }
 .hero-compact h1 { font-size: 1.4rem; }
 .article-date { font-size: 0.8rem; color: var(--ink-soft); margin-top: 6px; }
+.reading-time-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin-top: 6px;
+  margin-left: 10px;
+  padding-left: 12px;
+  border-left: 1px solid var(--line);
+}
 
 .tool-main {
   display: flex;
@@ -932,8 +941,8 @@ body {
   box-shadow: 0 0 0 4px var(--surface), 0 0 0 5px var(--line);
 }
 .article-card p {
-  font-size: 0.92rem;
-  line-height: 1.9;
+  font-size: 1rem;
+  line-height: 1.8;
   margin: 0 0 14px;
   color: var(--ink);
 }
@@ -957,8 +966,8 @@ body {
 .article-source a { color: var(--accent-deep); }
 .article-source em { font-style: italic; }
 
-.article-lead {
-  font-size: 0.85rem;
+p.article-lead {
+  font-size: 1rem;
   color: var(--ink-soft);
   line-height: 1.8;
   margin: 0 0 20px;
@@ -1067,7 +1076,7 @@ body {
   margin: 0 0 6px;
 }
 .article-list-item p {
-  font-size: 0.84rem;
+  font-size: 0.875rem;
   color: var(--ink-soft);
   line-height: 1.7;
   margin: 0;
