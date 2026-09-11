@@ -27,6 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 <script defer src="../analytics.js"></script>
+<script defer src="../search-widget.js"></script>
 <script>
 // ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
 // 保存がなければOS設定(prefers-color-scheme)に従う。
@@ -115,7 +116,12 @@
     </p>
   </header>
 
-  <main class="tool-main" id="main-content">
+  <main data-pagefind-body class="tool-main" id="main-content">
+
+    <div class="site-search" data-pagefind-ignore>
+      <input type="search" id="site-search-input" class="site-search-input" placeholder="🔍 サイト内を検索(例: 猫 換毛)" aria-label="サイト内検索" autocomplete="off">
+      <div id="site-search-results" class="site-search-results" hidden></div>
+    </div>
 
     <h2 class="portal-section-title-sub" id="zatsugaku"><span class="category-badge category-badge--zatsugaku">豆知識</span> 犬猫のなぜ?豆知識(18本)</h2>
     <div class="article-list">

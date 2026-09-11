@@ -1238,6 +1238,76 @@ button:focus-visible {
   color: var(--ink-soft);
 }
 
+/* ---- サイト内検索(Pagefind) ---- */
+.site-search {
+  position: relative;
+  max-width: 480px;
+  margin: 0 0 28px;
+}
+.site-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 1rem;
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+}
+.site-search-input::placeholder { color: var(--ink-soft); }
+.site-search-input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+.site-search-results {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-lift);
+  padding: 6px;
+}
+.site-search-result {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.site-search-result:hover,
+.site-search-result:focus {
+  background: var(--accent-tint);
+}
+.site-search-result-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.site-search-result-excerpt {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+.site-search-result-excerpt mark {
+  background: none;
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+.site-search-empty {
+  padding: 10px 12px;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  margin: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .wonder-card,
   .article-list-item,

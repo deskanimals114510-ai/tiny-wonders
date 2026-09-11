@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="style.css">
 <script defer src="analytics.js"></script>
 <script defer src="trivia-data.js"></script>
+<script defer src="search-widget.js"></script>
 <script>
 // ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
 // 保存がなければOS設定(prefers-color-scheme)に従う。
@@ -142,7 +143,12 @@
     <a href="#family">Desk Animalsファミリー</a>
   </nav>
 
-  <main id="main-content">
+  <main data-pagefind-body id="main-content">
+
+    <div class="site-search" data-pagefind-ignore>
+      <input type="search" id="site-search-input" class="site-search-input" placeholder="🔍 サイト内を検索(例: 猫 換毛)" aria-label="サイト内検索" autocomplete="off">
+      <div id="site-search-results" class="site-search-results" hidden></div>
+    </div>
 
     <section class="portal-section portal-section--compact" id="today-trivia">
       <h2 class="portal-section-title-sub">今日のプチ雑学</h2>
