@@ -6,8 +6,64 @@
   <atom:link href="https://deskanimals114510-ai.github.io/tiny-wonders/feed.xml" rel="self" type="application/rss+xml" />
   <description>犬猫を中心にした動物の「なぜ?」豆知識と、笑える「ざんねん」な習性を、専門家の知見にもとづきやさしく解説する動物トリビアマガジンです。</description>
   <language>ja</language>
-  <lastBuildDate>Fri, 11 Sep 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 12 Sep 2026 09:00:00 +0900</lastBuildDate>
   <generator>Tiny Wonders static feed generator</generator>
+  <item>
+    <title>犬種の人気は26年でどう変わった? JKC登録データで見る栄枯盛衰</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-ninki.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-ninki.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+    <category>動物のなぜ?豆知識</category>
+    <description>ダックスフンドの劇的な栄枯盛衰、プードルの独走、チワワの躍進。JKC公式統計26年分でたどる犬種人気の移り変わり。</description>
+  </item>
+  <item>
+    <title>ハムスターの頬袋、実は反転して口から飛び出すことも</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/zannen/hamster-hoobukuro.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/zannen/hamster-hoobukuro.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+    <category>動物のざんねんな習性</category>
+    <description>便利な収納スペースが、炎症や加齢をきっかけに反転してしまう「頬袋脱」という症状を解説します。</description>
+  </item>
+  <item>
+    <title>猫は甘さを感じられない?ケーキを前にしても無反応な理由</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/zannen/neko-amami.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/zannen/neko-amami.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+    <category>動物のざんねんな習性</category>
+    <description>甘味受容体の遺伝子が壊れていて、そもそも甘さを感知できない。ネコ科全体に共通する「ざんねん」な話。</description>
+  </item>
+  <item>
+    <title>カバはなぜ泳げないの?水の達人なのに浮けない体</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/zannen/kaba.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/zannen/kaba.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+    <category>動物のざんねんな習性</category>
+    <description>水中適応した体を持ちながら、密度が高すぎて浮けない。川底を歩いて移動する「ざんねん」な事情。</description>
+  </item>
+  <item>
+    <title>うさぎはなぜ自分のフンを食べるの? 実は「二度目の食事」だった</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/usagi-fun.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/usagi-fun.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+    <category>動物のなぜ?豆知識</category>
+    <description>腸内細菌が作る栄養満点の「盲腸便」を食べ直す、うさぎの隠れた消化の仕組みを解説します。</description>
+  </item>
+  <item>
+    <title>犬のしっぽ、右に振るか左に振るかで気持ちがわかる?</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-shippo.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-shippo.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+    <category>動物のなぜ?豆知識</category>
+    <description>好きな相手には右寄り、警戒する相手には左寄り。脳の左右差がしっぽに表れる仕組みを解説します。</description>
+  </item>
+  <item>
+    <title>シマウマの縞模様はなぜ? 有力なのは吸血バエ対策説</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/shimauma.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/shimauma.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+    <category>動物のなぜ?豆知識</category>
+    <description>UC Davisの研究が5つの仮説を比較、ハエの多い地域ほど縞が濃くなるという相関を発見しました。</description>
+  </item>
   <item>
     <title>都道府県別・犬の登録頭数ランキング! 人口あたりで一番多いのはどこ?</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-mitsudo.html</link>

@@ -1263,6 +1263,62 @@ button:focus-visible {
   font-variant-numeric: tabular-nums;
   color: var(--ink-soft);
 }
+.mitsudo-bar-fill--muted {
+  background: color-mix(in srgb, var(--zatsugaku) 35%, var(--paper-deep));
+}
+
+/* ---- 犬種人気トレンドチャート(犬種別登録頭数記事専用) ---- */
+.trend-chart-wrap {
+  margin: 8px 0 22px;
+}
+.trend-chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.trend-chart-axis {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.trend-chart-label {
+  fill: var(--ink-soft);
+  font-size: 11px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.trend-chart-area {
+  fill: color-mix(in srgb, var(--zatsugaku) 16%, transparent);
+}
+.trend-chart-line {
+  fill: none;
+  stroke: var(--zatsugaku);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.trend-chart-peak {
+  fill: var(--accent-deep);
+}
+.trend-chart-peak-label {
+  fill: var(--accent-deep);
+  font-size: 10px;
+  font-weight: 700;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.trend-pair-group {
+  margin: 0 0 16px;
+}
+.trend-pair-label {
+  font-size: 0.85rem;
+  color: var(--ink);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.trend-pair-pct {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+.trend-pair-pct.is-up { color: var(--accent-deep); }
+.trend-pair-pct.is-down { color: var(--ink-soft); }
 
 /* ---- サイト内検索(Pagefind) ---- */
 .site-search {

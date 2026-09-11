@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>犬種の人気は26年でどう変わった? JKC登録データで見る栄枯盛衰 | Tiny Wonders</title>
+<meta name="description" content="JKC公式統計1999〜2025年の26年分を分析。ダックスフンドの劇的な栄枯盛衰、プードルの独走、チワワの躍進など、犬種人気の移り変わりをグラフで紹介します。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="犬種の人気は26年でどう変わった? JKC登録データで見る栄枯盛衰">
+<meta property="og:description" content="ダックスフンドの劇的な栄枯盛衰、プードルの独走、チワワの躍進。JKC公式統計26年分でたどる犬種人気の移り変わり。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-ninki.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-ninki.html">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-zatsugaku-inu-ninki.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="犬種の人気は26年でどう変わった? JKC登録データで見る栄枯盛衰">
+<meta name="twitter:description" content="ダックスフンドの劇的な栄枯盛衰、プードルの独走、チワワの躍進。JKC公式統計26年分でたどる犬種人気の移り変わり。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-zatsugaku-inu-ninki.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../analytics.js"></script>
+<script defer src="../reading-time.js"></script>
+<script defer src="inu-ninki-data.js"></script>
+<script defer src="inu-ninki.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "犬種の人気は26年でどう変わった? JKC登録データで見る栄枯盛衰",
+  "description": "ダックスフンドの劇的な栄枯盛衰、プードルの独走、チワワの躍進。JKC公式統計26年分でたどる犬種人気の移り変わり。",
+  "image": "https://deskanimals114510-ai.github.io/tiny-wonders/images/zatsugaku-inu-ninki.jpg",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-ninki.html",
+  "inLanguage": "ja",
+  "isPartOf": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website" },
+  "publisher": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization" },
+  "datePublished": "2026-09-12T00:00:00+09:00",
+  "dateModified": "2026-09-12T00:00:00+09:00",
+  "citation": "ジャパンケネルクラブ(JKC)「犬種別犬籍登録頭数」1999年〜2025年統計"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tiny Wonders", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
+    { "@type": "ListItem", "position": 2, "name": "犬猫のなぜ?豆知識", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/" },
+    { "@type": "ListItem", "position": 3, "name": "犬種の人気は26年でどう変わった? JKC登録データで見る栄枯盛衰", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/inu-ninki.html" }
+  ]
+}
+</script>
+</head>
+<body class="page-article">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="../index.html">Tiny Wonders</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a class="back-link" href="index.html">犬猫のなぜ?豆知識</a></nav>
+    <p class="article-badge-row"><span class="category-badge category-badge--zatsugaku">豆知識</span></p>
+    <h1><span class="grad-text">犬種の人気は26年でどう変わった? JKC登録データで見る栄枯盛衰</span></h1>
+    <p class="article-date">公開日: 2026年9月12日 / 更新日: 2026年9月12日</p>
+  </header>
+
+  <main data-pagefind-body class="tool-main" id="main-content">
+    <article class="article-card">
+      <img class="article-illustration" src="../images/zatsugaku-inu-ninki.jpg" alt="26年間の犬種人気の移り変わりを示すアンティーク調グラフのイラスト" width="800" height="600">
+
+      <p class="article-lead">
+        <span class="lead-ja">JKCの犬種別登録データ26年分を分析すると、プードルの独走、チワワの躍進、そしてダックスフンドの劇的な栄枯盛衰が見えてきました。</span>
+        <span class="lead-en">A 26-year analysis of Japan's official dog breed registration data reveals the poodle's steady rise to the top, the chihuahua's boom, and the dachshund's dramatic rise and fall.</span>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16M6 19V9l6-5 6 5v10M9 19v-6h6v6"/></svg></span>26年で市場規模はほぼ半減</h2>
+      <p>
+        JKC(ジャパンケネルクラブ)が公表している犬種別登録頭数の統計を1999年から2025年まで26年分たどると、犬全体の新規登録頭数は1999年の42万4,061頭から、2003年に57万5,792頭でピークを迎えたあと減少を続け、2025年には30万2,530頭まで落ち込んでいます。四半世紀で見るとおよそ3割減、ピーク時からはほぼ半分という規模の縮小です。人気犬種の顔ぶれも、この26年間で大きく塗り替わりました。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-6 4 4 8-10M14 5h6v6"/></svg></span>ダックスフンド、一世を風靡してからの転落</h2>
+      <p>
+        その象徴が、ダックスフンドです。1999年時点ですでに登録数1位(76,711頭)だったダックスフンドは、そこからさらに人気が加速し、2003年には171,144頭という、単独犬種としては空前の頭数を記録しました。これは当時の全国登録数のおよそ3割を1犬種が占めていた計算になります。ところがピークを境に人気は反転し、坂を転げ落ちるように減少していきました。2025年の登録数は30,615頭で、ピーク比マイナス82%、順位も3位まで後退しています。26年間で最も劇的な浮き沈みを見せた犬種と言えそうです。
+      </p>
+
+      <div class="trend-chart-wrap">
+        <div id="ninki-dachs-chart"></div>
+      </div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20l6-8 4 3 8-11"/><path d="M15 4h6v6"/></svg></span>躍進したのはプードル、そして小型犬たち</h2>
+      <p>
+        一方、1999年から2025年にかけて頭数を大きく伸ばしたのはプードルです。1999年の12,473頭(13位)から2025年には69,342頭(1位)へと、実に4.6倍(+455.9%)に増加し、ダックスフンドに代わって不動の1位に立ちました。フレンチ・ブルドッグも1,907頭から9,578頭へ+402.3%と急伸し、7位まで順位を上げています。ボーダー・コリー(+114.6%)、ペキニーズ(+94.6%)、チワワ(+77.3%)も着実に数を伸ばした犬種です。
+      </p>
+      <div id="ninki-risers"></div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5l6 8 4-3 8 11"/><path d="M15 18h6v-6"/></svg></span>反対に、大きく数を減らした犬種も</h2>
+      <p>
+        反対に、大きく数を減らしたのは中型〜大型犬が目立ちます。ラブラドール・レトリーバーは27,343頭から3,410頭へ-87.5%、ビーグルは15,431頭から1,973頭へ-87.2%と、いずれも8〜9割近い減少です。パピヨン(-79.2%)、シー・ズー(-78.8%)、ウェルシュ・コーギー・ペンブローク(-77.9%)も大きく数を減らしました。今回のデータだけで理由を断定することはできませんが、上位に並ぶ犬種を見比べると、より小型の犬種へと人気がシフトしていった可能性はありそうです。
+      </p>
+      <div id="ninki-fallers"></div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"/><path d="M12 8v4l3 2"/></svg></span>データの出典と算出方法</h2>
+      <p>
+        使用したデータはジャパンケネルクラブ(JKC)公式サイトで公開されている「犬種別犬籍登録頭数」の年別統計(1999年〜2025年)です。各年、登録頭数の多い上位30犬種を対象に、犬種名の表記揺れ(全角ハイフンと長音符の違いなど)を正規化した上で集計しました。プードル・ダックスフンドはJKCの公表データ自体がサイズ別内訳(トイ・ミニチュア・スタンダード等)と合計を両方示しているため、公表されている合計値をそのまま採用しています。上位30犬種に一度も入らなかった犬種のデータは含まれていない点にご留意ください。
+      </p>
+      <p class="article-source">
+        出典: ジャパンケネルクラブ(JKC)「犬種別犬籍登録頭数」 <a href="https://www.jkc.or.jp/registr-statistics/" target="_blank" rel="noopener">jkc.or.jp</a>
+      </p>
+
+      <details class="lookup-table-details">
+        <summary>2025年 登録頭数トップ10を見る</summary>
+        <div class="lookup-table-wrap">
+          <table class="lookup-table">
+            <caption>2025年・犬種別登録頭数ランキング トップ10</caption>
+            <thead>
+              <tr><th>順位</th><th>犬種</th><th>登録頭数</th></tr>
+            </thead>
+            <tbody id="ninki-table-body"></tbody>
+          </table>
+        </div>
+      </details>
+
+      <div class="trivia-box">
+        <span class="trivia-box-label">豆知識プラスワン</span>
+        <p>2025年のトップ10には、2010年にようやく上位30入りを果たしたばかりのビション・フリーゼが9位で顔を出しています。26年前のランキングを知る人が今の順位表を見たら、きっと驚くはずです。人気犬種の顔ぶれは、私たちが思っている以上のスピードで入れ替わっているのかもしれません。</p>
+      </div>
+    </article>
+
+    <div class="related-tools">
+      <a class="link-btn" href="../shindan.html">犬種・猫種かんたん診断へ</a>
+      <div class="article-nav">
+        <a class="link-btn link-btn-secondary" href="inu-mitsudo.html">都道府県別・犬密度ランキングへ</a>
+        <a class="link-btn link-btn-secondary" href="inu-roka.html">犬はなぜ早く年をとる?へ</a>
+      </div>
+    </div>
+    <div class="share-row">
+      <a class="link-btn-secondary" href="https://twitter.com/intent/tweet?text=%E7%8A%AC%E7%A8%AE%E3%81%AE%E4%BA%BA%E6%B0%97%E3%81%AF26%E5%B9%B4%E3%81%A7%E3%81%A9%E3%81%86%E5%A4%89%E3%82%8F%E3%81%A3%E3%81%9F%3F%20JKC%E7%99%BB%E9%8C%B2%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A7%E8%A6%8B%E3%82%8B%E6%A0%84%E6%9E%AF%E7%9B%9B%E8%A1%B0%20%7C%20Tiny%20Wonders&url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fzatsugaku%2Finu-ninki.html" target="_blank" rel="noopener">Xでシェア</a>
+      <a class="link-btn-secondary" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fzatsugaku%2Finu-ninki.html" target="_blank" rel="noopener">LINEでシェア</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/?utm_source=tiny-wonders&utm_medium=referral&utm_campaign=cross_site" target="_blank" rel="noopener">🔬 Desk Animals Lab</a>
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
+    <p>This site's content is produced with AI assistance.</p>
+    <p>本記事は公開統計データをもとにした参考情報であり、公式見解を示すものではありません。</p>
+    <p>This content is a reference analysis based on public statistics, not an official government publication.</p>
+    <p><a href="../privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

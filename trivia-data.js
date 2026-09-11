@@ -21,6 +21,10 @@ window.TW_TRIVIA = [
   { category: "zatsugaku", title: "犬や猫はなぜ秋になると食欲が増すの?", teaser: "気温が下がると体は脂肪を燃やして熱をつくる、体温維持のための自然な仕組みを解説します。", path: "zatsugaku/aki-shokuyoku.html" },
   { category: "zatsugaku", title: "エゾシカはなぜ秋に恋の季節を迎えるの?", teaser: "猫とは正反対、日が短くなる秋に動き出す「短日繁殖動物」の一年がかりの恋の準備を解説します。", path: "zatsugaku/shika.html" },
   { category: "zatsugaku", title: "都道府県別・犬の登録頭数ランキング! 人口あたりで一番多いのはどこ?", teaser: "厚労省・総務省の公式統計から算出した、人口あたりの犬密度ランキング47都道府県。1位は香川県という結果に。", path: "zatsugaku/inu-mitsudo.html" },
+  { category: "zatsugaku", title: "シマウマの縞模様はなぜ? 有力なのは吸血バエ対策説", teaser: "UC Davisの研究が5つの仮説を比較、ハエの多い地域ほど縞が濃くなるという相関を発見しました。", path: "zatsugaku/shimauma.html" },
+  { category: "zatsugaku", title: "犬のしっぽ、右に振るか左に振るかで気持ちがわかる?", teaser: "好きな相手には右寄り、警戒する相手には左寄り。脳の左右差がしっぽに表れる仕組みを解説します。", path: "zatsugaku/inu-shippo.html" },
+  { category: "zatsugaku", title: "うさぎはなぜ自分のフンを食べるの? 実は「二度目の食事」だった", teaser: "腸内細菌が作る栄養満点の「盲腸便」を食べ直す、うさぎの隠れた消化の仕組みを解説します。", path: "zatsugaku/usagi-fun.html" },
+  { category: "zatsugaku", title: "犬種の人気は26年でどう変わった? JKC登録データで見る栄枯盛衰", teaser: "ダックスフンドの劇的な栄枯盛衰、プードルの独走、チワワの躍進。JKC公式統計26年分でたどる犬種人気の移り変わり。", path: "zatsugaku/inu-ninki.html" },
 
   { category: "zannen", title: "犬はなぜうんちの前にぐるぐる回るの?", teaser: "実は方角にまでこだわっていた、という笑ってしまう研究結果があります。", path: "zannen/inu-guruguru.html" },
   { category: "zannen", title: "猫はなぜ明らかに小さすぎる箱に入りたがるの?", teaser: "「もし入れるなら、座る」猫の宿命と、テープの四角にも反応する不思議。", path: "zannen/neko-hako.html" },
@@ -32,5 +36,8 @@ window.TW_TRIVIA = [
   { category: "zannen", title: "ラッコはなぜ大量に食べ続けなければならないの?", teaser: "皮下脂肪を持たない体を、毛皮の空気層と体重の2〜3割の食事量で力技カバー。", path: "zannen/rakko.html" },
   { category: "zannen", title: "ナマケモノはなぜ命がけで週に1回しかトイレに行かないの?", teaser: "週1回のトイレに全エネルギーの約8%を注ぎ込む、命がけの「ざんねん」な排泄事情。", path: "zannen/namakemono.html" },
   { category: "zannen", title: "キリンはなぜ横になってほとんど眠らないの?", teaser: "野生では横になって眠る時間が一晩わずか8.6分、長すぎる首と脚が招いた「ざんねん」な睡眠事情。", path: "zannen/kirin.html" },
-  { category: "zannen", title: "タコはなぜ泳ぐと心臓が1つ止まってしまうの?", teaser: "3つある心臓のうち全身担当の1つが、泳ぐと止まってしまう「ざんねん」な体の仕組み。", path: "zannen/tako.html" }
+  { category: "zannen", title: "タコはなぜ泳ぐと心臓が1つ止まってしまうの?", teaser: "3つある心臓のうち全身担当の1つが、泳ぐと止まってしまう「ざんねん」な体の仕組み。", path: "zannen/tako.html" },
+  { category: "zannen", title: "カバはなぜ泳げないの?水の達人なのに浮けない体", teaser: "水中適応した体を持ちながら、密度が高すぎて浮けない。川底を歩いて移動する「ざんねん」な事情。", path: "zannen/kaba.html" },
+  { category: "zannen", title: "猫は甘さを感じられない?ケーキを前にしても無反応な理由", teaser: "甘味受容体の遺伝子が壊れていて、そもそも甘さを感知できない。ネコ科全体に共通する「ざんねん」な話。", path: "zannen/neko-amami.html" },
+  { category: "zannen", title: "ハムスターの頬袋、実は反転して口から飛び出すことも", teaser: "便利な収納スペースが、炎症や加齢をきっかけに反転してしまう「頬袋脱」という症状を解説します。", path: "zannen/hamster-hoobukuro.html" }
 ];
