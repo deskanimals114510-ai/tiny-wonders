@@ -1605,16 +1605,16 @@ ul.checklist strong, ul.checklist--danger strong { color: var(--ink); }
 }
 
 /* ---- 記事本文の図解・表・グラフをPC幅で本文カラムより広く表示 ----
-   本文(.article-card p)は可読性のため640px幅のまま維持し、
-   表・図解・割合グラフだけをビューポート中央基準で広げる(本文カラム基準ではなく
-   ページ全体の中央に対して配置することで、#appの640px上限を実質的に超えて広げる)。 */
-@media (min-width: 900px) {
-  .diagram-wrap,
-  .lookup-table-wrap,
-  .mitsudo-bar-list {
-    width: min(780px, calc(100vw - 40px));
-    margin-left: 50%;
-    transform: translateX(-50%);
+   カード自体をPC幅で広げ(#appのmax-widthを拡張)、本文段落・見出し等の
+   テキスト系要素だけをそのカードの中で512px幅に中央寄せして可読性を維持する。
+   表・図解・割合グラフはカードの新しい幅いっぱいに表示する。
+   カードの外枠(border/shadow)をはみ出さないよう、要素はすべてカード内に収める。 */
+@media (min-width: 940px) {
+  .page-article #app { max-width: 900px; }
+  .article-card > :not(.diagram-wrap):not(.lookup-table-wrap):not(.mitsudo-bar-list):not(.article-illustration) {
+    max-width: 512px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
