@@ -25,6 +25,7 @@ window.TW_TRIVIA = [
   { category: "zatsugaku", title: "犬のしっぽ、右に振るか左に振るかで気持ちがわかる?", teaser: "好きな相手には右寄り、警戒する相手には左寄り。脳の左右差がしっぽに表れる仕組みを解説します。", path: "zatsugaku/inu-shippo.html" },
   { category: "zatsugaku", title: "うさぎはなぜ自分のフンを食べるの? 実は「二度目の食事」だった", teaser: "腸内細菌が作る栄養満点の「盲腸便」を食べ直す、うさぎの隠れた消化の仕組みを解説します。", path: "zatsugaku/usagi-fun.html" },
   { category: "zatsugaku", title: "犬種の人気は26年でどう変わった? JKC登録データで見る栄枯盛衰", teaser: "ダックスフンドの劇的な栄枯盛衰、プードルの独走、チワワの躍進。JKC公式統計26年分でたどる犬種人気の移り変わり。", path: "zatsugaku/inu-ninki.html" },
+  { category: "zatsugaku", title: "保護犬猫の譲渡率、20年でどう変わった?", teaser: "環境省の公式統計20年分から算出、全国では7.0%から82.5%まで劇的に改善していました。", path: "zatsugaku/hogo-jotoritsu.html" },
 
   { category: "zannen", title: "犬はなぜうんちの前にぐるぐる回るの?", teaser: "実は方角にまでこだわっていた、という笑ってしまう研究結果があります。", path: "zannen/inu-guruguru.html" },
   { category: "zannen", title: "猫はなぜ明らかに小さすぎる箱に入りたがるの?", teaser: "「もし入れるなら、座る」猫の宿命と、テープの四角にも反応する不思議。", path: "zannen/neko-hako.html" },

@@ -6,8 +6,16 @@
   <atom:link href="https://deskanimals114510-ai.github.io/tiny-wonders/feed.xml" rel="self" type="application/rss+xml" />
   <description>犬猫を中心にした動物の「なぜ?」豆知識と、笑える「ざんねん」な習性を、専門家の知見にもとづきやさしく解説する動物トリビアマガジンです。</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 12 Sep 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 12 Sep 2026 15:00:00 +0900</lastBuildDate>
   <generator>Tiny Wonders static feed generator</generator>
+  <item>
+    <title>保護犬猫の譲渡率、20年でどう変わった?</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/hogo-jotoritsu.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/hogo-jotoritsu.html</guid>
+    <pubDate>Sat, 12 Sep 2026 15:00:00 +0900</pubDate>
+    <category>動物のなぜ?豆知識</category>
+    <description>環境省の公式統計20年分から算出、全国では7.0%から82.5%まで劇的に改善していました。</description>
+  </item>
   <item>
     <title>換毛期のお手入れ完全ガイド:頻度とブラッシングのコツ</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kanmouki-care.html</link>
