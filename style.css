@@ -992,6 +992,12 @@ body {
 .h2-icon svg { display: block; width: 100%; height: 100%; }
 .article-card--zannen .h2-icon { color: var(--zannen); }
 .article-card--kurashi .h2-icon { color: var(--kurashi); }
+.article-card--zannen .point-box--tip {
+  background: color-mix(in srgb, var(--zannen) 10%, var(--surface));
+  border-left: 3px solid var(--zannen);
+}
+.article-card--zannen .point-box--tip .point-box-icon { color: var(--zannen); }
+.article-card--zannen .point-box--tip .point-box-title { color: var(--zannen); }
 
 /* ---- 記事中の2枚目イラスト(見出しの合間に挿入する補助図版) ---- */
 .article-inline-illustration {
