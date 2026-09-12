@@ -1022,6 +1022,21 @@ p.article-lead {
 .trivia-today-link p { color: var(--ink); }
 .trivia-today-link strong { font-family: "Shippori Mincho", serif; font-size: 1rem; }
 
+.diag-aside {
+  margin: 22px 0;
+  padding: 12px 16px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.diag-aside p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+.diag-aside a { color: var(--accent-deep); font-weight: 700; }
+
 .related-tools {
   margin-top: 26px;
   text-align: center;
