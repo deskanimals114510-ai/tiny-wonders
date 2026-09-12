@@ -228,6 +228,35 @@ body {
   background: var(--kurashi-tint);
 }
 
+.hero-kurashi-cta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 20px;
+  padding: 12px 16px;
+  min-height: 44px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid var(--kurashi);
+  background: var(--kurashi-tint);
+  text-decoration: none;
+  transition: filter 0.15s ease;
+}
+.hero-kurashi-cta:hover { filter: brightness(0.96); }
+.hero-kurashi-cta-text {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.hero-kurashi-cta-arrow {
+  margin-left: auto;
+  color: var(--kurashi);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
 @media (min-width: 640px) {
   .hero--split {
     display: flex;
