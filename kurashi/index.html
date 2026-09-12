@@ -132,10 +132,48 @@
       <a href="#usagi">🐇 うさぎと暮らす</a>
     </nav>
 
+    <div class="chip-row" id="kurashi-cat-filter" role="group" aria-label="内容で絞り込む">
+      <button type="button" class="filter-chip is-active" data-filter="all">すべて</button>
+      <button type="button" class="filter-chip" data-filter="care">飼い方</button>
+      <button type="button" class="filter-chip" data-filter="item">アイテム</button>
+      <button type="button" class="filter-chip" data-filter="breed">品種</button>
+      <button type="button" class="filter-chip" data-filter="feature">生態</button>
+      <button type="button" class="filter-chip" data-filter="food">エサ</button>
+      <button type="button" class="filter-chip" data-filter="health">健康</button>
+    </div>
+    <script>
+    (function () {
+      "use strict";
+      var filterBar = document.getElementById("kurashi-cat-filter");
+      if (!filterBar) return;
+
+      filterBar.addEventListener("click", function (e) {
+        var chip = e.target.closest(".filter-chip");
+        if (!chip) return;
+        var chips = filterBar.querySelectorAll(".filter-chip");
+        chips.forEach(function (c) {
+          c.classList.toggle("is-active", c === chip);
+          c.setAttribute("aria-pressed", c === chip ? "true" : "false");
+        });
+        var filter = chip.getAttribute("data-filter");
+        var items = document.querySelectorAll(".article-list-item[data-cat]");
+        items.forEach(function (item) {
+          var match = filter === "all" || item.getAttribute("data-cat") === filter;
+          item.hidden = !match;
+        });
+        var sections = document.querySelectorAll(".portal-section");
+        sections.forEach(function (section) {
+          var visible = section.querySelectorAll(".article-list-item:not([hidden])").length;
+          section.hidden = visible === 0;
+        });
+      });
+    })();
+    </script>
+
     <section class="portal-section" id="inuneko">
     <h2 class="portal-section-title">犬猫と暮らす</h2>
     <div class="article-list">
-      <a class="article-list-item" href="kanmouki-care.html">
+      <a class="article-list-item" href="kanmouki-care.html" data-cat="care">
         <img class="article-thumb" src="../images/kurashi-kanmouki-care.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>換毛期のお手入れ完全ガイド:頻度とブラッシングのコツ</h2>
@@ -143,7 +181,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="kanmouki-brush.html">
+      <a class="article-list-item" href="kanmouki-brush.html" data-cat="item">
         <img class="article-thumb" src="../images/kurashi-kanmouki-brush.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>換毛期のブラシ選び:スリッカー・ラバー・コーム、どれを使う?</h2>
@@ -151,7 +189,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="shinia-kurashi.html">
+      <a class="article-list-item" href="shinia-kurashi.html" data-cat="care">
         <img class="article-thumb" src="../images/kurashi-shinia-kurashi.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>シニア期に入ったら見直したい、暮らしの工夫</h2>
@@ -159,7 +197,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="shinia-items.html">
+      <a class="article-list-item" href="shinia-items.html" data-cat="item">
         <img class="article-thumb" src="../images/kurashi-shinia-items.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>シニア犬猫のための暮らしグッズ:段差・食事・寝床を見直す</h2>
@@ -167,7 +205,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="kafun-care.html">
+      <a class="article-list-item" href="kafun-care.html" data-cat="care">
         <img class="article-thumb" src="../images/kurashi-kafun-care.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>犬猫の花粉症シーズンのケア:症状と対策</h2>
@@ -175,7 +213,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="kafun-items.html">
+      <a class="article-list-item" href="kafun-items.html" data-cat="item">
         <img class="article-thumb" src="../images/kurashi-kafun-items.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>花粉症対策グッズの選び方:空気清浄機・ウェットシート・ウェア</h2>
@@ -183,7 +221,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="atsusa-care.html">
+      <a class="article-list-item" href="atsusa-care.html" data-cat="care">
         <img class="article-thumb" src="../images/kurashi-atsusa-care.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>犬猫の暑さ対策:散歩の時間帯と室温管理</h2>
@@ -191,7 +229,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="atsusa-items.html">
+      <a class="article-list-item" href="atsusa-items.html" data-cat="item">
         <img class="article-thumb" src="../images/kurashi-atsusa-items.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>暑さ対策グッズの選び方:クールマット・給水器・冷感ウェア</h2>
@@ -204,7 +242,7 @@
     <section class="portal-section" id="usagi">
     <h2 class="portal-section-title">うさぎと暮らす</h2>
     <div class="article-list">
-      <a class="article-list-item" href="usagi-shurui.html">
+      <a class="article-list-item" href="usagi-shurui.html" data-cat="breed">
         <img class="article-thumb" src="../images/kurashi-usagi-shurui.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>うさぎの代表的な品種7選:大きさと性格の違い <span style="color:var(--accent-deep);">NEW</span></h2>
@@ -212,7 +250,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="usagi-tokucho.html">
+      <a class="article-list-item" href="usagi-tokucho.html" data-cat="feature">
         <img class="article-thumb" src="../images/kurashi-usagi-tokucho.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>うさぎの体の特徴:飼う前に知っておきたい歯と体温調節のこと <span style="color:var(--accent-deep);">NEW</span></h2>
@@ -220,7 +258,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="usagi-kaikata.html">
+      <a class="article-list-item" href="usagi-kaikata.html" data-cat="care">
         <img class="article-thumb" src="../images/kurashi-usagi-kaikata.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>うさぎの飼い方の基本:温度管理・お手入れ・多頭飼いの注意点</h2>
@@ -228,7 +266,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="usagi-esa.html">
+      <a class="article-list-item" href="usagi-esa.html" data-cat="food">
         <img class="article-thumb" src="../images/kurashi-usagi-esa.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>うさぎの餌の基本:牧草とペレットの与え方、与えてはいけない食べ物</h2>
@@ -236,7 +274,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="usagi-item.html">
+      <a class="article-list-item" href="usagi-item.html" data-cat="item">
         <img class="article-thumb" src="../images/kurashi-usagi-item.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>うさぎの飼育アイテム:ケージ・給水器・お手入れ用品の選び方</h2>
@@ -244,7 +282,7 @@
         </span>
       </a>
 
-      <a class="article-list-item" href="usagi-byoki.html">
+      <a class="article-list-item" href="usagi-byoki.html" data-cat="health">
         <img class="article-thumb" src="../images/kurashi-usagi-byoki.jpg" alt="" loading="lazy" width="800" height="600">
         <span class="article-body">
           <h2>うさぎの体調不良のサイン:早めに気づきたい病気のとき</h2>

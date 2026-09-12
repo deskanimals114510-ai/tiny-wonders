@@ -362,6 +362,30 @@ body {
   padding: 8px 16px;
 }
 
+/* ---- カテゴリ絞り込みチップ(記事一覧ハブページ共通) ---- */
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  box-sizing: border-box;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 7px 15px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.filter-chip:hover { border-color: var(--accent); }
+.filter-chip.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
 .card-embed--compact {
   max-width: 320px;
   margin: 0 auto 14px;
@@ -1171,6 +1195,7 @@ p.article-lead {
   transition: box-shadow 0.15s ease;
 }
 .article-list-item:hover { box-shadow: var(--shadow-lift); }
+.article-list-item[hidden] { display: none; }
 .article-list-item .article-thumb {
   flex: 0 0 auto;
   width: 84px;
