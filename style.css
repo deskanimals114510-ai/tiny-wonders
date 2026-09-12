@@ -1381,6 +1381,99 @@ button:focus-visible {
 .mitsudo-bar-fill--muted {
   background: color-mix(in srgb, var(--zatsugaku) 35%, var(--paper-deep));
 }
+.mitsudo-bar-fill--kurashi {
+  background: var(--kurashi);
+}
+
+/* ---- ラベル付き図解(記事本文の構造・部位説明、全カテゴリ共通) ---- */
+.diagram-wrap {
+  margin: 20px 0;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.diagram-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---- ポイント・注意ボックス(記事本文の視覚的な要点整理、全カテゴリ共通) ---- */
+.point-box {
+  margin: 20px 0;
+  padding: 16px 18px;
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.point-box-icon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.point-box-icon svg { width: 20px; height: 20px; }
+.point-box-title {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+.point-box p { margin: 0; font-size: 0.85rem; line-height: 1.75; color: var(--ink); }
+.point-box--tip {
+  background: color-mix(in srgb, var(--zatsugaku) 10%, var(--surface));
+  border-left: 3px solid var(--zatsugaku);
+}
+.point-box--tip .point-box-icon { color: var(--zatsugaku); }
+.point-box--tip .point-box-title { color: var(--zatsugaku); }
+.point-box--warning {
+  background: color-mix(in srgb, var(--zannen) 10%, var(--surface));
+  border-left: 3px solid var(--zannen);
+}
+.point-box--warning .point-box-icon { color: var(--zannen); }
+.point-box--warning .point-box-title { color: var(--zannen); }
+
+/* ---- チェックリスト(要点・NG項目の箇条書き強調、全カテゴリ共通) ---- */
+ul.checklist, ul.checklist--danger {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+ul.checklist li, ul.checklist--danger li {
+  position: relative;
+  padding: 10px 14px 10px 40px;
+  border-radius: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+ul.checklist li::before, ul.checklist--danger li::before {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+ul.checklist li::before {
+  content: "✓";
+  color: var(--zatsugaku);
+}
+ul.checklist--danger li::before {
+  content: "✕";
+  color: var(--zannen);
+}
+ul.checklist strong, ul.checklist--danger strong { color: var(--ink); }
 
 /* ---- 犬種人気トレンドチャート(犬種別登録頭数記事専用) ---- */
 .trend-chart-wrap {
