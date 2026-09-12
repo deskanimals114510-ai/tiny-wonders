@@ -6,8 +6,40 @@
   <atom:link href="https://deskanimals114510-ai.github.io/tiny-wonders/feed.xml" rel="self" type="application/rss+xml" />
   <description>犬猫を中心にした動物の「なぜ?」豆知識と、笑える「ざんねん」な習性を、専門家の知見にもとづきやさしく解説する動物トリビアマガジンです。</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 12 Sep 2026 15:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 12 Sep 2026 16:00:00 +0900</lastBuildDate>
   <generator>Tiny Wonders static feed generator</generator>
+  <item>
+    <title>犬猫の花粉症シーズンのケア:症状と対策</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kafun-care.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kafun-care.html</guid>
+    <pubDate>Sat, 12 Sep 2026 16:00:00 +0900</pubDate>
+    <category>犬猫とのくらし方</category>
+    <description>花粉症は皮膚に症状が出やすいという特徴と、帰宅後にできる具体的なケア方法を解説します。</description>
+  </item>
+  <item>
+    <title>花粉症対策グッズの選び方:空気清浄機・ウェットシート・ウェア</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kafun-items.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kafun-items.html</guid>
+    <pubDate>Sat, 12 Sep 2026 16:00:00 +0900</pubDate>
+    <category>犬猫とのくらし方</category>
+    <description>帰宅後のお手入れから室内対策まで、花粉シーズンに役立つ道具をタイプ別に紹介します。</description>
+  </item>
+  <item>
+    <title>犬猫の暑さ対策:散歩の時間帯と室温管理</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/atsusa-care.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/atsusa-care.html</guid>
+    <pubDate>Sat, 12 Sep 2026 16:00:00 +0900</pubDate>
+    <category>犬猫とのくらし方</category>
+    <description>散歩に適した時間帯の選び方や、留守番中の室温管理など、暑い時期に見直したいポイントを解説します。</description>
+  </item>
+  <item>
+    <title>暑さ対策グッズの選び方:クールマット・給水器・冷感ウェア</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/atsusa-items.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/atsusa-items.html</guid>
+    <pubDate>Sat, 12 Sep 2026 16:00:00 +0900</pubDate>
+    <category>犬猫とのくらし方</category>
+    <description>クールマットや循環式給水器など、暑い時期の暮らしに役立つ道具をタイプ別に紹介します。</description>
+  </item>
   <item>
     <title>保護犬猫の譲渡率、20年でどう変わった?</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/hogo-jotoritsu.html</link>
