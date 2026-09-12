@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>ハムスターの飼い方の基本:温度管理・単独飼育・慣らし方 | Tiny Wonders</title>
+<meta name="description" content="ハムスターの飼い方の基本をやさしく解説。適正温度20〜26℃・湿度40〜60%の目安、巣箱・床材・回し車といったケージの基本、昼間は無理に起こさないこと、単独飼育が基本である理由、慣らし方や掃除の頻度まで、初めて迎える方が押さえておきたいポイントをまとめました。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="ハムスターの飼い方の基本:温度管理・単独飼育・慣らし方">
+<meta property="og:description" content="適正温度・湿度の目安から、巣箱・床材・回し車・砂浴び場の用意、昼間は起こさないこと、単独飼育、慣らし方、掃除の頻度まで、ハムスターの飼い方の基本を解説します。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/hamster-kaikata.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/hamster-kaikata.html">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/kurashi-hamster-kaikata.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ハムスターの飼い方の基本:温度管理・単独飼育・慣らし方">
+<meta name="twitter:description" content="適正温度・湿度の目安から、巣箱・床材・回し車・砂浴び場の用意、昼間は起こさないこと、単独飼育、慣らし方、掃除の頻度まで、ハムスターの飼い方の基本を解説します。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/kurashi-hamster-kaikata.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../analytics.js"></script>
+<script defer src="../reading-time.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ハムスターの飼い方の基本:温度管理・単独飼育・慣らし方",
+  "description": "適正温度・湿度の目安から、巣箱・床材・回し車・砂浴び場の用意、昼間は起こさないこと、単独飼育、慣らし方、掃除の頻度まで、ハムスターの飼い方の基本を解説します。",
+  "image": "https://deskanimals114510-ai.github.io/tiny-wonders/images/kurashi-hamster-kaikata.jpg",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/hamster-kaikata.html",
+  "inLanguage": "ja",
+  "isPartOf": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website" },
+  "publisher": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization" },
+  "datePublished": "2026-09-12T00:00:00+09:00",
+  "dateModified": "2026-09-12T00:00:00+09:00"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tiny Wonders", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
+    { "@type": "ListItem", "position": 2, "name": "動物とのくらし方", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/" },
+    { "@type": "ListItem", "position": 3, "name": "ハムスターの飼い方の基本:温度管理・単独飼育・慣らし方", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/hamster-kaikata.html" }
+  ]
+}
+</script>
+</head>
+<body class="page-article">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="../index.html">Tiny Wonders</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a class="back-link" href="index.html">動物とのくらし方</a></nav>
+    <p class="article-badge-row"><span class="category-badge category-badge--kurashi">飼い方ガイド</span></p>
+    <h1><span class="grad-text">ハムスターの飼い方の基本:温度管理・単独飼育・慣らし方</span></h1>
+    <p class="article-date">公開日: 2026年9月12日 / 更新日: 2026年9月12日</p>
+  </header>
+
+  <main data-pagefind-body class="tool-main" id="main-content">
+    <article class="article-card article-card--kurashi">
+      <img class="article-illustration" src="../images/kurashi-hamster-kaikata.jpg" alt="ケージの巣箱のそばでくつろぐハムスターと、近くに置かれた温度計のイラスト" width="800" height="600">
+
+      <p class="article-lead">
+        <span class="lead-ja">手のひらにのる小さな体で、夜になるとせっせと動き回るハムスター。飼いやすい動物という印象がありますが、じつは温度の変化に弱く、昼間は起こされたくない、ひとりで暮らしたい、といった「ハムスターならではの事情」がいくつもあります。迎える前に知っておくと、お互いに無理のない暮らしを始められます。</span>
+        <span class="lead-en">Hamsters are small, quiet, and busy after dark. They are often called easy pets, but they are sensitive to temperature, sleep through the day, and generally prefer to live alone. Knowing these basics before you bring one home makes life easier for both of you.</span>
+      </p>
+
+      <p><strong>この記事でわかる5つの基本:</strong></p>
+      <ul class="checklist">
+        <li><strong>室温・湿度</strong>:おおむね20〜26℃・40〜60%をキープ。27℃超と低温はどちらも要注意</li>
+        <li><strong>ケージの中身</strong>:巣箱・体が埋まる厚さの床材・体格に合った回し車・砂浴び場</li>
+        <li><strong>生活リズム</strong>:昼間は寝ているので無理に起こさない</li>
+        <li><strong>飼育頭数</strong>:ゴールデンハムスターなどは1匹ずつの単独飼育が基本</li>
+        <li><strong>慣らし方と掃除</strong>:最初は触らず見守る、掃除は「こまめに部分・たまに全体」</li>
+      </ul>
+
+      <div class="diag-aside">
+        <p>🔍 ちょっと寄り道:ハムスターがひとり暮らしを好むように、人にも「ひとりが落ち着く」「みんなといたい」といった傾向があります。気になった方は<a href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断(MBTI)</a>を試してみてください。</p>
+      </div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>室温はおおむね20〜26℃、湿度は40〜60%が目安</h2>
+      <p>
+        ハムスターの飼い方で最初に押さえておきたいのが、部屋の温度と湿度です。適正温度はおおむね20〜26℃程度とされています。情報源によって「18〜27℃」「20〜24℃」などやや幅があるため、「20℃を少し下回るくらいから26℃前後まで」をおおよその目安と考えておくとよいでしょう。湿度は40〜60%程度が目安です。大切なのは、この範囲の上にも下にも危険があるということ。27℃を超えると熱中症や脱水のリスクが上がります。一方で、室温が大きく下がる(情報源により5〜10℃程度と幅があります)と、体温が下がって動かなくなる「疑似冬眠」に陥るリスクが上がります。暑さと寒さの両方から守る必要がある、という点が、ハムスターの温度管理のいちばんの特徴です。温度計と湿度計をケージの近くに置き、毎日ひと目で確認できるようにしておくと、季節の変わり目に気づかないうちに範囲を外れていた、という事態を避けやすくなります。
+      </p>
+      <p class="article-source">
+        出典: 吉祥寺エキゾチック動物病院(適正温度・湿度の目安) <a href="https://kichijoji-ah.com/hamster-kankyou/" target="_blank" rel="noopener">kichijoji-ah.com</a> / けい動物医療センター(適正温度・湿度の目安) <a href="https://kei-animal.com/about/hamster.html" target="_blank" rel="noopener">kei-animal.com</a>(数値は情報源により幅があります)
+      </p>
+
+      <div class="point-box point-box--warning">
+        <span class="point-box-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2.7 17a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span>
+        <div>
+          <span class="point-box-title">夏と冬、どちらも油断できません</span>
+          <p>27℃を超える暑さは熱中症・脱水のリスク、低温は疑似冬眠のリスクにつながります。夏はエアコンを基本に、冬は冷え込みすぎない工夫を。疑似冬眠に気づいたときの対処は<a href="hamster-byoki.html">ハムスターの病気ガイド</a>で、温度管理に役立つアイテムは<a href="hamster-item.html">飼育アイテムガイド</a>で紹介しています。</p>
+        </div>
+      </div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>ケージには巣箱・床材・回し車・砂浴び場を</h2>
+      <p>
+        ハムスターのケージに欠かせないのが、まず巣箱です。ハムスターには隠れて眠る習性があり、身を隠せる場所がないと落ち着いて休めません。この点は複数の飼育ガイドで一致しており、「ケージには巣箱が必須」と考えておいてください。次に床材。床材の厚みについては情報源によって具体的な数値がまちまちですが、「数cm程度、体が埋まるくらい」を目安に敷いておくと、潜ったり掘ったりといった本来の行動がしやすくなります。そして回し車。ハムスターは運動量の多い動物なので、走る場所を用意してあげる必要があります。サイズは「体格に合った、走っているときに背中が反らない大きさ」を基準に選んでください。具体的な直径のcm数は情報源によってばらつきが大きいため、ここでは数値を挙げませんが、小さすぎる回し車で背中が反り返っている状態は避けたい、というのが共通したポイントです。最後に砂浴び場。ハムスターは砂を浴びて皮脂や汚れを落とす習性があるため、専用の砂と容器を用意しましょう。なお、水浴びはさせないでください。
+      </p>
+      <p class="article-source">
+        出典: GEX公式(ケージ内環境・巣箱や回し車等の必要性) <a href="https://www.gex-fp.co.jp/animal/breed/hamster/supplies/" target="_blank" rel="noopener">gex-fp.co.jp</a> / けい動物医療センター(ケージ内環境の必要性) <a href="https://kei-animal.com/about/hamster.html" target="_blank" rel="noopener">kei-animal.com</a>(床材の厚みと回し車の寸法は情報源により差があります)
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>昼間は寝ている。無理に起こさないのが思いやり</h2>
+      <p>
+        ハムスターは昼間に眠り、夜になってから活発に動き出す動物です。飼い主が起きて活動している時間帯に、ハムスターはぐっすり眠っている、ということになります。かわいくてつい構いたくなりますが、昼間に無理に起こすのは避けてください。この点は複数の動物病院サイトで一致しており、実際に無理に起こし続けた結果、ストレスや体調不良につながった事例も報告されています。昼間のケージは、明るく静かな場所に置いておくのが基本。触れ合いたいなら、ハムスターが自分から起きて活動を始める夕方以降に時間を合わせるのがおすすめです。「こちらの都合ではなく、ハムスターの生活リズムに合わせる」という姿勢が、長く仲良く暮らすうえでいちばん大切な心構えかもしれません。
+      </p>
+      <p class="article-source">
+        出典: サム動物病院(昼間は静かに寝かせる・夜行性への配慮) <a href="https://www.samvet.jp/exotic/e04.html" target="_blank" rel="noopener">samvet.jp</a>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>ゴールデンハムスターなどは単独飼育が基本</h2>
+      <p>
+        「1匹だと寂しいのでは」と思って、2匹目を迎えたくなる方もいるかもしれません。ですが、ゴールデンハムスターなどは1匹ずつ飼う単独飼育が基本です。同じケージで複数を同居させると、ケンカやそれによるケガの原因になります。これは動物病院系の複数の情報源で一致している、はっきりしたポイントです。うさぎのように「馴化期間をかければ同居できる」という考え方ではなく、「そもそも1匹で暮らすのが自然な動物」と捉えておくほうが安全です。複数のハムスターを迎えたい場合は、ケージを1匹に1つずつ用意してください。「ひとりでかわいそう」ではなく「ひとりが落ち着く」のがハムスターなのだ、と思ってあげると、飼い主の気持ちも楽になります。
+      </p>
+      <p class="article-source">
+        出典: けい動物医療センター(単独飼育が基本・多頭飼いのリスク) <a href="https://kei-animal.com/about/hamster.html" target="_blank" rel="noopener">kei-animal.com</a> / アニコム損保(単独飼育が基本・多頭飼いのリスク) <a href="https://mag.anicom-sompo.co.jp/15195" target="_blank" rel="noopener">mag.anicom-sompo.co.jp</a>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>慣らし方は「最初は触らない」から始める</h2>
+      <p>
+        迎えたばかりのハムスターは、知らない場所に連れてこられて緊張しています。ここで最初にやるべきことは、触ることではなく、そっとしておくことです。迎えてすぐは無理に手を出さず、新しい環境に慣れる時間を与えてください。落ち着いてきたら、おやつを手のひらにのせて差し出すなど、ハムスターのほうから近づいてくるのを待つ形で、少しずつ距離を縮めていきます。このとき、急に手を動かしたり、大きな音を立てたりしないことが大切です。急な動きや音は、小さな体のハムスターを驚かせてしまいます。「何日でなつく」といった具体的な日数について、はっきりした裏づけは確認できていません。個体差も大きいので、日数を決めて焦るのではなく、その子のペースに合わせて根気よく付き合ってあげてください。
+      </p>
+      <p class="article-source">
+        出典: アニコム損保(慣らし方・無理に触らない等) <a href="https://mag.anicom-sompo.co.jp/15195" target="_blank" rel="noopener">mag.anicom-sompo.co.jp</a>(具体的な日数は明確な裏づけなし)
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>掃除は「汚れた部分はこまめに、全体はたまに」</h2>
+      <p>
+        ケージの掃除は、頻度の考え方を2段階に分けておくと迷いません。ひとつは部分掃除。トイレや床材の汚れた部分は、毎日から数日おきにこまめに取り除きます。もうひとつは全体の大掃除で、こちらは1〜4週間に1回程度が目安です。情報源によって頻度には幅があるので、汚れ具合や季節に応じて調整してください。「毎日すべてをぴかぴかにする」と気負うよりも、「汚れたところだけこまめに、全体はたまに」というリズムのほうが、飼い主にとっても無理なく続けやすいでしょう。
+      </p>
+      <p class="article-source">
+        出典: けい動物医療センター(掃除の頻度) <a href="https://kei-animal.com/about/hamster.html" target="_blank" rel="noopener">kei-animal.com</a> / アニコム損保(掃除の頻度) <a href="https://mag.anicom-sompo.co.jp/15195" target="_blank" rel="noopener">mag.anicom-sompo.co.jp</a>(頻度は情報源により幅があります)
+      </p>
+
+      <div class="trivia-box">
+        <span class="trivia-box-label">豆知識プラスワン</span>
+        <p>ハムスターが砂を浴びるのは、水の代わりに砂で皮脂や汚れを落とす習性があるからです。だから飼育下でも専用の砂と容器を用意し、水浴びはさせないのが基本になります。ハムスターの体の不思議をもっと知りたい方は、<a href="hamster-tokucho.html">ハムスターの体の特徴ガイド</a>もあわせてどうぞ。</p>
+      </div>
+
+      <details class="mini-quiz">
+        <summary>ミニクイズ:ゴールデンハムスターは、仲良くなれば同じケージで2匹一緒に飼ってよい?(タップして答えを見る)</summary>
+        <p><span class="quiz-label">こたえ</span>×。ゴールデンハムスターなどは単独飼育が基本で、同居はケンカやケガの原因になるとされています。複数飼うならケージは1匹に1つずつ用意しましょう。</p>
+      </details>
+    </article>
+
+    <div class="related-tools">
+      <a class="link-btn" href="hamster-esa.html">ハムスターの餌の基本ガイドへ</a>
+      <div class="article-nav">
+        <a class="link-btn link-btn-secondary" href="hamster-item.html">ハムスターの飼育アイテムガイドへ</a>
+        <a class="link-btn link-btn-secondary" href="hamster-tokucho.html">ハムスターの体の特徴ガイドへ</a>
+      </div>
+    </div>
+    <div class="share-row">
+      <a class="link-btn-secondary" href="https://twitter.com/intent/tweet?text=%E3%83%8F%E3%83%A0%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AE%E9%A3%BC%E3%81%84%E6%96%B9%E3%81%AE%E5%9F%BA%E6%9C%AC%3A%E6%B8%A9%E5%BA%A6%E7%AE%A1%E7%90%86%E3%83%BB%E5%8D%98%E7%8B%AC%E9%A3%BC%E8%82%B2%E3%83%BB%E6%85%A3%E3%82%89%E3%81%97%E6%96%B9%20%7C%20Tiny%20Wonders&url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fkurashi%2Fhamster-kaikata.html" target="_blank" rel="noopener">Xでシェア</a>
+      <a class="link-btn-secondary" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fkurashi%2Fhamster-kaikata.html" target="_blank" rel="noopener">LINEでシェア</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/?utm_source=tiny-wonders&utm_medium=referral&utm_campaign=cross_site" target="_blank" rel="noopener">🔬 Desk Animals Lab</a>
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
+    <p>This site's content is produced with AI assistance.</p>
+    <p>本記事は一般的な情報提供を目的としたもので、獣医学的な診断・助言に代わるものではありません。</p>
+    <p>This content is for general information only and is not veterinary advice.</p>
+    <p><a href="../privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
