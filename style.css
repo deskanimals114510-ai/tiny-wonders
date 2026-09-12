@@ -914,6 +914,7 @@ body {
   padding: 28px 22px;
   box-shadow: var(--shadow-soft);
 }
+.article-card { counter-reset: h2-num; }
 .article-card h2 {
   display: flex;
   align-items: center;
@@ -925,6 +926,22 @@ body {
   color: var(--ink);
 }
 .article-card h2:first-child { margin-top: 0; }
+.article-card h2::before {
+  counter-increment: h2-num;
+  content: counter(h2-num, decimal-leading-zero);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  background: var(--paper);
+}
 .h2-icon {
   flex-shrink: 0;
   width: 20px;
