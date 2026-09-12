@@ -24,6 +24,8 @@
   --zatsugaku-tint: #dde8df;
   --zannen: #bf5a2c;
   --zannen-tint: #f3ddce;
+  --kurashi: #3d5a73;
+  --kurashi-tint: #dde5ec;
   --accent-hover: #dba13f;
   --on-accent: #2b2521;
   --shadow-soft: 0 8px 22px rgba(60, 40, 10, 0.08);
@@ -45,6 +47,8 @@
     --zatsugaku-tint: #2c3a30;
     --zannen: #d98a5c;
     --zannen-tint: #4a3020;
+    --kurashi: #8bb0cf;
+    --kurashi-tint: #263440;
     --accent-hover: #eabb78;
     --on-accent: #241f18;
     --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.35);
@@ -65,6 +69,8 @@
   --zatsugaku-tint: #2c3a30;
   --zannen: #d98a5c;
   --zannen-tint: #4a3020;
+  --kurashi: #8bb0cf;
+  --kurashi-tint: #263440;
   --accent-hover: #eabb78;
   --on-accent: #241f18;
   --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.35);
@@ -216,6 +222,10 @@ body {
 .category-badge--zannen {
   color: var(--zannen);
   background: var(--zannen-tint);
+}
+.category-badge--kurashi {
+  color: var(--kurashi);
+  background: var(--kurashi-tint);
 }
 
 @media (min-width: 640px) {
@@ -452,6 +462,8 @@ body {
 #zatsugaku .preview-row:hover .preview-row-text strong { color: var(--zatsugaku); }
 #zannen .preview-row-icon { color: var(--zannen); }
 #zannen .preview-row:hover .preview-row-text strong { color: var(--zannen); }
+#kurashi .preview-row-icon { color: var(--kurashi); }
+#kurashi .preview-row:hover .preview-row-text strong { color: var(--kurashi); }
 .preview-more { margin-top: 18px; text-align: center; }
 
 /* ---- ボタン ---- */
@@ -950,6 +962,7 @@ body {
 }
 .h2-icon svg { display: block; width: 100%; height: 100%; }
 .article-card--zannen .h2-icon { color: var(--zannen); }
+.article-card--kurashi .h2-icon { color: var(--kurashi); }
 
 /* ---- 記事中の2枚目イラスト(見出しの合間に挿入する補助図版) ---- */
 .article-inline-illustration {
