@@ -98,6 +98,7 @@ body {
 }
 
 .page-home #app { max-width: 900px; }
+.page-hub #app { max-width: 960px; }
 
 @media (min-width: 640px) {
   #app { padding: 56px 32px 40px; }
@@ -1086,6 +1087,13 @@ p.article-lead {
 }
 @media (max-width: 520px) {
   .article-list-item .article-thumb { width: 64px; height: 48px; }
+}
+@media (min-width: 700px) {
+  .page-hub .article-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
 /* ---- アクセシビリティ ---- */
