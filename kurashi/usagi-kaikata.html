@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>うさぎの飼い方の基本:温度管理・お手入れ・多頭飼いの注意点 | Tiny Wonders</title>
+<meta name="description" content="うさぎの飼い方の基本をやさしく解説。適正温度18〜24℃・湿度40〜60%という室内環境の目安、部屋んぽの時間、ブラッシングや爪切りの頻度、多頭飼いで必要になる去勢・避妊と馴化期間、トイレのしつけのコツまで、初めてうさぎを迎える方が押さえておきたいポイントをまとめました。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="うさぎの飼い方の基本:温度管理・お手入れ・多頭飼いの注意点">
+<meta property="og:description" content="適正温度・湿度の目安から、部屋んぽ、ブラッシング・爪切りの頻度、多頭飼いとトイレのしつけまで、うさぎの飼い方の基本を解説します。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-kaikata.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-kaikata.html">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/kurashi-usagi-kaikata.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="うさぎの飼い方の基本:温度管理・お手入れ・多頭飼いの注意点">
+<meta name="twitter:description" content="適正温度・湿度の目安から、部屋んぽ、ブラッシング・爪切りの頻度、多頭飼いとトイレのしつけまで、うさぎの飼い方の基本を解説します。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/kurashi-usagi-kaikata.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../analytics.js"></script>
+<script defer src="../reading-time.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "うさぎの飼い方の基本:温度管理・お手入れ・多頭飼いの注意点",
+  "description": "適正温度・湿度の目安から、部屋んぽ、ブラッシング・爪切りの頻度、多頭飼いとトイレのしつけまで、うさぎの飼い方の基本を解説します。",
+  "image": "https://deskanimals114510-ai.github.io/tiny-wonders/images/kurashi-usagi-kaikata.jpg",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-kaikata.html",
+  "inLanguage": "ja",
+  "isPartOf": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website" },
+  "publisher": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization" },
+  "datePublished": "2026-09-12T00:00:00+09:00",
+  "dateModified": "2026-09-12T00:00:00+09:00"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tiny Wonders", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
+    { "@type": "ListItem", "position": 2, "name": "動物とのくらし方", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/" },
+    { "@type": "ListItem", "position": 3, "name": "うさぎの飼い方の基本:温度管理・お手入れ・多頭飼いの注意点", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-kaikata.html" }
+  ]
+}
+</script>
+</head>
+<body class="page-article">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="../index.html">Tiny Wonders</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a class="back-link" href="index.html">動物とのくらし方</a></nav>
+    <p class="article-badge-row"><span class="category-badge category-badge--kurashi">飼い方ガイド</span></p>
+    <h1><span class="grad-text">うさぎの飼い方の基本:温度管理・お手入れ・多頭飼いの注意点</span></h1>
+    <p class="article-date">公開日: 2026年9月12日 / 更新日: 2026年9月12日</p>
+  </header>
+
+  <main data-pagefind-body class="tool-main" id="main-content">
+    <article class="article-card article-card--kurashi">
+      <img class="article-illustration" src="../images/kurashi-usagi-kaikata.jpg" alt="室内でくつろぐうさぎと、そばに置かれた温度計のイラスト" width="800" height="600">
+
+      <p class="article-lead">
+        <span class="lead-ja">うさぎとの暮らしは、静かで穏やかな時間に満ちています。ただ、犬や猫とは体のつくりも習性も違うため、迎える前に「うさぎならではの基本」を知っておくと、お互いにずっと過ごしやすくなります。</span>
+        <span class="lead-en">Rabbits make quiet, gentle companions, but they are not small dogs or cats. Knowing the basics of temperature, exercise, grooming, and multi-rabbit households before you bring one home makes life easier for both of you.</span>
+      </p>
+
+      <div class="diag-aside">
+        <p>🔍 ちょっと寄り道:うさぎ同士の同居にも相性があるように、人同士にも相性があります。気になった方は<a href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断</a>を試してみてください。</p>
+      </div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>室温は18〜24℃、湿度は40〜60%が基本</h2>
+      <p>
+        うさぎの飼い方で最初に押さえておきたいのが、部屋の温度と湿度です。適正温度は18〜24℃、適正湿度は40〜60%とされており、複数の飼育ガイドがこの範囲で一致しています。ここから大きく外れる季節、とりわけ夏が要注意です。うさぎは肉球から汗をかくことも、犬のように舌を出して呼吸することもできず、暑いときに体温を逃がす手段をほとんど持っていません。そのため夏場は室温27℃以下・湿度70%以下を目安に保ち、30℃を超えると熱中症のリスクが高まると考えておきましょう。「人が少し涼しいと感じるくらい」を意識しておくと、この目安に収めやすくなります。温度計と湿度計をケージの近くに置いて、毎日ひと目で確認できるようにしておくと、気づかないうちに部屋が暑くなっていた、という事態を避けやすくなります。
+      </p>
+      <p class="article-source">
+        出典: アニコム損保(うさぎの適正温度・暑さ対策) <a href="https://www.anicom-sompo.co.jp/usagi/2988.html" target="_blank" rel="noopener">anicom-sompo.co.jp</a>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>「部屋んぽ」で毎日体を動かす時間をつくる</h2>
+      <p>
+        ケージの中だけで一日を過ごすのは、うさぎにとって少し退屈で、運動量も足りなくなりがちです。そこで多くの飼い主さんが取り入れているのが、部屋の中でうさぎを自由に歩かせる「部屋んぽ」です。時間の目安としては、毎日1回30分〜1時間ほど、1日1〜2回、忙しい日が続く場合でも最低週3〜4回は確保したい、という目安があります。これは飼育者コミュニティで共有されてきた経験則で、獣医学的な一次情報として確認できているわけではありませんが、「毎日少しずつ」を基本にしつつ、難しい日は無理をしない、という現実的なラインとして参考になります。部屋んぽの前には、かじられて困るものや入り込むと危ない場所がないかを見回して、安全な環境を整えておくのが大切です。人がそばで見守りながら過ごす時間は、運動になるだけでなく、うさぎと飼い主の距離を縮める時間にもなります。
+      </p>
+      <p class="article-source">
+        出典: 飼育者サイト・はなふわうさぎ(部屋んぽの時間の目安) <a href="https://hanahuwa-usagi.jp/heyanpozikan/" target="_blank" rel="noopener">hanahuwa-usagi.jp</a>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>ブラッシングと爪切りの頻度は「毛の長さと季節」で決まる</h2>
+      <p>
+        うさぎのお手入れの柱は、ブラッシングと爪切りの2つです。ブラッシングの頻度は、短毛種で週1回、長毛種で週2〜3回が目安。そして年に4回ある換毛期には、抜け毛の量が一気に増えるため、1〜2日に1回へと回数を増やすのが基本です。この頻度の方向性は、動物クリニックの公式サイトと飼育者向けのサイトとで一致しています。換毛期は「普段の倍以上のペース」と覚えておくと、抜け毛に追われずに済みます。爪切りについては、1〜2ヶ月に1回が目安とされています。こちらは飼育者サイト発信の情報で、獣医師による具体的な頻度の裏づけまでは確認できていませんが、伸びすぎる前に定期的に整えてあげる、という考え方でひとまず問題ないでしょう。自宅での爪切りに不安がある場合は、動物病院やうさぎ専門店にお願いするのもひとつの方法です。
+      </p>
+      <p class="article-source">
+        出典: 動物クリニック公式サイト(ブラッシング頻度) <a href="https://heart-ac-kmt.com/useful-information/" target="_blank" rel="noopener">heart-ac-kmt.com</a> / 飼育者サイト(ブラッシング・爪切りの頻度) <a href="https://pyonpyonhouse.com/rabbit-brushing-nail-clipper-frequency/" target="_blank" rel="noopener">pyonpyonhouse.com</a>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>多頭飼いを考えるなら、去勢・避妊と「馴化期間」が前提</h2>
+      <p>
+        「1羽だと寂しいのでは」と心配して、2羽目を迎えることを考える方も多いかもしれません。ただ、うさぎは1羽でも飼い主との時間がしっかりあれば孤独になりにくいとされており、多頭飼いは必須ではありません。それでも多頭飼いを選ぶなら、いくつか前提となる条件があります。まず、去勢・避妊をしていない個体同士だと繁殖してしまうため、手術が必要になること。推奨時期は生後6〜12ヶ月とされています。次に、初対面のうさぎ同士をいきなり同じ空間に入れるのではなく、まずは数ヶ月かけて少しずつ慣らす馴化期間が必要だということ。そして、慣れたあとでもケージは1頭に1つ用意し、食事は同居後も別々に与える、という運用が基本です。「仲良くなったら全部いっしょでいい」とはならない点は、意外に思われるかもしれません。多頭飼いは、うさぎにとっての幸せというより、飼い主側の準備と覚悟が問われる選択だと考えておくと、判断を誤りにくいでしょう。
+      </p>
+      <p class="article-source">
+        出典: アニコム損保(単独飼育について) <a href="https://www.anicom-sompo.co.jp/usagi/4615.html" target="_blank" rel="noopener">anicom-sompo.co.jp</a> / アニコム損保(多頭飼い・トイレのしつけ) <a href="https://www.anicom-sompo.co.jp/usagi/1673.html" target="_blank" rel="noopener">anicom-sompo.co.jp</a>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>トイレのしつけは「匂い」を味方につける</h2>
+      <p>
+        うさぎのトイレのしつけで有効とされているのが、排泄物の匂いを染み込ませたティッシュをトイレに入れておく方法です。「ここがトイレ」と伝えるうえで、自分の匂いがその場所にあることが手がかりになる、という考え方です。うさぎが排泄したあとのティッシュをトイレに入れておき、匂いをトイレに移していくというシンプルな方法なので、迎えた初日から試しやすいのも利点です。ただし、覚えられるかどうかには個体差があり、すぐに覚える子もいれば、時間がかかる子もいます。「うちの子はまだ覚えない」と焦らず、匂いの手がかりを根気よく用意しながら、その子のペースに付き合ってあげてください。
+      </p>
+      <p class="article-source">
+        出典: アニコム損保(多頭飼い・トイレのしつけ) <a href="https://www.anicom-sompo.co.jp/usagi/1673.html" target="_blank" rel="noopener">anicom-sompo.co.jp</a>
+      </p>
+
+      <div class="trivia-box">
+        <span class="trivia-box-label">豆知識プラスワン</span>
+        <p>うさぎが暑さに弱いのは、肉球から汗をかくことも、舌を出して熱を逃がすこともできない体のつくりのせいです。だからこそ、室温の管理は飼い主の大切な役目になります。うさぎの体の不思議をもっと知りたい方は、<a href="usagi-tokucho.html">うさぎの体の特徴ガイド</a>もあわせてどうぞ。</p>
+      </div>
+
+      <details class="mini-quiz">
+        <summary>ミニクイズ:多頭飼いで仲良くなったうさぎ同士は、ケージも1つにまとめてよい?(タップして答えを見る)</summary>
+        <p><span class="quiz-label">こたえ</span>×。慣れたあとでもケージは1頭に1つ用意し、食事は同居後も別々に与えるのが基本とされています。</p>
+      </details>
+    </article>
+
+    <div class="related-tools">
+      <a class="link-btn" href="usagi-esa.html">うさぎの餌の基本ガイドへ</a>
+      <div class="article-nav">
+        <a class="link-btn link-btn-secondary" href="usagi-item.html">うさぎの飼育アイテムガイドへ</a>
+        <a class="link-btn link-btn-secondary" href="usagi-tokucho.html">うさぎの体の特徴ガイドへ</a>
+      </div>
+    </div>
+    <div class="share-row">
+      <a class="link-btn-secondary" href="https://twitter.com/intent/tweet?text=%E3%81%86%E3%81%95%E3%81%8E%E3%81%AE%E9%A3%BC%E3%81%84%E6%96%B9%E3%81%AE%E5%9F%BA%E6%9C%AC%3A%E6%B8%A9%E5%BA%A6%E7%AE%A1%E7%90%86%E3%83%BB%E3%81%8A%E6%89%8B%E5%85%A5%E3%82%8C%E3%83%BB%E5%A4%9A%E9%A0%AD%E9%A3%BC%E3%81%84%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9%20%7C%20Tiny%20Wonders&url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fkurashi%2Fusagi-kaikata.html" target="_blank" rel="noopener">Xでシェア</a>
+      <a class="link-btn-secondary" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fkurashi%2Fusagi-kaikata.html" target="_blank" rel="noopener">LINEでシェア</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/?utm_source=tiny-wonders&utm_medium=referral&utm_campaign=cross_site" target="_blank" rel="noopener">🔬 Desk Animals Lab</a>
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
+    <p>This site's content is produced with AI assistance.</p>
+    <p>本記事は一般的な情報提供を目的としたもので、獣医学的な診断・助言に代わるものではありません。</p>
+    <p>This content is for general information only and is not veterinary advice.</p>
+    <p><a href="../privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

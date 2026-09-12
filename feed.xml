@@ -6,14 +6,62 @@
   <atom:link href="https://deskanimals114510-ai.github.io/tiny-wonders/feed.xml" rel="self" type="application/rss+xml" />
   <description>犬猫を中心にした動物の「なぜ?」豆知識と、笑える「ざんねん」な習性を、専門家の知見にもとづきやさしく解説する動物トリビアマガジンです。</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 12 Sep 2026 16:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 12 Sep 2026 17:00:00 +0900</lastBuildDate>
   <generator>Tiny Wonders static feed generator</generator>
+  <item>
+    <title>うさぎの代表的な品種7選:大きさと性格の違い</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-shurui.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-shurui.html</guid>
+    <pubDate>Sat, 12 Sep 2026 17:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>ネザーランドドワーフからダッチまで、日本でよく流通する品種の体格や性格の傾向を紹介します。</description>
+  </item>
+  <item>
+    <title>うさぎの体の特徴:飼う前に知っておきたい歯と体温調節のこと</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-tokucho.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-tokucho.html</guid>
+    <pubDate>Sat, 12 Sep 2026 17:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>一生伸び続ける歯や暑さへの弱さなど、飼育に直結する体の特徴をまとめました。</description>
+  </item>
+  <item>
+    <title>うさぎの飼い方の基本:温度管理・お手入れ・多頭飼いの注意点</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-kaikata.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-kaikata.html</guid>
+    <pubDate>Sat, 12 Sep 2026 17:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>適正な室温・湿度からブラッシング頻度、多頭飼いの注意点まで基本をまとめました。</description>
+  </item>
+  <item>
+    <title>うさぎの餌の基本:牧草とペレットの与え方、与えてはいけない食べ物</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-esa.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-esa.html</guid>
+    <pubDate>Sat, 12 Sep 2026 17:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>牧草中心の基本構成と、ねぎ類・アボカドなど与えてはいけない食べ物を解説します。</description>
+  </item>
+  <item>
+    <title>うさぎの飼育アイテム:ケージ・給水器・お手入れ用品の選び方</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-item.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-item.html</guid>
+    <pubDate>Sat, 12 Sep 2026 17:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>足裏や歯、体温を守る視点で、ケージからブラシまで必要なアイテムを紹介します。</description>
+  </item>
+  <item>
+    <title>うさぎの体調不良のサイン:早めに気づきたい病気のとき</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-byoki.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-byoki.html</guid>
+    <pubDate>Sat, 12 Sep 2026 17:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>食欲・排泄物・様子の変化から、早めに気づくためのポイントをまとめました。</description>
+  </item>
   <item>
     <title>犬猫の花粉症シーズンのケア:症状と対策</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kafun-care.html</link>
     <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kafun-care.html</guid>
     <pubDate>Sat, 12 Sep 2026 16:00:00 +0900</pubDate>
-    <category>犬猫とのくらし方</category>
+    <category>動物とのくらし方</category>
     <description>花粉症は皮膚に症状が出やすいという特徴と、帰宅後にできる具体的なケア方法を解説します。</description>
   </item>
   <item>
@@ -21,7 +69,7 @@
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kafun-items.html</link>
     <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kafun-items.html</guid>
     <pubDate>Sat, 12 Sep 2026 16:00:00 +0900</pubDate>
-    <category>犬猫とのくらし方</category>
+    <category>動物とのくらし方</category>
     <description>帰宅後のお手入れから室内対策まで、花粉シーズンに役立つ道具をタイプ別に紹介します。</description>
   </item>
   <item>
@@ -29,7 +77,7 @@
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/atsusa-care.html</link>
     <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/atsusa-care.html</guid>
     <pubDate>Sat, 12 Sep 2026 16:00:00 +0900</pubDate>
-    <category>犬猫とのくらし方</category>
+    <category>動物とのくらし方</category>
     <description>散歩に適した時間帯の選び方や、留守番中の室温管理など、暑い時期に見直したいポイントを解説します。</description>
   </item>
   <item>
@@ -37,7 +85,7 @@
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/atsusa-items.html</link>
     <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/atsusa-items.html</guid>
     <pubDate>Sat, 12 Sep 2026 16:00:00 +0900</pubDate>
-    <category>犬猫とのくらし方</category>
+    <category>動物とのくらし方</category>
     <description>クールマットや循環式給水器など、暑い時期の暮らしに役立つ道具をタイプ別に紹介します。</description>
   </item>
   <item>
@@ -53,7 +101,7 @@
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kanmouki-care.html</link>
     <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kanmouki-care.html</guid>
     <pubDate>Sat, 12 Sep 2026 12:00:00 +0900</pubDate>
-    <category>犬猫とのくらし方</category>
+    <category>動物とのくらし方</category>
     <description>ダブルコート・シングルコートの違いと、正しいブラッシングの頻度・道具の使い分けを解説します。</description>
   </item>
   <item>
@@ -61,7 +109,7 @@
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kanmouki-brush.html</link>
     <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/kanmouki-brush.html</guid>
     <pubDate>Sat, 12 Sep 2026 12:00:00 +0900</pubDate>
-    <category>犬猫とのくらし方</category>
+    <category>動物とのくらし方</category>
     <description>抜け毛対策の道具をタイプ別に紹介、それぞれの得意分野と選び方のポイントを解説します。</description>
   </item>
   <item>
@@ -69,7 +117,7 @@
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/shinia-kurashi.html</link>
     <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/shinia-kurashi.html</guid>
     <pubDate>Sat, 12 Sep 2026 12:00:00 +0900</pubDate>
-    <category>犬猫とのくらし方</category>
+    <category>動物とのくらし方</category>
     <description>嗅覚の変化に合わせた食事の工夫や、無理のないフードの切り替え方など、シニア期の暮らしのポイントを解説します。</description>
   </item>
   <item>
@@ -77,7 +125,7 @@
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/shinia-items.html</link>
     <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/shinia-items.html</guid>
     <pubDate>Sat, 12 Sep 2026 12:00:00 +0900</pubDate>
-    <category>犬猫とのくらし方</category>
+    <category>動物とのくらし方</category>
     <description>関節や体温調節が気になる時期に見直したい、住環境まわりのグッズをタイプ別に紹介します。</description>
   </item>
   <item>

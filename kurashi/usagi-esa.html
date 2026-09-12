@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>うさぎの餌の基本:牧草とペレットの与え方、与えてはいけない食べ物 | Tiny Wonders</title>
+<meta name="description" content="うさぎの餌の基本をやさしく解説。チモシー(牧草)中心+ペレット+少量の野菜という基本構成、牧草を常時与える理由(歯の摩耗と腸内環境)、ペレットは体重の1.5〜2%前後という目安、ねぎ類・じゃがいもの芽・アボカド・チョコレートなど与えてはいけない食べ物の一覧、そして水分摂取の大切さまでまとめました。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="うさぎの餌の基本:牧草とペレットの与え方、与えてはいけない食べ物">
+<meta property="og:description" content="牧草中心の基本構成、ペレットと野菜の量の目安、ねぎ類・じゃがいもの芽・アボカドなど与えてはいけない食べ物、水分摂取まで、うさぎの食事の基本を解説します。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-esa.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-esa.html">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/kurashi-usagi-esa.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="うさぎの餌の基本:牧草とペレットの与え方、与えてはいけない食べ物">
+<meta name="twitter:description" content="牧草中心の基本構成、ペレットと野菜の量の目安、ねぎ類・じゃがいもの芽・アボカドなど与えてはいけない食べ物、水分摂取まで、うさぎの食事の基本を解説します。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/kurashi-usagi-esa.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../analytics.js"></script>
+<script defer src="../reading-time.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "うさぎの餌の基本:牧草とペレットの与え方、与えてはいけない食べ物",
+  "description": "牧草中心の基本構成、ペレットと野菜の量の目安、ねぎ類・じゃがいもの芽・アボカドなど与えてはいけない食べ物、水分摂取まで、うさぎの食事の基本を解説します。",
+  "image": "https://deskanimals114510-ai.github.io/tiny-wonders/images/kurashi-usagi-esa.jpg",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-esa.html",
+  "inLanguage": "ja",
+  "isPartOf": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website" },
+  "publisher": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization" },
+  "datePublished": "2026-09-12T00:00:00+09:00",
+  "dateModified": "2026-09-12T00:00:00+09:00"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tiny Wonders", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
+    { "@type": "ListItem", "position": 2, "name": "動物とのくらし方", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/" },
+    { "@type": "ListItem", "position": 3, "name": "うさぎの餌の基本:牧草とペレットの与え方、与えてはいけない食べ物", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/usagi-esa.html" }
+  ]
+}
+</script>
+</head>
+<body class="page-article">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="../index.html">Tiny Wonders</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a class="back-link" href="index.html">動物とのくらし方</a></nav>
+    <p class="article-badge-row"><span class="category-badge category-badge--kurashi">エサガイド</span></p>
+    <h1><span class="grad-text">うさぎの餌の基本:牧草とペレットの与え方、与えてはいけない食べ物</span></h1>
+    <p class="article-date">公開日: 2026年9月12日 / 更新日: 2026年9月12日</p>
+  </header>
+
+  <main data-pagefind-body class="tool-main" id="main-content">
+    <article class="article-card article-card--kurashi">
+      <img class="article-illustration" src="../images/kurashi-usagi-esa.jpg" alt="牧草を食べるうさぎと、そばに置かれたペレットの器のイラスト" width="800" height="600">
+
+      <p class="article-lead">
+        <span class="lead-ja">うさぎの食事は「牧草が主食」。この一点を押さえるだけで、歯と胃腸の健康は大きく守られます。ここでは基本の組み立て方と、絶対に与えてはいけない食べ物を整理しました。</span>
+        <span class="lead-en">A rabbit's diet starts and ends with hay. Get that one thing right and you protect both teeth and gut. Here is how to build a daily menu, and which foods must never go in the bowl.</span>
+      </p>
+
+      <div class="diag-aside">
+        <p>🔍 ちょっと寄り道:動物の行動には理由があるように、人の性格にも傾向があります。気になった方は<a href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断(MBTI)</a>も覗いてみてください。</p>
+      </div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>基本構成は「牧草中心+ペレット+少量の野菜」</h2>
+      <p>
+        うさぎの食事の基本構成は、チモシーなどの牧草を中心に、ペレットと少量の野菜を組み合わせる形です。獣医師監修の飼育ガイドでも、この「牧草が主役、ペレットと野菜は脇役」という考え方が示されています。牧草はいつでも食べられる状態にしておくのが理想で、時間を決めて与えるのではなく常に置いておく「常時給餌」が基本。ペレットの量については情報源によって幅があり、「体重1kgあたり10〜15g」「体重の約2%」など複数の目安が示されていますが、おおよそ体重の1.5〜2%前後と考えておくとよいでしょう。体重2kgのうさぎなら1日30〜40g程度、というイメージです。野菜は1日1〜2種類、少量が目安です。おやつ感覚でつい増やしたくなりますが、野菜もペレットも「多いほどいい」ものではなく、牧草を食べる量を減らしてしまわない範囲に収めるのが大切です。
+      </p>
+      <p class="article-source">
+        出典: いけだ動物病院(うさぎの食事、獣医師監修) <a href="https://ikedaanihos.com/rabbit-diet/" target="_blank" rel="noopener">ikedaanihos.com</a> / かねこ動物病院(うさぎの食事) <a href="https://kanekoah.com/clinical-information/rabbit-food" target="_blank" rel="noopener">kanekoah.com</a>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>牧草が主食なのは、歯と腸のため</h2>
+      <p>
+        なぜ牧草がそこまで重要なのでしょうか。理由は大きく2つあります。ひとつは歯です。うさぎの歯は一生伸び続けるため、繊維の多い牧草をしっかり咀嚼することで歯が自然に摩耗し、伸びすぎによるトラブルの予防になります。もうひとつは腸です。牧草をよく噛んで食べることは腸内環境を整え、消化を助けることにつながります。この2点は、複数の動物病院が共通して挙げているポイントで、「牧草をいつでも食べられるようにしておく」という基本ルールの根拠でもあります。ペレットや野菜だけでお腹が満たされてしまうと、肝心の牧草を食べる量が減り、歯にも腸にもよくない状態を招きかねません。「今日はどのくらい牧草を食べたかな」と毎日ちらりと確認する習慣が、うさぎの健康を守るいちばん身近な方法です。
+      </p>
+      <p class="article-source">
+        出典: いけだ動物病院(うさぎの食事、獣医師監修) <a href="https://ikedaanihos.com/rabbit-diet/" target="_blank" rel="noopener">ikedaanihos.com</a> / かねこ動物病院(うさぎの食事) <a href="https://kanekoah.com/clinical-information/rabbit-food" target="_blank" rel="noopener">kanekoah.com</a>
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>与えてはいけない食べ物一覧</h2>
+      <p>
+        うさぎに与えてはいけない食べ物は、人の食卓にごく普通に並ぶものも多く、「ちょっとだけ」のつもりが深刻な中毒につながることがあります。以下は必ず避けてください。
+      </p>
+      <ul>
+        <li><strong>ねぎ類</strong>(長ねぎ・玉ねぎ・にんにく・ニラ・エシャロット・チャイブなど):赤血球が破壊されて溶血性貧血を起こします。</li>
+        <li><strong>じゃがいもの芽・青くなった皮、じゃがいも/さつまいも/さといもの葉</strong>:有毒です。</li>
+        <li><strong>生の大豆・マメ類</strong>:中毒や消化不良の原因になります。</li>
+        <li><strong>ルバーブ</strong>(特に葉):重度の中毒を起こす可能性があります。</li>
+        <li><strong>トマトの葉・茎</strong>:トマチンという毒を含みます。トマトの実そのものは少量なら基本的に問題ないとされていますが、葉と茎は避けてください。</li>
+        <li><strong>アボカド</strong>:中毒の原因になるとされています。</li>
+        <li><strong>チョコレート・カフェインを含む飲み物</strong>:中毒の原因になるとされています。</li>
+        <li><strong>ヒガンバナ・スイセンなどの観葉植物</strong>:有毒とされています。部屋んぽ中にかじられないよう置き場所にも注意が必要です。</li>
+      </ul>
+      <p class="article-source">
+        出典: アニコム損保(うさぎに与えてはいけない食べ物) <a href="https://www.anicom-sompo.co.jp/usagi/2383.html" target="_blank" rel="noopener">anicom-sompo.co.jp</a> / かねこ動物病院(うさぎの食事) <a href="https://kanekoah.com/clinical-information/rabbit-food" target="_blank" rel="noopener">kanekoah.com</a>
+      </p>
+      <p>
+        これらの急性中毒を起こすものとは危険度が異なりますが、<strong>ほうれん草</strong>のようにシュウ酸を多く含む野菜は、頻繁に与えるのは避けたほうがよいと一般に言われています。一口食べたからといってすぐに命に関わるものではないものの、「毎日の野菜」の定番にはしないほうが無難でしょう。与えてよいか迷う食材があるときは、「迷ったら与えない」を原則にしておくと安心です。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>水分摂取も食事の一部</h2>
+      <p>
+        餌の話をするとき、見落とされがちなのが水です。うさぎは体重1kgあたり約120mlの水分が必要といわれており、体重2kgなら1日240ml前後というイメージになります。これはうさぎ専門店から発信されている目安で、獣医学的な一次情報での裏づけまでは確認できていませんが、「うさぎは意外とたくさん水を飲む」という感覚を持っておくには十分な数字です。飲水が不足すると、尿結石や胃腸うっ滞のリスクにつながるとされています。水をしっかり飲めているかどうかは、そのまま体調に響いてきます。給水ボトルや器の水がきちんと減っているかを、餌の補充とあわせて毎日確認する習慣をつけておきましょう。
+      </p>
+      <p class="article-source">
+        出典: うさぎ専門店発信のnote記事(うさぎの水分摂取) <a href="https://note.com/usaginomori/n/n5cfd50a39fb0" target="_blank" rel="noopener">note.com</a>
+      </p>
+
+      <div class="trivia-box">
+        <span class="trivia-box-label">豆知識プラスワン</span>
+        <p>うさぎに必要な水分量は「体重1kgあたり約120ml」といわれています。あの小さな体で、コップ1杯以上の水を毎日飲んでいる計算になるのです。専門店発信の目安なので幅はありますが、「水をよく飲む動物」と覚えておくと、飲水量の変化に気づきやすくなります。</p>
+      </div>
+
+      <details class="mini-quiz">
+        <summary>ミニクイズ:トマトは実も葉も茎も、うさぎには全部NG?(タップして答えを見る)</summary>
+        <p><span class="quiz-label">こたえ</span>×。避けるべきなのは葉と茎で、トマチンという毒を含みます。実そのものは少量なら基本的に問題ないとされていますが、迷ったら与えないのが安心です。</p>
+      </details>
+    </article>
+
+    <div class="related-tools">
+      <a class="link-btn" href="usagi-item.html">うさぎの飼育アイテムガイドへ</a>
+      <div class="article-nav">
+        <a class="link-btn link-btn-secondary" href="usagi-kaikata.html">うさぎの飼い方の基本ガイドへ</a>
+        <a class="link-btn link-btn-secondary" href="usagi-byoki.html">うさぎの病気ガイドへ</a>
+      </div>
+    </div>
+    <div class="share-row">
+      <a class="link-btn-secondary" href="https://twitter.com/intent/tweet?text=%E3%81%86%E3%81%95%E3%81%8E%E3%81%AE%E9%A4%8C%E3%81%AE%E5%9F%BA%E6%9C%AC%3A%E7%89%A7%E8%8D%89%E3%81%A8%E3%83%9A%E3%83%AC%E3%83%83%E3%83%88%E3%81%AE%E4%B8%8E%E3%81%88%E6%96%B9%E3%80%81%E4%B8%8E%E3%81%88%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E9%A3%9F%E3%81%B9%E7%89%A9%20%7C%20Tiny%20Wonders&url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fkurashi%2Fusagi-esa.html" target="_blank" rel="noopener">Xでシェア</a>
+      <a class="link-btn-secondary" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fkurashi%2Fusagi-esa.html" target="_blank" rel="noopener">LINEでシェア</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/?utm_source=tiny-wonders&utm_medium=referral&utm_campaign=cross_site" target="_blank" rel="noopener">🔬 Desk Animals Lab</a>
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
+    <p>This site's content is produced with AI assistance.</p>
+    <p>本記事は一般的な情報提供を目的としたもので、獣医学的な診断・助言に代わるものではありません。</p>
+    <p>This content is for general information only and is not veterinary advice.</p>
+    <p><a href="../privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
