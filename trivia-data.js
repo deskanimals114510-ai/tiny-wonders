@@ -40,5 +40,6 @@ window.TW_TRIVIA = [
   { category: "zannen", title: "タコはなぜ泳ぐと心臓が1つ止まってしまうの?", teaser: "3つある心臓のうち全身担当の1つが、泳ぐと止まってしまう「ざんねん」な体の仕組み。", path: "zannen/tako.html" },
   { category: "zannen", title: "カバはなぜ泳げないの?水の達人なのに浮けない体", teaser: "水中適応した体を持ちながら、密度が高すぎて浮けない。川底を歩いて移動する「ざんねん」な事情。", path: "zannen/kaba.html" },
   { category: "zannen", title: "猫は甘さを感じられない?ケーキを前にしても無反応な理由", teaser: "甘味受容体の遺伝子が壊れていて、そもそも甘さを感知できない。ネコ科全体に共通する「ざんねん」な話。", path: "zannen/neko-amami.html" },
-  { category: "zannen", title: "ハムスターの頬袋、実は反転して口から飛び出すことも", teaser: "便利な収納スペースが、炎症や加齢をきっかけに反転してしまう「頬袋脱」という症状を解説します。", path: "zannen/hamster-hoobukuro.html" }
+  { category: "zannen", title: "ハムスターの頬袋、実は反転して口から飛び出すことも", teaser: "便利な収納スペースが、炎症や加齢をきっかけに反転してしまう「頬袋脱」という症状を解説します。", path: "zannen/hamster-hoobukuro.html" },
+  { category: "zannen", title: "インコは具合が悪くても我慢してしまう、鳥のざんねんな習性", teaser: "元気なふりが上手すぎて、飼い主が気づいた時にはすでに進行していることも多い、鳥のざんねんな習性です。", path: "zannen/inko-gaman.html" }
 ];

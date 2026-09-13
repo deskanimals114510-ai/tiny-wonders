@@ -6,8 +6,64 @@
   <atom:link href="https://deskanimals114510-ai.github.io/tiny-wonders/feed.xml" rel="self" type="application/rss+xml" />
   <description>犬猫を中心にした動物の「なぜ?」豆知識と、笑える「ざんねん」な習性を、専門家の知見にもとづきやさしく解説する動物トリビアマガジンです。</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 12 Sep 2026 23:30:00 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 13 Sep 2026 12:00:00 +0900</lastBuildDate>
   <generator>Tiny Wonders static feed generator</generator>
+  <item>
+    <title>インコは具合が悪くても我慢してしまう、鳥のざんねんな習性</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/zannen/inko-gaman.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/zannen/inko-gaman.html</guid>
+    <pubDate>Sun, 13 Sep 2026 12:00:00 +0900</pubDate>
+    <category>動物のざんねんな習性</category>
+    <description>元気なふりが上手すぎて、飼い主が気づいた時にはすでに進行していることも多い、鳥のざんねんな習性です。</description>
+  </item>
+  <item>
+    <title>飼い鳥の代表品種7選:インコ・文鳥の大きさと性格の違い</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-shurui.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-shurui.html</guid>
+    <pubDate>Sun, 13 Sep 2026 12:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>セキセイインコから文鳥、カナリアまで、代表的な7品種の原産地・寿命・性格の傾向を紹介します。</description>
+  </item>
+  <item>
+    <title>飼い鳥の体の特徴:飼う前に知っておきたい足・換羽・目のこと</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-tokucho.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-tokucho.html</guid>
+    <pubDate>Sun, 13 Sep 2026 12:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>対趾足の仕組みや換羽の時期、体調不良を隠す習性など、鳥の体のふしぎをまとめました。</description>
+  </item>
+  <item>
+    <title>鳥の飼い方の基本:温度管理・慣らし方・鳴き声対策</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-kaikata.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-kaikata.html</guid>
+    <pubDate>Sun, 13 Sep 2026 12:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>適温の目安から慣らし方、集合住宅での鳴き声対策、家の中の危険物までまとめました。</description>
+  </item>
+  <item>
+    <title>鳥の餌の基本:ペレットとシード、与えてはいけない食べ物</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-esa.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-esa.html</guid>
+    <pubDate>Sun, 13 Sep 2026 12:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>ペレットとシードの違いから、アボカドやネギ類など危険な食べ物まで解説します。</description>
+  </item>
+  <item>
+    <title>インコ・文鳥の飼育アイテム:ケージ・止まり木・保温器具の選び方</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-item.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-item.html</guid>
+    <pubDate>Sun, 13 Sep 2026 12:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>ケージや止まり木の選び方、保温器具の温度目安など必要なアイテムを紹介します。</description>
+  </item>
+  <item>
+    <title>インコ・文鳥の体調不良のサイン:早めに気づきたい病気のとき</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-byoki.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-byoki.html</guid>
+    <pubDate>Sun, 13 Sep 2026 12:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>弱った姿を隠す習性や、そのう炎・メガバクテリア症など気をつけたい病気をまとめました。</description>
+  </item>
   <item>
     <title>ハムスターの代表品種5選:大きさと性格の違い</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/hamster-shurui.html</link>
