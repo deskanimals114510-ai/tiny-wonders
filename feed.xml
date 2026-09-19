@@ -6,8 +6,16 @@
   <atom:link href="https://deskanimals114510-ai.github.io/tiny-wonders/feed.xml" rel="self" type="application/rss+xml" />
   <description>犬猫を中心にした動物の「なぜ?」豆知識と、笑える「ざんねん」な習性を、専門家の知見にもとづきやさしく解説する動物トリビアマガジンです。</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 13 Sep 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 19 Sep 2026 12:00:00 +0900</lastBuildDate>
   <generator>Tiny Wonders static feed generator</generator>
+  <item>
+    <title>犬猫の冬の寒さ対策ガイド:室温の目安・寝床・暖房器具の注意点</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/fuyu-care.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/fuyu-care.html</guid>
+    <pubDate>Sat, 19 Sep 2026 12:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>寒さのサインと室温の目安、寝床の置き方、こたつやホットカーペットの低温やけど対策、冬の散歩の考え方までをまとめた冬のケアガイドです。</description>
+  </item>
   <item>
     <title>インコは具合が悪くても我慢してしまう、鳥のざんねんな習性</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/zannen/inko-gaman.html</link>

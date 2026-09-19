@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -122,7 +122,7 @@
   </url>
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/neko-kotatsu.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -284,7 +284,7 @@
   </url>
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -302,7 +302,7 @@
   </url>
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/shinia-kurashi.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -332,7 +332,7 @@
   </url>
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/atsusa-care.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -447,6 +447,12 @@
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-byoki.html</loc>
     <lastmod>2026-09-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/fuyu-care.html</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
