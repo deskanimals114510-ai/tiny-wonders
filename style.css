@@ -24,6 +24,7 @@
   --zatsugaku-tint: #dde8df;
   --zannen: #bf5a2c;
   --zannen-tint: #f3ddce;
+  --zannen-deep: #984823;
   --kurashi: #3d5a73;
   --kurashi-tint: #dde5ec;
   --accent-hover: #dba13f;
@@ -47,6 +48,7 @@
     --zatsugaku-tint: #2c3a30;
     --zannen: #d98a5c;
     --zannen-tint: #4a3020;
+    --zannen-deep: #de9b75;
     --kurashi: #8bb0cf;
     --kurashi-tint: #263440;
     --accent-hover: #eabb78;
@@ -69,6 +71,7 @@
   --zatsugaku-tint: #2c3a30;
   --zannen: #d98a5c;
   --zannen-tint: #4a3020;
+  --zannen-deep: #de9b75;
   --kurashi: #8bb0cf;
   --kurashi-tint: #263440;
   --accent-hover: #eabb78;
@@ -220,7 +223,7 @@ body {
   background: var(--zatsugaku-tint);
 }
 .category-badge--zannen {
-  color: var(--zannen);
+  color: var(--zannen-deep);
   background: var(--zannen-tint);
 }
 .category-badge--kurashi {
@@ -1058,6 +1061,24 @@ body {
 }
 .article-source a { color: var(--accent-deep); }
 .article-source em { font-style: italic; }
+
+.article-source-details {
+  margin: -6px 0 14px;
+}
+.article-source-details summary {
+  cursor: pointer;
+  font-size: 0.76rem;
+  color: var(--accent-deep);
+  font-weight: 500;
+  list-style: none;
+}
+.article-source-details summary::-webkit-details-marker { display: none; }
+.article-source-details summary::before {
+  content: "▸ ";
+  display: inline-block;
+}
+.article-source-details[open] summary::before { content: "▾ "; }
+.article-source-details .article-source { margin: 6px 0 0; }
 
 p.article-lead {
   font-size: 1rem;

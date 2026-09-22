@@ -261,18 +261,41 @@
       p.setAttribute("role", "tabpanel");
       if (!p.id) p.id = "shindan-panel-" + p.getAttribute("data-panel");
     });
+    function activateTab(btn) {
+      var target = btn.getAttribute("data-tab");
+      tabButtons.forEach(function (b) {
+        var active = b === btn;
+        b.classList.toggle("is-active", active);
+        b.setAttribute("aria-selected", active ? "true" : "false");
+        b.setAttribute("tabindex", active ? "0" : "-1");
+      });
+      panels.forEach(function (p) {
+        p.classList.toggle("is-active", p.getAttribute("data-panel") === target);
+      });
+    }
+
     tabButtons.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var target = btn.getAttribute("data-tab");
-        tabButtons.forEach(function (b) {
-          var active = b === btn;
-          b.classList.toggle("is-active", active);
-          b.setAttribute("aria-selected", active ? "true" : "false");
-          b.setAttribute("tabindex", active ? "0" : "-1");
-        });
-        panels.forEach(function (p) {
-          p.classList.toggle("is-active", p.getAttribute("data-panel") === target);
-        });
+      btn.addEventListener("click", function () { activateTab(btn); });
+
+      // キーボード操作(ARIA tabsパターン): 左右矢印/Home/Endでタブ間を移動しフォーカス
+      btn.addEventListener("keydown", function (e) {
+        var tabs = Array.prototype.slice.call(tabButtons);
+        var i = tabs.indexOf(btn);
+        var next = null;
+        if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+          next = tabs[(i + 1) % tabs.length];
+        } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+          next = tabs[(i - 1 + tabs.length) % tabs.length];
+        } else if (e.key === "Home") {
+          next = tabs[0];
+        } else if (e.key === "End") {
+          next = tabs[tabs.length - 1];
+        }
+        if (next) {
+          e.preventDefault();
+          next.focus();
+          activateTab(next);
+        }
       });
     });
   });
