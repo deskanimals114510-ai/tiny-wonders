@@ -6,8 +6,16 @@
   <atom:link href="https://deskanimals114510-ai.github.io/tiny-wonders/feed.xml" rel="self" type="application/rss+xml" />
   <description>犬猫を中心にした動物の「なぜ?」豆知識と、笑える「ざんねん」な習性を、専門家の知見にもとづきやさしく解説する動物トリビアマガジンです。</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 19 Sep 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 27 Sep 2026 12:00:00 +0900</lastBuildDate>
   <generator>Tiny Wonders static feed generator</generator>
+  <item>
+    <title>犬猫の体調不良のサイン:早めに気づきたい病気のとき</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/inuneko-byoki.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/inuneko-byoki.html</guid>
+    <pubDate>Sun, 27 Sep 2026 12:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>食欲・飲水量・排泄物の変化から、猫特有の緊急サインである排尿困難まで、早めに気づきたい犬猫の病気サインをまとめました。</description>
+  </item>
   <item>
     <title>冬の寒さ対策グッズの選び方:ヒーター・ベッド・ガード・加湿器・防寒ウェア</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/fuyu-items.html</link>
