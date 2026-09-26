@@ -1488,7 +1488,7 @@ button:focus-visible {
   border-left: 3px solid var(--zannen);
 }
 .point-box--warning .point-box-icon { color: var(--zannen); }
-.point-box--warning .point-box-title { color: var(--zannen); }
+.point-box--warning .point-box-title { color: var(--zannen-deep); }
 .point-box a { color: var(--accent-deep); font-weight: 600; }
 .point-box-note {
   margin-top: 10px !important;
@@ -1496,8 +1496,6 @@ button:focus-visible {
   color: var(--ink-soft);
   line-height: 1.7 !important;
 }
-.emergency-pending { color: var(--ink-soft) !important; font-style: italic; }
-.emergency-pending::before { content: "…" !important; color: var(--ink-soft) !important; }
 
 /* ---- チェックリスト(要点・NG項目の箇条書き強調、全カテゴリ共通) ---- */
 ul.checklist, ul.checklist--danger {
