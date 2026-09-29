@@ -1358,6 +1358,11 @@ button:focus-visible {
 .lookup-table-details[open] summary { margin-bottom: 14px; }
 .lookup-table--left th,
 .lookup-table--left td { text-align: left; }
+.lookup-table--left { min-width: 560px; }
+.lookup-table--left th:first-child,
+.lookup-table--left td:first-child { min-width: 130px; }
+.lookup-table--left th:nth-child(2),
+.lookup-table--left td:nth-child(2) { min-width: 100px; }
 
 /* ---- 都道府県タイルマップ(犬密度ランキング記事専用) ---- */
 .mitsudo-map-wrap {
@@ -1491,14 +1496,6 @@ button:focus-visible {
 }
 .point-box--warning .point-box-icon { color: var(--zannen); }
 .point-box--warning .point-box-title { color: var(--zannen-deep); }
-.point-box--kurashi {
-  background: color-mix(in srgb, var(--kurashi) 10%, var(--surface));
-  border-left: 3px solid var(--kurashi);
-}
-.point-box--kurashi .point-box-icon { color: var(--kurashi); }
-.point-box--kurashi .point-box-title { color: var(--kurashi); }
-.point-box--kurashi .link-btn,
-.point-box--kurashi .link-btn-secondary { margin-top: 10px; }
 .point-box a { color: var(--accent-deep); font-weight: 600; }
 .point-box-note {
   margin-top: 10px !important;
