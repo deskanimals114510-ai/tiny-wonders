@@ -24,11 +24,22 @@
     if (url.hostname === location.hostname) return;
     const linkText = (a.textContent || '').trim().slice(0, 100);
     const isShare = /twitter\.com\/intent|line\.me\/lineit\/share/.test(url.href);
+    const isAmazon = /(^|\.)amazon\.co\.jp$/.test(url.hostname);
     if (isShare) {
       window.gtag('event', 'share', {
         method: url.hostname.includes('line.me') ? 'line' : 'x',
         content_type: 'article',
         item_id: location.pathname
+      });
+    } else if (isAmazon) {
+      // アフィリエイトリンクのクリックをoutbound_clickとは別のイベント名で計測する。
+      // 全記事のAmazonリンクがtag=tinywonders-22で共通のため、Amazon側のレポートでは
+      // どの記事が送客したか区別できない。GA4側でlink_text(検索キーワード)・
+      // ページパスをパラメータに含めることで記事単位の効果測定を可能にする。
+      window.gtag('event', 'amazon_click', {
+        link_url: url.href,
+        link_text: linkText,
+        page_path: location.pathname
       });
     } else {
       window.gtag('event', 'outbound_click', {
