@@ -6,8 +6,16 @@
   <atom:link href="https://deskanimals114510-ai.github.io/tiny-wonders/feed.xml" rel="self" type="application/rss+xml" />
   <description>犬猫を中心にした動物の「なぜ?」豆知識と、笑える「ざんねん」な習性を、専門家の知見にもとづきやさしく解説する動物トリビアマガジンです。</description>
   <language>ja</language>
-  <lastBuildDate>Sun, 27 Sep 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 12:00:00 +0900</lastBuildDate>
   <generator>Tiny Wonders static feed generator</generator>
+  <item>
+    <title>犬猫の食欲・肥満:知っておきたい原因とリスク、減量の注意点</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/inuneko-himan.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/inuneko-himan.html</guid>
+    <pubDate>Wed, 30 Sep 2026 12:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>肥満の原因・体への負担・見た目でわかるサイン・安全な減量の基本を解説。よく食べるのに痩せる場合の注意点もまとめました。</description>
+  </item>
   <item>
     <title>犬猫の体調不良のサイン:早めに気づきたい病気のとき</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/inuneko-byoki.html</link>
