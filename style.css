@@ -1080,6 +1080,28 @@ body {
 .article-source-details[open] summary::before { content: "▾ "; }
 .article-source-details .article-source { margin: 6px 0 0; }
 
+p.affiliate-note {
+  margin: 0 0 18px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.affiliate-note-label {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 p.article-lead {
   font-size: 1rem;
   color: var(--ink-soft);
