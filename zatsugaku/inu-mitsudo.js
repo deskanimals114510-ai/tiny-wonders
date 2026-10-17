@@ -26,7 +26,8 @@
     sorted.forEach(function (r, i) { r.rank = i + 1; });
 
     // 5分位のしきい値(タイルマップの塗り分け用)
-    var densities = sorted.map(function (r) { return r.density; });
+    // quantile() は昇順の配列を前提にするため、多い順の並びを反転して渡す
+    var densities = sorted.map(function (r) { return r.density; }).reverse();
     function quantile(p) {
       var idx = (densities.length - 1) * p;
       var lo = Math.floor(idx), hi = Math.ceil(idx);

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>都道府県別・犬1,000頭あたりの犬猫診療獣医師数ランキング! 東京都は約5人、和歌山県は約1.3人 | Tiny Wonders</title>
+<meta name="description" content="農林水産省・厚生労働省・総務省の公的統計を再集計し、犬1,000頭あたりの犬猫診療獣医師数を47都道府県で比較。1位は東京都の4.97人、最下位は和歌山県の1.30人。届出ベースの数字の読み方や、人口あたりで見たときの違いも分かりやすく解説します。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="都道府県別・犬1,000頭あたりの犬猫診療獣医師数ランキング! 東京都は約5人、和歌山県は約1.3人">
+<meta property="og:description" content="犬1,000頭あたりの犬猫診療獣医師数を47都道府県で比較。1位は東京都4.97人、最下位は和歌山県1.30人。届出ベースの数字の読み方も解説。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/byoin-juishi.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/byoin-juishi.html">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-zatsugaku-byoin-juishi.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="都道府県別・犬1,000頭あたりの犬猫診療獣医師数ランキング! 東京都は約5人、和歌山県は約1.3人">
+<meta name="twitter:description" content="犬1,000頭あたりの犬猫診療獣医師数を47都道府県で比較。1位は東京都4.97人、最下位は和歌山県1.30人。届出ベースの数字の読み方も解説。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-zatsugaku-byoin-juishi.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../analytics.js"></script>
+<script defer src="../reading-time.js"></script>
+<script defer src="byoin-juishi-data.js"></script>
+<script defer src="byoin-juishi.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "都道府県別・犬1,000頭あたりの犬猫診療獣医師数ランキング! 東京都は約5人、和歌山県は約1.3人",
+  "description": "犬1,000頭あたりの犬猫診療獣医師数を47都道府県で比較。1位は東京都4.97人、最下位は和歌山県1.30人。届出ベースの数字の読み方も解説。",
+  "image": "https://deskanimals114510-ai.github.io/tiny-wonders/images/og-zatsugaku-byoin-juishi.jpg",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/byoin-juishi.html",
+  "inLanguage": "ja",
+  "isPartOf": {
+    "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website"
+  },
+  "author": {
+    "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization"
+  },
+  "publisher": {
+    "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization"
+  },
+  "datePublished": "2026-10-17T00:00:00+09:00",
+  "dateModified": "2026-10-17T00:00:00+09:00",
+  "citation": "農林水産省「獣医師の届出状況(獣医師数)」令和6年12月31日現在、農林水産省「飼育動物診療施設の開設届出状況」令和6年12月31日現在、厚生労働省「都道府県別の犬の登録頭数と予防注射頭数等」令和6年度、総務省統計局「人口推計」2024年10月1日現在(いずれも公共データ利用規約(第1.0版)に基づき、Tiny Wonders運営者が再集計・加工して作成)"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Tiny Wonders",
+      "item": "https://deskanimals114510-ai.github.io/tiny-wonders/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "犬猫のなぜ?豆知識",
+      "item": "https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "都道府県別・犬1,000頭あたりの犬猫診療獣医師数ランキング! 東京都は約5人、和歌山県は約1.3人",
+      "item": "https://deskanimals114510-ai.github.io/tiny-wonders/zatsugaku/byoin-juishi.html"
+    }
+  ]
+}
+</script>
+</head>
+<body class="page-article">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="../index.html">Tiny Wonders</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a class="back-link" href="index.html">犬猫のなぜ?豆知識</a></nav>
+    <p class="article-badge-row"><span class="category-badge category-badge--zatsugaku">豆知識</span></p>
+    <h1><span class="grad-text">都道府県別・犬1,000頭あたりの犬猫診療獣医師数ランキング! 東京都は約5人、和歌山県は約1.3人</span></h1>
+    <p class="article-date">公開日: 2026年10月17日 / 更新日: 2026年10月17日</p>
+  </header>
+
+  <main data-pagefind-body class="tool-main" id="main-content">
+    <article class="article-card">
+      <img class="article-illustration" src="../images/zatsugaku-byoin-juishi.jpg" alt="アンティーク調の日本地図の上に、犬と聴診器、診察バッグが並んだイラスト" width="800" height="600">
+
+      <p class="article-lead">
+        <span class="lead-ja">犬1,000頭あたりの犬猫診療獣医師数を47都道府県で比べると、1位は東京都の4.97人、最下位は和歌山県の1.30人でした。関東の都県が上位に集まり、四国の県が下位に多い結果です。この数字は、犬の登録頭数に対して国に届け出られている獣医師の数を単純に割った目安で、全国では2.76人でした。</span>
+        <span class="lead-en">How many veterinarians treating dogs and cats are there per 1,000 registered dogs in each Japanese prefecture? This is our own recalculation of 2024 statistics from Japan's MAFF, MHLW and MIC; it is not an official ranking.</span>
+      </p>
+
+      <div class="point-box point-box--tip">
+        <span class="point-box-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M4.9 4.9l2.8 2.8M2 12h4M4.9 19.1l2.8-2.8M12 18v4M16.3 16.3l2.8 2.8M22 12h-4M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="4"/></svg></span>
+        <div>
+          <span class="point-box-title">この記事の結論</span>
+          <p>全国は犬1,000頭あたり2.76人で、関東が高く、四国が低めに出ました。ただし、犬の頭数に対して届け出られている獣医師の数を単純に割った目安で、順位の低い県が「足りない」という意味ではありません。獣医師が100人未満の県が13県あり、順位は入れ替わりやすい点にも注意してください。</p>
+        </div>
+      </div>
+
+      <div class="diag-aside">
+        <p>🔍 ちょっと寄り道:犬との暮らしで、飼い主さん自身のタイプも気になる方は<a href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断</a>を試してみてください。</p>
+      </div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></span>結果:犬1,000頭あたりの獣医師数は東京都が約5人、和歌山県は約1.3人</h2>
+      <p>
+        犬1,000頭あたりの犬猫診療獣医師数は、全国では2.76人(約2.8人)でした。逆に見ると、獣医師1人あたりの犬の登録頭数は約362頭です。47都道府県を並べた真ん中の県は2.19人で、全国の2.76人より低めです。犬の登録頭数が多く値も高い東京都・神奈川県が、全国の値を押し上げているためです。
+      </p>
+      <p>
+        1位は東京都の4.97人(約5人)、最下位は和歌山県の1.30人で、約3.8倍の差があります。ただし、犬猫を診る獣医師が100人未満の県が13県あり、1人の増減で順位が入れ替わりやすいことは頭に置いてください。獣医師1人あたりの犬の登録頭数に直すと、東京都は約201頭、和歌山県は約772頭です(単純に割った数字で、1人の獣医師が772頭を診ているという意味ではありません)。東京都には全国の犬猫診療獣医師の約16.6%が集まる一方、犬の登録頭数は全国の約9.2%です。
+      </p>
+      <p>
+        地域ごとの合計で見ると、関東が3.69人で最も高く、北海道2.96人、近畿2.46人、中部2.36人と続きます。東北と中国はともに2.10人、九州・沖縄は2.08人、四国は1.80人でした。下の地図では、色が濃いほど犬1,000頭あたりの獣医師数が多いことを示しています。自分の県の数字は、ページ下の「47都道府県すべてのランキングを見る」(折りたたみ)で確認できます。
+      </p>
+      <div class="mitsudo-map-wrap">
+        <div class="mitsudo-map" id="byoin-map" role="img" aria-label="都道府県別の、犬1,000頭あたりの獣医師数を色の濃さで示した日本地図。数値は本文下の表を参照してください。"></div>
+      </div>
+      <div class="mitsudo-legend">
+        <span>少ない</span>
+        <span class="mitsudo-legend-scale">
+          <span class="mitsudo-tile--q1"></span>
+          <span class="mitsudo-tile--q2"></span>
+          <span class="mitsudo-tile--q3"></span>
+          <span class="mitsudo-tile--q4"></span>
+          <span class="mitsudo-tile--q5"></span>
+        </span>
+        <span>多い</span>
+      </div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v14"/></svg></span>上位10県と下位10県</h2>
+      <p>
+        上位10県は、東京都・神奈川県・千葉県・埼玉県の首都圏4都県に、奈良県・京都府、北海道、鳥取県・山梨県・石川県を加えた顔ぶれです。1位の東京都4.97人と2位の神奈川県4.00人は、3位の奈良県3.58人以下を引き離しています。鳥取県(8位、2.92人)や山梨県(9位、2.59人)のように、獣医師の人数そのものは多くなくても、犬の登録頭数との比では上位に入る県もあります。
+      </p>
+      <div class="mitsudo-bar-list" id="byoin-top10"></div>
+      <p>
+        下位5県は、和歌山県(47位、1.30人)、佐賀県(46位、1.53人)、宮崎県(45位、1.56人)、島根県(44位、1.61人)、愛媛県(43位、1.68人)です。下位10県には、愛媛・香川・徳島の四国3県が含まれています。ただし、下位10県のうち7県は犬猫を診る獣医師が100人未満で、わずかな人数の増減で順位が入れ替わります。この順位は、各県の動物病院や獣医師の質、動物医療の充実度を評価するものではありません。
+      </p>
+      <div class="mitsudo-bar-list" id="byoin-worst10"></div>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"/><path d="M12 8v4l3 2"/></svg></span>犬の多い県は、犬あたりでは小さく出やすい</h2>
+      <p>
+        人口に対して犬の登録頭数が多い県は、犬1,000頭あたりの獣医師数が小さく出やすい、という計算上の性質があります。香川県がその例です。人口1,000人あたりの犬の登録頭数は74.2頭で全国1位ですが、犬1,000頭あたりの獣医師数は1.79人で40位でした(人口あたりの犬の登録頭数は令和6年度の値で計算しています。<a href="inu-mitsudo.html">犬の登録頭数ランキングの記事</a>は令和5年度の値のため、数字が少し違います)。
+      </p>
+      <p>
+        そうなる理由は、獣医師の数も犬の登録頭数も、人口にほぼ比例しているからです。47都道府県で見ると、獣医師数と人口の相関係数は0.98、犬の登録頭数と人口の相関係数は0.985で、どちらも人口の多い県ほど多いという関係がはっきりしています(相関係数は、1に近いほど「一方が多ければもう一方も多い」関係が強いことを表します)。獣医師の数が人口に見合った水準でも、人口に対して犬が多い県では、犬で割ったとたんに値が小さくなります。
+      </p>
+      <p>
+        人口あたりの犬の登録頭数が多い上位10県(香川・三重・愛媛・徳島・岐阜・高知・滋賀・愛知・山口・茨城)の、犬1,000頭あたりの獣医師数の順位は、香川40位、三重42位、愛媛43位、徳島38位、岐阜35位、高知30位、滋賀28位、愛知17位、山口27位、茨城25位でした。平均順位は32.5位で、上位半分(23位以内)に入ったのは愛知県だけです。この並びにも、上で述べた割り算の性質が大きく効いています。
+      </p>
+      <p>
+        犬1,000頭あたりの獣医師数と、人口あたりの犬の登録頭数の相関係数は-0.39です。ただしこの値は、上の計算上の性質を含んだ値で、犬が多い県で獣医師が少ないと言い切れるものではありません。実際に、獣医師数を人口で割った値(人口10万人あたり)と人口あたりの犬の登録頭数の相関係数は+0.12で、ほぼ関係がありません。つまり、犬の多い県で人口に対して獣医師が手薄だ、という関係はこのデータからは見えません。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16M6 19V9l6-5 6 5v10M9 19v-6h6v6"/></svg></span>「人口あたり」で見ると順位が変わる県</h2>
+      <p>
+        同じ獣医師数を、犬の登録頭数ではなく人口で割って比べることもできます。人口10万人あたりの獣医師数は全国で13.50人、上位は東京都19.57人、神奈川県18.83人、千葉県16.69人で、下位は青森県7.21人、最下位は和歌山県7.16人でした。犬あたりの値と人口あたりの値には相関があり(相関係数0.86。同じ獣医師数を使うので似て見えやすい面もあります)、順位が5位以上ずれる県が24県あります。
+      </p>
+      <p>
+        順位が下がるのは、人口に対して犬の登録頭数が多い県です。香川県は人口あたりでは10位ですが、犬あたりでは40位になります。三重県は28位から42位へ、愛媛県は32位から43位へ下がります。逆に、山形県は35位から14位へ、新潟県は36位から18位へ、石川県は26位から10位へ上がります。
+      </p>
+      <p>
+        違って見える理由は、獣医師の数は同じでも、何で割るかが違うからです。人口で割れば「住んでいる人に対する数」、登録されている犬の頭数で割れば「登録されている犬に対する数」になります。どちらかが正しいというものではなく、見たいものに合わせて使い分ける指標です。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></span>この数字で言えること、言えないこと</h2>
+      <p>
+        この記事の数字は、犬の登録頭数に対して、国に届けられている獣医師の数を比べた目安です。獣医師数も診療施設数も、法律で決められた届出(国や県に出す報告)を集計したもので、実際に診察にあたっている人数や、待ち時間のような診察の混み具合を表すものではありません。犬あたりの獣医師が少ない県の動物医療が足りない、多い県なら十分、という意味でもありません。
+      </p>
+      <p>
+        獣医師と犬の組み合わせにも注意が必要です。ここで数えている獣医師は、届出で「主に犬・猫・小鳥を診る」とした人で、猫を診る人も含まれますが、割る相手は犬の登録頭数だけです。猫には、犬の狂犬病予防法のような全頭を対象にした登録制度がありません。2022年6月からは販売される犬猫のマイクロチップ登録が義務になりましたが、猫の全頭数を把握する統計はないため、この記事の数字は「犬を基準にした目安」になります。
+      </p>
+      <p>
+        割る側の犬の登録頭数は、狂犬病予防法に基づいて登録されている犬の数です。未登録の犬や、死亡の届けが出ていないままの犬があり、登録の徹底度が県で違えば、実際に飼われている頭数とはずれます。獣医師数のほうは、診療施設で働く人(往診を含む)の届出で、住所地の知事を経由して届け出る決まりですが、県ごとの集計が勤務先の場所なのか住所地なのかは、統計表や概要には明記されていません。
+      </p>
+      <p>
+        犬猫を診る獣医師が100人未満の県は13県あります。こうした県では1人の増減でも順位が動くため、順位の1つ2つの差を重く見ないほうがよいでしょう。また、病院までの距離、夜間や休日の救急対応、往診、県境をまたいだ通院といった、飼い主にとって大事な事情は、この数字には表れません。時点も、犬の登録頭数は2025年3月末、獣医師・施設は2024年12月末、人口は2024年10月と少しずつずれています。
+      </p>
+      <p>
+        この記事は獣医師の監修を受けていません。公的統計をAIの支援を受けて再集計したもので、特定の地域や動物病院の評価ではありません。いつもと違う様子があるときは、迷わず動物病院に相談してください。ふだんから、かかりつけの病院と、夜間・休日に診てもらえる病院の連絡先を調べておくと、いざというとき慌てずにすみます(受診の目安は<a href="../kurashi/inuneko-byoki.html">犬猫の体調不良のサイン</a>の記事にまとめています)。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v14"/></svg></span>診療施設の数で見ると</h2>
+      <p>
+        獣医師ではなく診療施設の数で見ても、香川県は犬1,000頭あたりの小動物・その他の診療施設数が1.26施設で47位(最下位)、東京都は3.42施設で最多でした。ただし、施設の大きさ(獣医師の人数や設備)は数字に表れず、「小動物、その他」の区分には犬猫以外を診る施設も含まれるため、「犬猫の病院の数」そのものではありません。牛・馬・豚などを診る産業動物の施設は、この計算から除いています。農林水産省からは令和7年(2025年12月31日現在)の施設データも公表されていますが、獣医師数(令和6年)と時点をそろえるため、この記事では令和6年の値を使いました。
+      </p>
+
+      <h2><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"/><path d="M12 8v4l3 2"/></svg></span>データの出典と算出方法</h2>
+      <p>
+        獣医師数は、農林水産省「獣医師の届出状況(獣医師数)」の令和6年(2024年)12月31日現在の値です。獣医師法第22条に基づいて2年に1度行われる届出の集計で、そのうち「診療施設で働く獣医師のうち、犬猫を診る人(開設者と被雇用者の合計)」を使いました。全国では16,717人(開設者8,028人、被雇用者8,689人)です。診療施設数は、同じく農林水産省「飼育動物診療施設の開設届出状況(診療施設数)」の2024年12月31日現在で、全国16,993施設(産業動物4,147、小動物・その他12,846)です。
+      </p>
+      <p>
+        犬の登録頭数は、厚生労働省「都道府県別の犬の登録頭数と予防注射頭数等」の令和6年度(年度末の2025年3月31日現在)で、全国6,048,725頭です。人口は総務省統計局「人口推計」の2024年10月1日現在で、47都道府県の合計は123,803,000人です。計算式は「犬猫を診る獣医師数 ÷ 犬の登録頭数 × 1,000」、人口あたりは「同じ獣医師数 ÷ 総人口 × 100,000」、施設は「小動物・その他の診療施設数 ÷ 犬の登録頭数 × 1,000」です。地域ごとの値は、含まれる都道府県の合計どうしを割って求め、順位は丸める前の値で付けているため、表では同じ値に見える県でも小数第3位以下の差で順位が分かれる場合があります。
+      </p>
+      <p>
+        検算として、47都道府県の値を合計したところ、犬6,048,725頭、犬猫診療獣医師16,717人、小動物・その他の施設12,846、施設合計16,993のいずれも、各統計表の全国計と一致することを2026年10月に確認しました。時点は、獣医師・施設が2024年12月末、犬が2025年3月末(約3か月差)、人口が2024年10月と、それぞれ少しずれています。この記事の数値は、農林水産省・厚生労働省・総務省の資料を加工して作成したもので、各省が公表したランキングではありません。
+      </p>
+      <p class="article-source">
+        出典: 農林水産省「獣医師の届出状況(獣医師数)」(<a href="https://www.maff.go.jp/j/tokei/kouhyou/zyui/index.html" target="_blank" rel="noopener">農林水産省</a>)/ 農林水産省「飼育動物診療施設の開設届出状況」(<a href="https://www.maff.go.jp/j/tokei/kouhyou/animal/index.html" target="_blank" rel="noopener">農林水産省</a>)/ 厚生労働省「都道府県別の犬の登録頭数と予防注射頭数等」(<a href="https://www.mhlw.go.jp/bunya/kenkou/kekkaku-kansenshou10/01.html" target="_blank" rel="noopener">厚生労働省</a>)/ 総務省統計局「人口推計」(<a href="https://www.stat.go.jp/data/jinsui/2024np/index.html" target="_blank" rel="noopener">統計局ホームページ</a>)。農林水産省・厚生労働省・総務省の資料を加工して作成。
+      </p>
+      <p class="article-source">
+        各データは<a href="https://www.digital.go.jp/resources/open_data/public_data_license_v1.0" target="_blank" rel="noopener">公共データ利用規約(第1.0版)</a>に基づいて利用しています(2026年10月17日利用)。農林水産省・厚生労働省・総務省の資料をもとに、Tiny Wonders運営者が再集計・加工して作成しました。各省が作成・公表したものではなく、各省の見解を示すものでもありません。
+      </p>
+
+      <details class="lookup-table-details">
+        <summary>47都道府県すべてのランキングを見る</summary>
+        <div class="lookup-table-wrap">
+          <table class="lookup-table">
+            <caption>都道府県別・犬1,000頭あたりの犬猫診療獣医師数ランキング(多い順。表示は小数第2位までで、小数第3位以下の差で順位が分かれる場合があります)</caption>
+            <thead>
+              <tr><th scope="col">順位</th><th scope="col">都道府県</th><th scope="col">犬猫診療獣医師(人)</th><th scope="col">犬の登録頭数</th><th scope="col">犬1,000頭あたり(人)</th><th scope="col">人口あたり順位(参考)</th></tr>
+            </thead>
+            <tbody id="byoin-table-body"></tbody>
+          </table>
+        </div>
+      </details>
+
+      <div class="trivia-box">
+        <span class="trivia-box-label">豆知識プラスワン</span>
+        <p>全国の診療施設16,993のうち、牛・馬・豚などを診る産業動物の施設は4,147で、約4分の1(24.4%)を占めます。この割合は県によって大きく違い、岩手県では約3分の2(66%)、鹿児島県・島根県・青森県・鳥取県でもそれぞれ約60%が産業動物の施設です。街で見かける動物病院だけが「診療施設」ではないことが、この数字から分かります。</p>
+      </div>
+
+      <details class="mini-quiz">
+        <summary>ミニクイズ:人口あたりの犬の登録頭数が全国で一番多い香川県は、犬1,000頭あたりの獣医師数でも上位?(タップして答えを見る)</summary>
+        <p><span class="quiz-label">こたえ</span>×。香川県は犬1,000頭あたりの獣医師数が1.79人で40位、小動物・その他の診療施設数は1.26施設で47位(最下位)でした。犬が多い県は、犬で割ると数字が小さく出やすいためです。</p>
+      </details>
+    </article>
+
+    <div class="related-tools">
+      <a class="link-btn" href="../kurashi/inuneko-byoki.html">犬猫の体調不良のサインを見る</a>
+      <div class="article-nav">
+        <a class="link-btn link-btn-secondary" href="inu-mitsudo.html">都道府県別・犬の登録頭数ランキングへ</a>
+        <a class="link-btn link-btn-secondary" href="inu-ninki.html">犬種人気の26年トレンドへ</a>
+        <a class="link-btn link-btn-secondary" href="hogo-jotoritsu.html">保護犬猫の譲渡率20年の歩みへ</a>
+        <a class="link-btn link-btn-secondary" href="../kurashi/inuneko-rusuban.html">犬と猫の留守番は何時間まで?へ</a>
+        <a class="link-btn link-btn-secondary" href="../shindan.html">犬種・猫種かんたん診断へ</a>
+      </div>
+    </div>
+    <div class="share-row">
+      <a class="link-btn-secondary" href="https://twitter.com/intent/tweet?text=%E9%83%BD%E9%81%93%E5%BA%9C%E7%9C%8C%E5%88%A5%E3%83%BB%E7%8A%AC1%2C000%E9%A0%AD%E3%81%82%E3%81%9F%E3%82%8A%E3%81%AE%E7%8A%AC%E7%8C%AB%E8%A8%BA%E7%99%82%E7%8D%A3%E5%8C%BB%E5%B8%AB%E6%95%B0%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%21%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E3%81%AF%E7%B4%845%E4%BA%BA%E3%80%81%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E3%81%AF%E7%B4%841.3%E4%BA%BA%20%7C%20Tiny%20Wonders&url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fzatsugaku%2Fbyoin-juishi.html" target="_blank" rel="noopener">Xでシェア</a>
+      <a class="link-btn-secondary" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fzatsugaku%2Fbyoin-juishi.html" target="_blank" rel="noopener">LINEでシェア</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/?utm_source=tiny-wonders&utm_medium=referral&utm_campaign=cross_site" target="_blank" rel="noopener">🔬 Desk Animals Lab</a>
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
+    <p>This site's content is produced with AI assistance.</p>
+    <p>本記事は公開統計データをもとにした参考情報であり、公式見解を示すものではありません。</p>
+    <p>This content is a reference analysis based on public statistics, not an official government publication.</p>
+    <p><a href="../about/index.html">運営者情報・記事の作り方</a></p>
+    <p><a href="../privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
