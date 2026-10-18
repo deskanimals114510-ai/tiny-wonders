@@ -6,7 +6,7 @@
   <atom:link href="https://deskanimals114510-ai.github.io/tiny-wonders/feed.xml" rel="self" type="application/rss+xml" />
   <description>犬猫を中心にした動物の「なぜ?」豆知識と、笑える「ざんねん」な習性を、専門家の知見にもとづきやさしく解説する動物トリビアマガジンです。</description>
   <language>ja</language>
-  <lastBuildDate>Sat, 17 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 18 Oct 2026 12:00:00 +0900</lastBuildDate>
   <generator>Tiny Wonders static feed generator</generator>
   <item>
     <title>都道府県別・犬1,000頭あたりの獣医師数ランキング! 東京都は約5人、和歌山県は1.3人</title>
@@ -81,12 +81,12 @@
     <description>元気なふりが上手すぎて、飼い主が気づいた時にはすでに進行していることも多い、鳥のざんねんな習性です。</description>
   </item>
   <item>
-    <title>飼い鳥の代表品種7選:インコ・文鳥の大きさと性格の違い</title>
+    <title>飼い鳥の種類と違い:インコ・文鳥・カナリアの性格と分類</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-shurui.html</link>
     <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-shurui.html</guid>
     <pubDate>Sun, 13 Sep 2026 12:00:00 +0900</pubDate>
     <category>動物とのくらし方</category>
-    <description>セキセイインコから文鳥、カナリアまで、代表的な7品種の原産地・寿命・性格の傾向を紹介します。</description>
+    <description>インコ・カナリア・文鳥・ジュウシマツの違いを、分類・声・野生の祖先と原産で比較。迷いやすい組み合わせを先に整理します。性格の傾向は早見表で。</description>
   </item>
   <item>
     <title>飼い鳥の体の特徴:飼う前に知っておきたい足・換羽・目のこと</title>
@@ -121,12 +121,12 @@
     <description>ケージや止まり木の選び方、保温器具の温度目安など必要なアイテムを紹介します。</description>
   </item>
   <item>
-    <title>インコ・文鳥の体調不良のサイン:早めに気づきたい病気のとき</title>
+    <title>文鳥・インコが弱っているサイン:部位別と緊急度の目安</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-byoki.html</link>
     <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/tori-byoki.html</guid>
     <pubDate>Sun, 13 Sep 2026 12:00:00 +0900</pubDate>
     <category>動物とのくらし方</category>
-    <description>弱った姿を隠す習性や、そのう炎・メガバクテリア症など気をつけたい病気をまとめました。</description>
+    <description>文鳥・インコが弱っているサインを部位別に整理。緊急度の目安は病院・学会で区分が異なります。体重とフンの見方、膨羽・そのう炎・卵詰まりなど気をつけたい病気も。</description>
   </item>
   <item>
     <title>ハムスターの代表品種5選:大きさと性格の違い</title>

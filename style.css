@@ -1708,3 +1708,7 @@ ul.checklist strong, ul.checklist--danger strong { color: var(--ink); }
     transition: none;
   }
 }
+
+/* 表の注記・行見出し(2026-10-18、鳥の記事の追記で追加) */
+.article-card p.table-note { font-size: 0.88rem; color: var(--ink-soft); margin: 10px 0 18px; }
+.lookup-table--left tbody th { background: transparent; color: inherit; font-weight: 700; text-align: left; }
