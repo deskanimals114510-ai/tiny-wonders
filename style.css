@@ -1712,3 +1712,19 @@ ul.checklist strong, ul.checklist--danger strong { color: var(--ink); }
 /* 表の注記・行見出し(2026-10-18、鳥の記事の追記で追加) */
 .article-card p.table-note { font-size: 0.88rem; color: var(--ink-soft); margin: 10px 0 18px; }
 .lookup-table--left tbody th { background: transparent; color: inherit; font-weight: 700; text-align: left; }
+
+/* ペットの名前2匹セットのページ(2026-10-22)で追加 */
+.article-card ul.name-list { list-style: none; padding-left: 0; margin: 0 0 1.4em; }
+.article-card ul.name-list li { margin: 0 0 1.1em; padding-bottom: 1.1em; border-bottom: 1px dashed var(--line); line-height: 1.8; }
+.article-card ul.name-list li:last-child { border-bottom: 0; }
+.name-list .nm, .name-list .mean, .name-list .yb, .name-list .fit { display: block; }
+.name-list .nm { font-size: 1.1rem; margin-bottom: 0.15em; }
+.name-list .yb, .name-list .fit { font-size: 0.88rem; color: var(--ink-soft); }
+.lookup-table--left.lookup-table--text { min-width: 0; font-size: 0.9rem; }
+.lookup-table--left.lookup-table--text th:first-child { min-width: 0; width: 36%; }
+.article-card nav.page-nav { margin: 0 0 1.6em; padding: 0.9em 1.1em; border: 1px solid var(--line); border-radius: 6px; }
+.article-card nav.page-nav .page-nav-title { margin: 0 0 0.4em; font-weight: 700; font-size: 0.9rem; }
+.article-card nav.page-nav ul { margin: 0; padding-left: 1.2em; }
+.article-card nav.page-nav li { margin: 0.2em 0; font-size: 0.92rem; }
+.article-card nav.page-nav a { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 0.18em; }
+.article-card nav.page-nav a:hover, .article-card nav.page-nav a:focus-visible { text-decoration-thickness: 2px; }
