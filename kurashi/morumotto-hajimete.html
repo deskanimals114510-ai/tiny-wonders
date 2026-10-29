@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>モルモットの飼い方入門:ビタミンC計算機つき・迎える前の確認 | Tiny Wonders</title>
+<meta name="description" content="初心者向けのモルモットの飼い方入門。迎える前の確認、住まい、牧草中心の食事、ビタミンC計算機、受診の目安を、出典ごとの数字の違いも隠さずまとめました。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="モルモットの飼い方入門:ビタミンC計算機つき・迎える前の確認">
+<meta property="og:description" content="モルモットの迎え方・住まい・食事・ビタミンC計算機・受診の目安。出典ごとの違いも書く入門記事。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/morumotto-hajimete.html">
+<link rel="canonical" href="https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/morumotto-hajimete.html">
+<meta property="og:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="モルモットの飼い方入門:ビタミンC計算機つき・迎える前の確認">
+<meta name="twitter:description" content="モルモットの迎え方・住まい・食事・ビタミンC計算機・受診の目安。出典ごとの違いも書く入門記事。">
+<meta name="twitter:image" content="https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%90%BE</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../analytics.js"></script>
+<script defer src="../reading-time.js"></script>
+<script defer src="morumotto-calc.js"></script>
+<script>
+// ライト/ダーク表示切り替え。localStorageに保存し、次回訪問時も引き継ぐ。
+// 保存がなければOS設定(prefers-color-scheme)に従う。
+(function () {
+  "use strict";
+  var KEY = "tinywonders-theme";
+  var root = document.documentElement;
+
+  function getStored() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function setStored(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+  }
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function isDarkNow() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark") return true;
+    if (explicit === "light") return false;
+    return systemPrefersDark();
+  }
+
+  var SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+  var MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M15.5 4a8 8 0 1 0 4.5 14.6A9 9 0 0 1 15.5 4z"/></svg>';
+
+  var stored = getStored();
+  if (stored === "dark" || stored === "light") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function render() {
+      var dark = isDarkNow();
+      btn.innerHTML = dark ? SUN_ICON : MOON_ICON;
+      btn.setAttribute("aria-label", dark ? "ライト表示に切り替える" : "ダーク表示に切り替える");
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDarkNow() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      setStored(next);
+      render();
+    });
+
+    render();
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "モルモットの飼い方入門:ビタミンC計算機つき・迎える前の確認",
+  "description": "モルモットの迎え方・住まい・食事・ビタミンC計算機・受診の目安。出典ごとの違いも書く入門記事。",
+  "image": "https://deskanimals114510-ai.github.io/tiny-wonders/images/og-image.jpg",
+  "url": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/morumotto-hajimete.html",
+  "inLanguage": "ja",
+  "isPartOf": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#website" },
+  "author": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization" },
+  "publisher": { "@id": "https://deskanimals114510-ai.github.io/tiny-wonders/#organization" },
+  "datePublished": "2026-10-29T00:00:00+09:00",
+  "dateModified": "2026-10-29T00:00:00+09:00"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Tiny Wonders", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/" },
+    { "@type": "ListItem", "position": 2, "name": "動物とのくらし方", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/" },
+    { "@type": "ListItem", "position": 3, "name": "モルモットの飼い方入門:ビタミンC計算機つき・迎える前の確認", "item": "https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/morumotto-hajimete.html" }
+  ]
+}
+</script>
+</head>
+<body class="page-article">
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+
+<div id="app">
+
+  <header class="hero hero-compact">
+    <nav class="breadcrumb-nav" aria-label="パンくずリスト"><a class="back-link" href="../index.html">Tiny Wonders</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a class="back-link" href="index.html">動物とのくらし方</a></nav>
+    <p class="article-badge-row"><span class="category-badge category-badge--kurashi">飼い方ガイド</span></p>
+    <h1><span class="grad-text">モルモットの飼い方入門:ビタミンC計算機つき・迎える前の確認</span></h1>
+    <p class="article-date">公開日: 2026年10月29日 / 更新日: 2026年10月29日</p>
+  </header>
+
+  <main data-pagefind-body class="tool-main" id="main-content">
+    <article class="article-card article-card--kurashi">
+      <p class="article-lead">
+        <span class="lead-ja">初めてモルモットを迎える初心者向けの入門記事です。迎える前の確認、住まいの温度とケージの広さ、牧草が主役の食事、受診の目安をまとめました。モルモットは体内でビタミンCを作れず、体重1kgあたり1日に最低10mgが目安とされます。体重を入れるとこの最低ラインと野菜の目安グラムが出る計算機もつけました。温度やケージの広さは出典によって数字が違うので、違いを隠さず並べ、確認できなかったことも正直に書きます。</span>
+        <span class="lead-en" lang="en">A beginner's guide for first-time guinea pig owners: what to check before bringing one home, housing, a hay-based diet, vitamin C (which guinea pigs cannot make themselves), and the signs that call for a vet visit. It includes a vitamin C calculator that turns body weight into a daily minimum and the amount of vegetables that would reach it. Where our sources disagree on numbers, we show the disagreement instead of hiding it.</span>
+      </p>
+
+      <div class="point-box article-summary"><p class="article-summary-title">先に要点</p>
+        <ul>
+          <li>食事は牧草が主役です(Merck・VCA・英国RSPCA)。</li>
+          <li>少なくとも2匹で飼うことをVCAは推奨しています。</li>
+          <li>夏は室温が26℃を超えないようにします(英国RSPCAは26℃超で熱中症)。</li>
+          <li>ビタミンCは体内で作れず、体重1kgあたり1日に最低10mgが目安です。体重が軽い子・妊娠中は増えるので獣医師へ。<a href="#calc">計算機へ</a></li>
+          <li>食べない・糞が出ないときは、すぐに獣医へ(英国RSPCA)。</li>
+        </ul>
+      </div>
+
+      <nav class="page-nav" aria-label="この記事の内容">
+        <p class="page-nav-title">この記事の内容</p>
+        <ul>
+          <li><a href="#before">迎える前に確認したい5つのこと</a></li>
+          <li><a href="#home">住まいは、出典によって数字が違います</a></li>
+          <li><a href="#food">食事の基本:牧草が主役</a></li>
+          <li><a href="#vitc">ビタミンCは体内で作れません</a></li>
+          <li><a href="#calc">ビタミンC計算機:体重から最低ラインを出す</a></li>
+          <li><a href="#vitc2">ペレットの古さ・添加水・足りないサイン</a></li>
+          <li><a href="#split">出典で扱いが割れている食品</a></li>
+          <li><a href="#symptoms">受診の目安になるサイン</a></li>
+          <li><a href="#unknown">この記事で確認できなかったこと</a></li>
+          <li><a href="#notes">このページの使い方と注意</a></li>
+        </ul>
+      </nav>
+
+      <h2 id="before"><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>迎える前に確認したい5つのこと</h2>
+      <p>
+        結論から言うと、迎える前に確認したいのは、寿命の長さ、2匹以上で飼えるか、組み合わせ、診てもらえる病院、毎日の世話の5つです。モルモットの寿命は平均5〜6年で、8〜10年まで生きる個体もいます(VCA)。英国RSPCAも通常5〜6年としています。成体の体重はオスで約900〜1200g、メスで約700〜900gです(VCA)。
+      </p>
+      <p>
+        頭数について、VCAは少なくとも2匹で飼うことを推奨し、英国RSPCAも少なくとも1匹の仲間と暮らすよう勧めています。長時間ひとりでいると異常行動につながる恐れがあるためです。Merckの獣医向け資料でも、ペアまたはトリオが最適なことが多いとされています。2匹を迎えるなら、<a href="pet-namae-set.html">2匹セットの名前の付け方</a>も参考にしてください。
+      </p>
+      <p>
+        組み合わせについて、英国RSPCAは、去勢したオスとメス1匹以上、メス同士、一緒に育ったきょうだいのオスがよいとしています。Merckは、未去勢のオス同士や、未去勢のオスとメスの同居にはリスクがあるとして注意を促しています。相性は性別より個体差が大きく、成体のオスの初対面はケンカになることがあります。去勢してもオス同士のケンカが解決するとは限らず(英国RSPCA)、妊娠・出産にはリスクがあります。
+      </p>
+      <p>
+        犬猫以外を診る動物病院は少ないとされるため、迎える前にモルモットを診てもらえるか病院へ問い合わせておくことを、当サイトの一般的な助言としてお勧めします(環境省の審議会資料も、事業者向けの基準案でかかりつけの獣医の確保に触れています)。英国RSPCAは年1回以上の健診とペット保険の検討を挙げ、留守中は誰かに毎日様子を見てもらうよう勧めています。夜間や休日に診てもらえる病院も、あらかじめ確認しておくと慌てずにすみます(当サイトの一般的な助言)。アレルギーが心配な人は、迎える前に医師に相談してください。
+      </p>
+      <details class="article-source-details">
+        <summary>出典を見る</summary>
+        <p class="article-source">
+        出典: VCA Hospitals「Guinea Pigs: Owning」(2019年3月更新) <a href="https://vcahospitals.com/know-your-pet/guinea-pigs-owning" target="_blank" rel="noopener" aria-label="VCA Hospitals「Guinea Pigs: Owning」(2019年3月更新)(新しいタブで開く)">vcahospitals.com</a> / 英国RSPCA「Guinea pigs」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pigs」(新しいタブで開く)">www.rspca.org.uk</a> / 英国RSPCA「Guinea pig company」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/company" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig company」(新しいタブで開く)">www.rspca.org.uk</a> / Merck Veterinary Manual(獣医向け)「Anatomy, Physiology, and Behavior of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/anatomy-physiology-and-behavior-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Anatomy, Physiology, and Behavior of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / 環境省 中央環境審議会資料(動物取扱業者向けの基準案、PDF) <a href="https://www.env.go.jp/council/content/i_10/000357240.pdf" target="_blank" rel="noopener" aria-label="環境省 中央環境審議会資料(動物取扱業者向けの基準案、PDF)(新しいタブで開く)">www.env.go.jp</a> / 英国RSPCA「Guinea pig health」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/health" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig health」(新しいタブで開く)">www.rspca.org.uk</a>
+      </p>
+      </details>
+
+      <h2 id="home"><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>住まいは、出典によって数字が違います</h2>
+      <p>
+        温度は出典で範囲が違います。Merck(獣医向け)とVCAは18〜26℃が理想とし、Merckは湿度30〜60%も挙げます。英国RSPCAは室温17〜20℃が理想で、26℃を超えると熱中症、15℃未満で体が冷えるとしています。日本の夏は上限を超えやすいので、室温計で確かめることを当サイトでは勧めます(室温計の話は一般的な助言です)。26℃は我慢できる上限ではなく、近づく前にエアコンなどで下げる目安と考えてください(当サイトの考え方)。迷うときは、両方に収まる18〜20℃を目標にしてください(当サイトの考え方)。
+      </p>
+      <p>
+        暑さのサインについては、日本獣医師会の学校飼育動物向けの資料が、よだれを出してぐったりしていたら要注意としています。モルモットは最初に落ち着きがなくなるそうです。風通しと日陰、凍らせたペットボトルなどの工夫を挙げ、気温が高くなくても湿度が高いときは注意するよう書かれています。英国RSPCAは、暖房器具や日当たりの窓際から離し、隙間風がなく換気のよい場所に置くよう勧めています。
+      </p>
+      <p>
+        ケージの広さも出典で幅があります。Merck(獣医向け)は1匹あたり最低約0.7平方mで、1匹増えるごとに約0.2〜0.4平方mを足します。VCAは室内で最小60×90cm、高さ25cm以上です。英国RSPCAは床面積の数字を出さず、立ち上がれる高さを求めています。当サイトでは、この2つを「最低でもこのくらい」の目安として並べます。2匹なら、Merckの数字を足し算して約0.9〜1.1平方mです(当サイトの計算)。モルモットはほとんど登らず跳びません(Merck)。
+      </p>
+      <p>
+        床は網ではなく、すき間のない床にします(Merck、足裏の皮膚炎を防ぐため)。床材は出典で割れています。Merck(獣医向け)とVCAは木のシェービングやウッドチップを呼吸器への刺激として避け、英国RSPCAはほこりの出ない木のシェービングと干し草(針葉樹は避ける)を挙げます。当サイトは避ける側に立ち、Merckが挙げる再生紙製品やフリースなどを例にします。
+      </p>
+      <p>
+        隠れ家は頭数より多く用意します。Merckは3匹なら4つ以上、英国RSPCAは頭数+1、VCAは1匹に1つ以上としています。水は、Merckによるとボトルのほうが摂取量が多くなります。英国RSPCAは1日2回確認し、冬は凍結を防ぐよう勧めています。
+      </p>
+      <div class="lookup-table-wrap" tabindex="0" role="region" aria-label="住まいの目安は、出典ごとに違います(横にスクロールできます)">
+      <table class="lookup-table lookup-table--left lookup-table--text lookup-table--4">
+      <caption>住まいの目安は、出典ごとに違います</caption>
+      <thead><tr><th scope="col">項目</th><th scope="col">米国の獣医系(Merck・VCA)</th><th scope="col">英国RSPCA</th><th scope="col">このページでの扱い</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">温度</th><td>18〜26℃(Merck・VCA)。Merckは湿度30〜60%も挙げる</td><td>室温17〜20℃が理想。26℃を超えると熱中症、15℃未満で冷える</td><td>両方を並べる。日本の夏は上限を超えやすいので室温計で確認(当サイトの目安)</td></tr>
+      <tr><th scope="row">ケージの広さ</th><td>Merck: 1匹あたり最低約0.7平方m(7.5平方フィート)、1匹増えるごとに約0.2〜0.4平方m追加。VCA: 最小60×90cm、高さ25cm以上</td><td>具体的な床面積の数字はなし。立ち上がれる高さを求める</td><td>「最低でもこのくらい」の目安として0.7平方mと60×90cmを並べる</td></tr>
+      <tr><th scope="row">床材</th><td>木のシェービング・ウッドチップは避ける(呼吸器への刺激)。Merckは再生紙製品・フリースなどを挙げる</td><td>ほこりの出ない木のシェービング+干し草(針葉樹は避ける)</td><td>避ける側(Merck・VCA)を採用。網の床は使わない</td></tr>
+      <tr><th scope="row">隠れ家の数</th><td>Merck: 頭数より多く(3匹なら4つ以上)。VCA: 1匹に1つ以上</td><td>頭数+1</td><td>頭数より多く用意する</td></tr>
+      <tr><th scope="row">ペレットの量</th><td>Merck: 1日に小さじ1〜2杯程度。VCA: 食事の約5%</td><td>製品の表示どおり</td><td>本文では数字を示さず、製品の表示に従う(出典で幅があるため)</td></tr>
+      </tbody>
+      </table>
+      </div>
+      <details class="article-source-details">
+        <summary>出典を見る</summary>
+        <p class="article-source">
+        出典: Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/housing-and-nutrition-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / VCA Hospitals「Guinea Pigs: Owning」(2019年3月更新) <a href="https://vcahospitals.com/know-your-pet/guinea-pigs-owning" target="_blank" rel="noopener" aria-label="VCA Hospitals「Guinea Pigs: Owning」(2019年3月更新)(新しいタブで開く)">vcahospitals.com</a> / 英国RSPCA「Guinea pig environment」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/environment" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig environment」(新しいタブで開く)">www.rspca.org.uk</a> / 日本獣医師会「学校飼育動物の暑さ対策」(平成30年8月1日、PDF) <a href="https://jvma-vet.jp/nichiju/suf/topics/2018/20180801_01.pdf" target="_blank" rel="noopener" aria-label="日本獣医師会「学校飼育動物の暑さ対策」(平成30年8月1日、PDF)(新しいタブで開く)">jvma-vet.jp</a> / Merck Veterinary Manual(獣医向け)「Anatomy, Physiology, and Behavior of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/anatomy-physiology-and-behavior-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Anatomy, Physiology, and Behavior of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / 英国RSPCA「Guinea pig diet」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig diet」(新しいタブで開く)">www.rspca.org.uk</a>
+      </p>
+      </details>
+
+      <h2 id="food"><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>食事の基本:牧草が主役</h2>
+      <p>
+        食事の基本は牧草です。Merckは良質のイネ科の干し草が基本とし、VCAは1日の食事の75%を牧草、英国RSPCAは干し草が食事の大部分で、いつでも食べられる状態にするとしています。成長期(6か月未満)や妊娠・授乳中はアルファルファを使うとMerckは書いています。
+      </p>
+      <p>
+        モルモットの歯は一生伸び続けます(VCA・Merck)。間違った食事は重い歯の病気の原因になりうるので(英国RSPCA)、牧草をよく食べさせます。前歯と爪は週1回確認します。ペレットは量の目安が出典で幅があるため、製品の表示に従ってください。うさぎ用などはビタミンCの量が合わないので、モルモット用を選びます(Keeble)。ビタミンCは空気で壊れるので、継ぎ足さず入れ替えます(英国RSPCA)。
+      </p>
+      <p>
+        野菜は、Merck(獣医向け)が主に葉物を1日1〜2カップ(カップの定義はなし)、VCAが葉物とビタミンCの多い野菜で食事の約20%としています。種類を多くすると結石が少ないという2025年の研究をMerckは引用しています。果物は糖が多いおやつです。VCAは時々少量、多すぎると重い下痢になるとし、PDSAはおやつを1〜2週に1回と書いています。
+      </p>
+      <p>
+        新しい食べ物は少量から始めます(AMC)。PDSAは2〜4週かけて切り替えるよう勧めています。PDSAが与えないほうがよいとする食品は、じゃがいも(皮を含む)、玉ねぎ、にんにく、きのこ、トマトのつると葉、アボカド、アイスバーグレタス、ルバーブ(葉を含む)、チャイブです。キャベツとブロッコリーは大量だとガスの原因になります。除草剤や農薬のある場所で採った草も与えません。
+      </p>
+      <details class="article-source-details">
+        <summary>出典を見る</summary>
+        <p class="article-source">
+        出典: Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/housing-and-nutrition-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / VCA Hospitals「Guinea Pigs: Feeding」 <a href="https://vcahospitals.com/know-your-pet/guinea-pigs-feeding" target="_blank" rel="noopener" aria-label="VCA Hospitals「Guinea Pigs: Feeding」(新しいタブで開く)">vcahospitals.com</a> / 英国RSPCA「Guinea pig diet」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig diet」(新しいタブで開く)">www.rspca.org.uk</a> / VCA Hospitals「Guinea Pigs: Owning」(2019年3月更新) <a href="https://vcahospitals.com/know-your-pet/guinea-pigs-owning" target="_blank" rel="noopener" aria-label="VCA Hospitals「Guinea Pigs: Owning」(2019年3月更新)(新しいタブで開く)">vcahospitals.com</a> / Merck Veterinary Manual(獣医向け)「Anatomy, Physiology, and Behavior of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/anatomy-physiology-and-behavior-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Anatomy, Physiology, and Behavior of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF) <a href="https://www.pure.ed.ac.uk/ws/portalfiles/portal/345017952/Nutrition_and_diet_in_Pet_Guinea_Pigs_review_article_accepted_version_1_1_.pdf" target="_blank" rel="noopener" aria-label="Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF)(新しいタブで開く)">www.pure.ed.ac.uk</a> / 英国PDSA「Guinea pig diet」 <a href="https://www.pdsa.org.uk/guineapigdiet" target="_blank" rel="noopener" aria-label="英国PDSA「Guinea pig diet」(新しいタブで開く)">www.pdsa.org.uk</a> / Animal Medical Center(米ニューヨーク)「Pet Guinea Pig Care Sheet」(PDF) <a href="https://www.amcny.org/wp-content/uploads/2020/02/Pet-Guinea-Pig-Care-Sheet_FINAL_Sans-Crops.pdf" target="_blank" rel="noopener" aria-label="Animal Medical Center(米ニューヨーク)「Pet Guinea Pig Care Sheet」(PDF)(新しいタブで開く)">www.amcny.org</a>
+      </p>
+      </details>
+
+      <h2 id="vitc"><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>ビタミンCは体内で作れません</h2>
+      <p>
+        モルモットは自分の体でビタミンCを作れません(Merck、遺伝子の変異によるものです)。足りないと壊血病(ビタミンC不足で起きる病気)になります。毎日の食事からとる必要があり、このページに計算機を置いた理由もここにあります。
+      </p>
+      <p>
+        必要な量は、体重1kgあたり1日に最低10mgです。Merckの飼い主向け資料、Keebleの総説、Tamuraの論文が同じ数字を挙げています。ただし、いずれも古い教科書や総説を引いたもので、当サイトが実験データまで確認したわけではありません。Merckの飼い主向け資料は「たいていのモルモットは約1kgなので、1匹10mg」とも書いています。獣医向けの資料では幅があり、Merckは成体で体重1kgあたり10〜25mgとしています。米国NRC(実験動物)は、未成熟な個体の成長には体重1kgあたり5mgで足りたとする報告や、約7mgで副腎の大きさが保たれたとする報告を挙げていて、ペットの推奨量とは基準が違います。
+      </p>
+      <p>
+        与えすぎについては、Merckは高用量でも大きな心配はないとし、PDSAは表示どおりに与えるなら過剰摂取は起こりにくいとしています。Keebleは、ビタミンCの補給で結石のリスクは通常上がらないとしつつ、高カルシウム・高シュウ酸の餌では上がった動物実験(1件)を引用しています。結石になったことがある子は、獣医師に相談してください。
+      </p>
+      <details class="article-source-details">
+        <summary>出典を見る</summary>
+        <p class="article-source">
+        出典: Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/housing-and-nutrition-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / Merck Veterinary Manual(飼い主向け)「Nutritional Problems of Guinea Pigs」 <a href="https://www.merckvetmanual.com/all-other-pets/guinea-pigs/nutritional-problems-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(飼い主向け)「Nutritional Problems of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF) <a href="https://www.pure.ed.ac.uk/ws/portalfiles/portal/345017952/Nutrition_and_diet_in_Pet_Guinea_Pigs_review_article_accepted_version_1_1_.pdf" target="_blank" rel="noopener" aria-label="Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF)(新しいタブで開く)">www.pure.ed.ac.uk</a> / Tamura Y. (2010)「Current Approach to Rodents as Patients」Journal of Exotic Pet Medicine 19(1) <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7106322" target="_blank" rel="noopener" aria-label="Tamura Y. (2010)「Current Approach to Rodents as Patients」Journal of Exotic Pet Medicine 19(1)(新しいタブで開く)">pmc.ncbi.nlm.nih.gov</a> / 英国PDSA「Guinea pig diet」 <a href="https://www.pdsa.org.uk/guineapigdiet" target="_blank" rel="noopener" aria-label="英国PDSA「Guinea pig diet」(新しいタブで開く)">www.pdsa.org.uk</a> / 米国National Research Council「Nutrient Requirements of Laboratory Animals」第4版(1995)第4章 <a href="https://www.nationalacademies.org/read/4758/chapter/6" target="_blank" rel="noopener" aria-label="米国National Research Council「Nutrient Requirements of Laboratory Animals」第4版(1995)第4章(新しいタブで開く)">www.nationalacademies.org</a>
+      </p>
+      </details>
+
+      <h2 id="calc"><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>ビタミンC計算機:体重から最低ラインを出す</h2>
+      <p>
+        下の計算機に体重(g)を入れると、1日の最低ライン(体重1kgあたり10mg、複数の獣医系資料が挙げる数字)と、獣医向け資料の幅(Merckの獣医向け資料は成体で10〜25mg/kg)が出ます。たとえば体重1000gなら、最低ラインは10mgです。
+      </p>
+      <p>
+        あわせて、野菜のビタミンCの目安として、文部科学省の日本食品標準成分表(八訂)増補2023年の値(可食部100gあたり)から、その野菜だけで最低ラインに届くグラム数を出します。入れているのは、赤・黄・青ピーマン、ブロッコリー、赤キャベツ、ミニトマトの6つです。果物は糖が多いおやつ(VCA・PDSA)なので入れていません。体重が700g未満のときは、成長期の可能性があるため数字を出さず、獣医師への相談をすすめます。
+      </p>
+      <div class="tool-card gp-calc" id="gp-calc" role="group" aria-label="モルモットのビタミンC計算機">
+        <form id="gp-form" novalidate>
+          <div class="field">
+            <label for="gp-weight">モルモットの体重(g)</label>
+            <input type="number" id="gp-weight" min="100" max="2000" step="10" value="900" inputmode="numeric" aria-describedby="gp-weight-hint gp-weight-msg">
+            <p class="gp-hint" id="gp-weight-hint">最初に入っている900gは例なので、実際の体重に直してください。成体の体重の目安は、オス約900〜1200g、メス約700〜900gです(VCA Hospitals)。</p>
+            <p class="gp-msg" id="gp-weight-msg" aria-live="polite"></p>
+          </div>
+        </form>
+        <div class="gp-result">
+          <p>1日の<strong>最低ライン</strong>: <strong class="gp-num"><span id="gp-min">9.0</span> mg</strong>(体重1kgあたり10mg)</p>
+          <p>獣医向け資料の成体の幅(体重1kgあたり10〜25mg): <span id="gp-range">9.0〜22.5</span> mg</p>
+          <p class="gp-young" id="gp-young" aria-live="polite"></p>
+        </div>
+        <p class="gp-hint"><strong>下の数字は下限の目安で、目標ではありません。</strong>その野菜1種類だけで最低ラインに届く量です。実際は牧草を中心に、数種類の野菜とモルモット用ペレットに分けるので、1種類あたりはもっと少なくなります(当サイトの考え方)。</p>
+        <div class="lookup-table-wrap" tabindex="0" role="region" aria-label="野菜ごとの量の表(横にスクロールできます)">
+        <table class="lookup-table lookup-table--left lookup-table--text gp-table" id="gp-foods">
+        <caption>その野菜だけで最低ラインに届く可食部の量(生の値。ビタミンCは可食部100gあたり)</caption>
+        <thead><tr><th scope="col">野菜</th><th scope="col">最低ラインに届く量</th></tr></thead>
+        <tbody>
+        <tr data-c="170"><th scope="row">赤ピーマン<span class="gp-grp">ビタミンC 170mg/100g</span></th><td class="gp-need">5.3 g</td></tr>
+        <tr data-c="150"><th scope="row">黄ピーマン<span class="gp-grp">ビタミンC 150mg/100g</span></th><td class="gp-need">6.0 g</td></tr>
+        <tr data-c="76"><th scope="row">青ピーマン<span class="gp-grp">ビタミンC 76mg/100g</span></th><td class="gp-need">11.8 g</td></tr>
+        <tr data-c="140"><th scope="row">ブロッコリー<span class="gp-grp">ビタミンC 140mg/100g</span></th><td class="gp-need">6.4 g</td></tr>
+        <tr data-c="68"><th scope="row">赤キャベツ<span class="gp-grp">ビタミンC 68mg/100g</span></th><td class="gp-need">13.2 g</td></tr>
+        <tr data-c="32"><th scope="row">ミニトマト(実)<span class="gp-grp">ビタミンC 32mg/100g</span></th><td class="gp-need">28.1 g</td></tr>
+        </tbody>
+        </table>
+        </div>
+        <p class="gp-hint">ビタミンCの値は文部科学省「日本食品標準成分表(八訂)増補2023年」の可食部100gあたりの数字です。皮・ヘタ・種などの捨てる部分は含みません。</p>
+      </div>
+      <p>
+        結果の読み方です。野菜の目安グラムは「その食品だけで最低ラインに届く可食部の量」で、計算式は必要mg÷(100gあたりのmg)×100です。体重1000gで赤ピーマンなら、10÷170×100で約5.9gになります。実際の食事は牧草が中心で、複数の野菜とペレットに分けて与えるものなので、この数字をそのまま1日の量にはしないでください。
+      </p>
+      <p>
+        最低ラインは下限の目安です。妊娠中・成長期・病気のときは増え、上限も出典で幅があります(VCAは1匹あたり1日10〜50mg、Vet Timesは平均的な個体で体重1kgあたり10〜30mg、若齢・妊娠・病気では最大50mg)。計算機は診断でも給与量の指示でもありません。出典で扱いが割れている食品(ケール・パセリなど)は入れていません。ミニトマトは実はよく、つると葉は避けます(PDSA)。ブロッコリーは英国RSPCAが少量、PDSAが大量だとガスの原因としています。数字より獣医師の判断を優先してください。
+      </p>
+      <details class="article-source-details">
+        <summary>出典を見る</summary>
+        <p class="article-source">
+        出典: Merck Veterinary Manual(飼い主向け)「Nutritional Problems of Guinea Pigs」 <a href="https://www.merckvetmanual.com/all-other-pets/guinea-pigs/nutritional-problems-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(飼い主向け)「Nutritional Problems of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF) <a href="https://www.pure.ed.ac.uk/ws/portalfiles/portal/345017952/Nutrition_and_diet_in_Pet_Guinea_Pigs_review_article_accepted_version_1_1_.pdf" target="_blank" rel="noopener" aria-label="Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF)(新しいタブで開く)">www.pure.ed.ac.uk</a> / Tamura Y. (2010)「Current Approach to Rodents as Patients」Journal of Exotic Pet Medicine 19(1) <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7106322" target="_blank" rel="noopener" aria-label="Tamura Y. (2010)「Current Approach to Rodents as Patients」Journal of Exotic Pet Medicine 19(1)(新しいタブで開く)">pmc.ncbi.nlm.nih.gov</a> / Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/housing-and-nutrition-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / Vet Times「Vitamin C supplementation in guinea pigs」 <a href="https://www.vettimes.com/clinical/equine/vitamin-c-supplementation-in-guinea-pigs-cpdguineapigs" target="_blank" rel="noopener" aria-label="Vet Times「Vitamin C supplementation in guinea pigs」(新しいタブで開く)">www.vettimes.com</a> / 文部科学省「日本食品標準成分表(八訂)増補2023年」 <a href="https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" target="_blank" rel="noopener" aria-label="文部科学省「日本食品標準成分表(八訂)増補2023年」(新しいタブで開く)">www.mext.go.jp</a> / 英国RSPCA「Guinea pig diet」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig diet」(新しいタブで開く)">www.rspca.org.uk</a> / 英国PDSA「Guinea pig diet」 <a href="https://www.pdsa.org.uk/guineapigdiet" target="_blank" rel="noopener" aria-label="英国PDSA「Guinea pig diet」(新しいタブで開く)">www.pdsa.org.uk</a> / VCA Hospitals「Guinea Pigs: Feeding」 <a href="https://vcahospitals.com/know-your-pet/guinea-pigs-feeding" target="_blank" rel="noopener" aria-label="VCA Hospitals「Guinea Pigs: Feeding」(新しいタブで開く)">vcahospitals.com</a>
+      </p>
+      </details>
+
+      <h2 id="vitc2"><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>ペレットの古さ・添加水・足りないサイン</h2>
+      <p>
+        ペレットのビタミンCは、熱・光・湿気で減っていきます(Merck)。混合から90日で約半分が失われうるとする資料もあります(NRC・Tamura)。VCAは製造日から90日以内に使い切る、PDSAは購入から3か月以内、AMCは60〜90日ごとに新しいものを買うとしています。「開封後◯日」と書いた出典はないので、当サイトでは製造日・購入日から約3か月を目安にします。
+      </p>
+      <p>
+        水にビタミンCを混ぜる方法は、PDSA・AMC・Vet Timesが勧めておらず、Merck(獣医向け)も非推奨です。Tamuraによると、水に混ぜたビタミンCは1日で50%を超えて減ります。マルチビタミンも通常は勧められません(Merck)。サプリの要否は出典で割れています(VCA・AMCは食事がよければ通常不要、PDSAは通常足りるとしつつ不安なら食べ物に添えるサプリを勧め、Tamuraは錠剤などで補う方法を挙げる)。自己判断で増やさず、獣医師に相談してください。
+      </p>
+      <p>
+        足りないときのサインは、Merck・Keeble・VCAによると、食欲低下、歯の問題、関節の腫れ、足を引きずる、粗い毛並み、体重減少、下痢、急な体調悪化、歯ぎしりや鳴き声で表れる痛み、歯茎や皮膚の出血や潰瘍です。VCAは、疑ったらすぐ獣医に行くよう書いています。自分でビタミンCを増やす前に、獣医師に相談してください。
+      </p>
+      <details class="article-source-details">
+        <summary>出典を見る</summary>
+        <p class="article-source">
+        出典: Merck Veterinary Manual(飼い主向け)「Nutritional Problems of Guinea Pigs」 <a href="https://www.merckvetmanual.com/all-other-pets/guinea-pigs/nutritional-problems-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(飼い主向け)「Nutritional Problems of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / 米国National Research Council「Nutrient Requirements of Laboratory Animals」第4版(1995)第4章 <a href="https://www.nationalacademies.org/read/4758/chapter/6" target="_blank" rel="noopener" aria-label="米国National Research Council「Nutrient Requirements of Laboratory Animals」第4版(1995)第4章(新しいタブで開く)">www.nationalacademies.org</a> / Tamura Y. (2010)「Current Approach to Rodents as Patients」Journal of Exotic Pet Medicine 19(1) <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7106322" target="_blank" rel="noopener" aria-label="Tamura Y. (2010)「Current Approach to Rodents as Patients」Journal of Exotic Pet Medicine 19(1)(新しいタブで開く)">pmc.ncbi.nlm.nih.gov</a> / VCA Hospitals「Guinea Pigs: Feeding」 <a href="https://vcahospitals.com/know-your-pet/guinea-pigs-feeding" target="_blank" rel="noopener" aria-label="VCA Hospitals「Guinea Pigs: Feeding」(新しいタブで開く)">vcahospitals.com</a> / 英国PDSA「Guinea pig diet」 <a href="https://www.pdsa.org.uk/guineapigdiet" target="_blank" rel="noopener" aria-label="英国PDSA「Guinea pig diet」(新しいタブで開く)">www.pdsa.org.uk</a> / Animal Medical Center(米ニューヨーク)「Pet Guinea Pig Care Sheet」(PDF) <a href="https://www.amcny.org/wp-content/uploads/2020/02/Pet-Guinea-Pig-Care-Sheet_FINAL_Sans-Crops.pdf" target="_blank" rel="noopener" aria-label="Animal Medical Center(米ニューヨーク)「Pet Guinea Pig Care Sheet」(PDF)(新しいタブで開く)">www.amcny.org</a> / Vet Times「Vitamin C supplementation in guinea pigs」 <a href="https://www.vettimes.com/clinical/equine/vitamin-c-supplementation-in-guinea-pigs-cpdguineapigs" target="_blank" rel="noopener" aria-label="Vet Times「Vitamin C supplementation in guinea pigs」(新しいタブで開く)">www.vettimes.com</a> / Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/housing-and-nutrition-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF) <a href="https://www.pure.ed.ac.uk/ws/portalfiles/portal/345017952/Nutrition_and_diet_in_Pet_Guinea_Pigs_review_article_accepted_version_1_1_.pdf" target="_blank" rel="noopener" aria-label="Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF)(新しいタブで開く)">www.pure.ed.ac.uk</a>
+      </p>
+      </details>
+
+      <h2 id="split"><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>出典で扱いが割れている食品</h2>
+      <p>
+        同じ食品でも、出典によって「よい」「避ける」が分かれるものがあります。たとえばケールは、Merckの飼い主向け資料がビタミンCの多い食べ物に挙げ、Keebleも日常の青菜の例にしますが、AMCはカルシウムとシュウ酸が多い野菜として避けます。パセリも、MerckとRSPCAは与えてよい側、AMCは避ける側です。
+      </p>
+      <p>
+        こうした食品は、当サイトの計算機に入れていません。どちらが正しいかを当サイトで決められないためです。下の表に成分表の値と各出典の扱いを並べたので、与えるかどうかは獣医師と相談して決めてください。小松菜は、モルモットでの可否を述べた獣医系の出典を確認できませんでした。
+      </p>
+      <div class="lookup-table-wrap" tabindex="0" role="region" aria-label="出典で扱いが割れている食品(成分表の値は可食部100gあたり)(横にスクロールできます)">
+      <table class="lookup-table lookup-table--left lookup-table--text lookup-table--4">
+      <caption>出典で扱いが割れている食品(成分表の値は可食部100gあたり)</caption>
+      <thead><tr><th scope="col">食品</th><th scope="col">成分表の値(100gあたり)</th><th scope="col">出典での扱い</th><th scope="col">計算機での扱い</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">ケール</th><td>ビタミンC 81mg、カルシウム220mg</td><td>Merck(飼い主向け)はビタミンCの多い食べ物に挙げる。Keebleは日常の青菜の例。AMCは高カルシウム・シュウ酸の野菜として避ける</td><td>入れていません(出典で扱いが割れているため)</td></tr>
+      <tr><th scope="row">パセリ</th><td>ビタミンC 120mg、カルシウム290mg</td><td>Merck(飼い主向け)はビタミンCの多い食べ物に挙げる。英国RSPCAは頻繁に与えてよい。AMCは高カルシウム・シュウ酸として避ける</td><td>入れていません(出典で扱いが割れているため)</td></tr>
+      <tr><th scope="row">ほうれんそう</th><td>ビタミンC 35mg(通年平均)、カルシウム49mg、シュウ酸0.7g</td><td>英国RSPCAはおやつ枠で少量を週に数回まで。Keebleはたまのおやつ枠。AMCは避ける</td><td>入れていません(出典で扱いが割れているため)</td></tr>
+      <tr><th scope="row">小松菜</th><td>ビタミンC 39mg、カルシウム170mg(シュウ酸は成分表に項目なし)</td><td>モルモットでの可否を述べた獣医系の出典を確認できていない</td><td>入れていません(獣医系の出典が見つからなかったため)</td></tr>
+      <tr><th scope="row">オレンジとみかん</th><td>みかん: ビタミンC 32mg</td><td>Merck(飼い主向け)はオレンジをビタミンCの多い食べ物に挙げる。Merck(獣医向け)は糖の多いおやつとして与えない。英国RSPCAは柑橘は有害とする</td><td>入れていません(出典で扱いが割れているため)</td></tr>
+      <tr><th scope="row">バナナ</th><td>ビタミンC 16mg</td><td>PDSAは少量なら可。AMCは糖が高いため避ける</td><td>入れていません(出典で扱いが割れているため)</td></tr>
+      <tr><th scope="row">にんじん</th><td>ビタミンC 6mg(根、皮つき)</td><td>Merck(獣医向け)は与えない。英国RSPCAは少量のおやつ、PDSAもおやつ枠、VCAは与えてよい野菜に挙げる。AMCはベビーキャロットは糖が高く避ける</td><td>入れていません(出典で扱いが割れているため)</td></tr>
+      </tbody>
+      </table>
+      </div>
+      <details class="article-source-details">
+        <summary>出典を見る</summary>
+        <p class="article-source">
+        出典: Merck Veterinary Manual(飼い主向け)「Nutritional Problems of Guinea Pigs」 <a href="https://www.merckvetmanual.com/all-other-pets/guinea-pigs/nutritional-problems-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(飼い主向け)「Nutritional Problems of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF) <a href="https://www.pure.ed.ac.uk/ws/portalfiles/portal/345017952/Nutrition_and_diet_in_Pet_Guinea_Pigs_review_article_accepted_version_1_1_.pdf" target="_blank" rel="noopener" aria-label="Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF)(新しいタブで開く)">www.pure.ed.ac.uk</a> / Animal Medical Center(米ニューヨーク)「Pet Guinea Pig Care Sheet」(PDF) <a href="https://www.amcny.org/wp-content/uploads/2020/02/Pet-Guinea-Pig-Care-Sheet_FINAL_Sans-Crops.pdf" target="_blank" rel="noopener" aria-label="Animal Medical Center(米ニューヨーク)「Pet Guinea Pig Care Sheet」(PDF)(新しいタブで開く)">www.amcny.org</a> / 英国RSPCA「Guinea pig diet」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig diet」(新しいタブで開く)">www.rspca.org.uk</a> / 英国PDSA「Guinea pig diet」 <a href="https://www.pdsa.org.uk/guineapigdiet" target="_blank" rel="noopener" aria-label="英国PDSA「Guinea pig diet」(新しいタブで開く)">www.pdsa.org.uk</a> / Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/housing-and-nutrition-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Housing and Nutrition of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / 文部科学省「日本食品標準成分表(八訂)増補2023年」 <a href="https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" target="_blank" rel="noopener" aria-label="文部科学省「日本食品標準成分表(八訂)増補2023年」(新しいタブで開く)">www.mext.go.jp</a>
+      </p>
+      </details>
+
+      <h2 id="symptoms"><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>受診の目安になるサイン</h2>
+      <p>
+        ここに書くのは診断ではなく、受診の目安です。モルモットは痛みの外見的な兆候が出にくいので、普段の行動の変化が早期のサインになります(英国RSPCA)。食べない・飲まない、糞が止まる・減る・軟便が付く、のいずれも英国RSPCAは「すぐに獣医へ」としています。PetMDも、消化管うっ滞は生命に関わる緊急だと書いています。
+      </p>
+      <p>
+        歯の異常は、栄養不良や繊維不足、飼育環境が原因になりえます(Merck)。軽い食欲低下から食欲廃絶、噛みにくい・飲み込みにくい、活動低下、体重減少、よだれが症状です。成体で急に前歯が伸びたら奥歯の異常を疑います。ケージの柵を引っ張ると前歯を傷めることがあります。
+      </p>
+      <p>
+        暖かい時期は、英国RSPCAが後ろ足まわりの被毛と皮膚を1日2回確認するよう勧めています。尿や便の汚れからハエ症になり、しばしば致命的だからです。胃拡張捻転は一般に致命的で、初期は気づかれにくいとMerckは書いています(モルモットは嘔吐できません)。ヒゼンダニや真菌(皮膚糸状菌)は人にもうつることがあります(Merck)。異変を感じたら、動物病院へ連絡してください。
+      </p>
+      <div class="lookup-table-wrap" tabindex="0" role="region" aria-label="受診の目安になるサイン(診断ではなく、出典の記述のまとめ)(横にスクロールできます)">
+      <table class="lookup-table lookup-table--left lookup-table--text">
+      <caption>受診の目安になるサイン(診断ではなく、出典の記述のまとめ)</caption>
+      <thead><tr><th scope="col">見えるサイン</th><th scope="col">出典が原因として挙げること</th><th scope="col">受診の目安</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">食べない・飲まない、糞が出ない・小さい・少ない</th><td>消化管うっ滞など(PetMD)。食欲不振は特定の病気に限らないサイン</td><td>すぐに獣医に(英国RSPCA)</td></tr>
+      <tr><th scope="row">よだれを出してぐったり、落ち着きがない(暑い時期)</th><td>暑さの影響(日本獣医師会、学校飼育動物向けの資料)</td><td>ぐったりしているなら緊急。涼しい場所へ移し、すぐ動物病院に電話(当サイトの考え方)。日本獣医師会も速やかな相談を求める</td></tr>
+      <tr><th scope="row">鼻水、呼吸の音が増える、呼吸が苦しそう、元気がない</th><td>細菌性肺炎などの呼吸器の病気(Merck)。飼育環境の不良やビタミンC不足が誘因になる</td><td>動物病院へ(Merckは突然死も挙げる)</td></tr>
+      <tr><th scope="row">足を引きずる、関節の腫れ、食欲低下、粗い毛並み</th><td>ビタミンC不足(壊血病)の可能性(Merck・Keeble・VCA)</td><td>すぐに獣医に(VCA)。自分でビタミンCを増やす前に相談</td></tr>
+      <tr><th scope="row">血尿</th><td>尿路結石(Merck)。再発しやすい</td><td>動物病院へ(当サイトの考え方)</td></tr>
+      <tr><th scope="row">激しいかゆみ、円形の脱毛、顔・足・背中の鱗屑状の斑</th><td>ヒゼンダニ、真菌(Merck)。人にも感染しうる</td><td>動物病院へ(当サイトの考え方)</td></tr>
+      <tr><th scope="row">食べにくそう、よだれ、急に前歯が伸びた</th><td>歯の異常(不正咬合、Merck)。奥歯の異常が隠れていることも</td><td>動物病院へ(治療は全身麻酔下での処置、Merck)</td></tr>
+      </tbody>
+      </table>
+      </div>
+      <details class="article-source-details">
+        <summary>出典を見る</summary>
+        <p class="article-source">
+        出典: 英国RSPCA「Guinea pig health」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/health" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig health」(新しいタブで開く)">www.rspca.org.uk</a> / 英国RSPCA「Guinea pig diet」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/diet" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig diet」(新しいタブで開く)">www.rspca.org.uk</a> / PetMD「GI Stasis in Guinea Pigs」(獣医師監修と記載。AI作成後に人が編集したとも明記、2026年5月公開) <a href="https://www.petmd.com/exotic/gi-stasis-in-guinea-pigs" target="_blank" rel="noopener" aria-label="PetMD「GI Stasis in Guinea Pigs」(獣医師監修と記載。AI作成後に人が編集したとも明記、2026年5月公開)(新しいタブで開く)">www.petmd.com</a> / 日本獣医師会「学校飼育動物の暑さ対策」(平成30年8月1日、PDF) <a href="https://jvma-vet.jp/nichiju/suf/topics/2018/20180801_01.pdf" target="_blank" rel="noopener" aria-label="日本獣医師会「学校飼育動物の暑さ対策」(平成30年8月1日、PDF)(新しいタブで開く)">jvma-vet.jp</a> / Merck Veterinary Manual(獣医向け)「Infectious Diseases of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/infectious-diseases-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Infectious Diseases of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / Merck Veterinary Manual(獣医向け)「Noninfectious Diseases of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/noninfectious-diseases-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Noninfectious Diseases of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / Merck Veterinary Manual(飼い主向け)「Nutritional Problems of Guinea Pigs」 <a href="https://www.merckvetmanual.com/all-other-pets/guinea-pigs/nutritional-problems-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(飼い主向け)「Nutritional Problems of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / VCA Hospitals「Guinea Pigs: Feeding」 <a href="https://vcahospitals.com/know-your-pet/guinea-pigs-feeding" target="_blank" rel="noopener" aria-label="VCA Hospitals「Guinea Pigs: Feeding」(新しいタブで開く)">vcahospitals.com</a> / Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF) <a href="https://www.pure.ed.ac.uk/ws/portalfiles/portal/345017952/Nutrition_and_diet_in_Pet_Guinea_Pigs_review_article_accepted_version_1_1_.pdf" target="_blank" rel="noopener" aria-label="Keeble E. (2023)「Nutrition and diet in pet guinea pigs」In Practice 45(4)(PDF)(新しいタブで開く)">www.pure.ed.ac.uk</a>
+      </p>
+      </details>
+
+      <h2 id="unknown"><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>この記事で確認できなかったこと</h2>
+      <p>
+        正直に書くと、次のことは確認できませんでした。まず、モルモット単独の購入価格や年間の飼育費の統計です。アニコム損保の2025年調査には「小動物」1種あたり年間支出115,944円という数字がありますが、うさぎとは別の区分で、モルモット単独の内訳も区分の定義もないため、参考にとどめます。
+      </p>
+      <p>
+        旅行時の預け先や留守番できる時間についての日本の出典も見つかりませんでした。英国RSPCAは、不在時は誰かに毎日確認してもらうよう書いています。日本の公的な飼い方資料での体重・ペレット量は確認できていません。寿命は、VCAと英国RSPCAが平均5〜6年、札幌市円山動物園のページは飼育下で約5〜8年としていて、資料によって幅があります。
+      </p>
+      <p>
+        鳴き声やにおいの程度も出典がありません。Merckはwheeking、chuttingなどの発声があり、薄明薄暮に最も活発とだけ書いており、うるさいか静かかを評価した資料はありません。ミニトマトのヘタについて述べた獣医系の出典もなく、実はよく、つると葉は避けるというPDSAの記述までです。ヘタは取って実だけにするのが当サイトの考えです。
+      </p>
+      <p>
+        小松菜のモルモットでの可否を述べた獣医系の出典、ビタミンCの量やペレットの期限を述べた日本語の獣医・公的資料も見つかりませんでした。パセリの妊娠中の扱いも出典が見つからないので、妊娠中は獣医師に相談してください。この記事の根拠の多くは英語圏の獣医系資料と、文部科学省の食品成分表です。
+      </p>
+      <details class="article-source-details">
+        <summary>出典を見る</summary>
+        <p class="article-source">
+        出典: アニコム損保 2026年3月11日ニュースリリース <a href="https://www.anicom-sompo.co.jp/news-release/2025/20260311/" target="_blank" rel="noopener" aria-label="アニコム損保 2026年3月11日ニュースリリース(新しいタブで開く)">www.anicom-sompo.co.jp</a> / 英国RSPCA「Guinea pig health」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/health" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig health」(新しいタブで開く)">www.rspca.org.uk</a> / VCA Hospitals「Guinea Pigs: Owning」(2019年3月更新) <a href="https://vcahospitals.com/know-your-pet/guinea-pigs-owning" target="_blank" rel="noopener" aria-label="VCA Hospitals「Guinea Pigs: Owning」(2019年3月更新)(新しいタブで開く)">vcahospitals.com</a> / 英国RSPCA「Guinea pigs」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pigs」(新しいタブで開く)">www.rspca.org.uk</a> / Merck Veterinary Manual(獣医向け)「Anatomy, Physiology, and Behavior of Guinea Pigs」 <a href="https://www.merckvetmanual.com/exotic-and-laboratory-animals/guinea-pigs/anatomy-physiology-and-behavior-of-guinea-pigs" target="_blank" rel="noopener" aria-label="Merck Veterinary Manual(獣医向け)「Anatomy, Physiology, and Behavior of Guinea Pigs」(新しいタブで開く)">www.merckvetmanual.com</a> / 英国PDSA「Guinea pig diet」 <a href="https://www.pdsa.org.uk/guineapigdiet" target="_blank" rel="noopener" aria-label="英国PDSA「Guinea pig diet」(新しいタブで開く)">www.pdsa.org.uk</a> / 札幌市円山動物園「モルモット」 <a href="https://www.city.sapporo.jp/zoo/031-f.html" target="_blank" rel="noopener" aria-label="札幌市円山動物園「モルモット」(新しいタブで開く)">www.city.sapporo.jp</a>
+      </p>
+      </details>
+
+      <h2 id="notes"><span class="h2-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="5" ry="4"/><ellipse cx="5.8" cy="9.2" rx="2" ry="2.6"/><ellipse cx="10.8" cy="6.3" rx="2" ry="2.6"/><ellipse cx="16.4" cy="7.2" rx="2" ry="2.6"/><ellipse cx="19.2" cy="12" rx="1.8" ry="2.3"/></svg></span>このページの使い方と注意</h2>
+      <p>
+        この記事はAIの制作支援を受けて作っています。獣医師の監修はありません。出典は本文と出典欄に示したとおりで、出典で割れているところは割れていると書きました。診断に代わるものではなく、受診や治療の判断は動物病院でしてください。
+      </p>
+      <p>
+        出典の多くは英語圏の獣医系資料です。英国RSPCAの理想室温17〜20℃のように、日本の飼育環境、特に夏の暑さとは前提が違うことがあります。日本の夏に合わせて考える必要がある、というのが当サイトの考え方です。異変を感じたら動物病院へ。ほかの動物を迎える人は、<a href="usagi-kaikata.html">うさぎの飼い方</a>や<a href="hamster-kaikata.html">ハムスターの飼い方</a>も参考にしてください。
+      </p>
+      <details class="article-source-details">
+        <summary>出典を見る</summary>
+        <p class="article-source">
+        出典: 英国RSPCA「Guinea pig environment」 <a href="https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs/environment" target="_blank" rel="noopener" aria-label="英国RSPCA「Guinea pig environment」(新しいタブで開く)">www.rspca.org.uk</a>
+      </p>
+      </details>
+
+    </article>
+
+    <div class="related-tools">
+      <a class="link-btn" href="pet-namae-set.html">2匹のペア名を探す(名前2匹セット30組)</a>
+      <div class="article-nav">
+        <a class="link-btn link-btn-secondary" href="usagi-kaikata.html">うさぎの飼い方ガイドへ</a>
+        <a class="link-btn link-btn-secondary" href="hamster-kaikata.html">ハムスターの飼い方ガイドへ</a>
+      </div>
+    </div>
+    <div class="share-row">
+      <a class="link-btn-secondary" href="https://twitter.com/intent/tweet?text=%E3%83%A2%E3%83%AB%E3%83%A2%E3%83%83%E3%83%88%E3%81%AE%E9%A3%BC%E3%81%84%E6%96%B9%E5%85%A5%E9%96%80%3A%E3%83%93%E3%82%BF%E3%83%9F%E3%83%B3C%E8%A8%88%E7%AE%97%E6%A9%9F%E3%81%A4%E3%81%8D%E3%83%BB%E8%BF%8E%E3%81%88%E3%82%8B%E5%89%8D%E3%81%AE%E7%A2%BA%E8%AA%8D%20%7C%20Tiny%20Wonders&url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fkurashi%2Fmorumotto-hajimete.html" target="_blank" rel="noopener">Xでシェア</a>
+      <a class="link-btn-secondary" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fdeskanimals114510-ai.github.io%2Ftiny-wonders%2Fkurashi%2Fmorumotto-hajimete.html" target="_blank" rel="noopener">LINEでシェア</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/?utm_source=tiny-wonders&utm_medium=referral&utm_campaign=cross_site" target="_blank" rel="noopener">🔬 Desk Animals Lab</a>
+      <a class="link-btn-secondary" href="https://www.instagram.com/desk.animals114510/" target="_blank" rel="noopener">🐾 Desk Animalsを見る</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/personality-type-quiz/" target="_blank" rel="noopener">性格診断してみる</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/kokuyo-shindan/" target="_blank" rel="noopener">黒曜診断で占う</a>
+      <a class="link-btn-secondary" href="https://deskanimals114510-ai.github.io/aisho-shindan/" target="_blank" rel="noopener">相性診断してみる</a>
+    </div>
+    <p>このサイトのコンテンツはAIの制作支援を受けています。</p>
+    <p>This site's content is produced with AI assistance.</p>
+    <p>本記事は一般的な情報提供を目的としたもので、獣医学的な診断・助言に代わるものではありません。</p>
+    <p>This content is for general information only and is not veterinary advice.</p>
+    <p><a href="../about/index.html">運営者情報・記事の作り方</a></p>
+    <p><a href="../privacy/index.html">プライバシーポリシー・運営者情報</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

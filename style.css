@@ -1728,3 +1728,27 @@ ul.checklist strong, ul.checklist--danger strong { color: var(--ink); }
 .article-card nav.page-nav li { margin: 0.2em 0; font-size: 0.92rem; }
 .article-card nav.page-nav a { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 0.18em; }
 .article-card nav.page-nav a:hover, .article-card nav.page-nav a:focus-visible { text-decoration-thickness: 2px; }
+
+/* モルモットの飼い方入門(2026-10-29)で追加: ビタミンC計算機 */
+.gp-calc { margin: 0 0 1.4em; }
+@media (max-width: 480px) { .gp-calc.tool-card { padding: 18px 12px; } .gp-calc .gp-table { font-size: 0.84rem; } .gp-calc .gp-table th, .gp-calc .gp-table td { padding: 8px 6px; } }
+.gp-calc .gp-hint { margin: 0; font-size: 0.84rem; color: var(--ink-soft); line-height: 1.7; }
+.gp-calc .gp-msg { margin: 0; font-size: 0.88rem; color: var(--accent-deep); font-weight: 700; }
+.gp-calc .gp-msg:empty { display: none; }
+.gp-calc .gp-result { padding: 0.8em 1em; border: 1px solid var(--line); border-radius: 6px; background: var(--accent-tint); }
+.gp-calc .gp-result p { margin: 0.15em 0; }
+.gp-calc .gp-num { font-size: 1.25rem; }
+.gp-calc .gp-grp { display: block; font-size: 0.78rem; font-weight: 400; color: var(--ink-soft); }
+.gp-calc .gp-table { min-width: 0; }
+.gp-calc .gp-table th:first-child, .gp-calc .gp-table td:first-child, .gp-calc .gp-table th:nth-child(2), .gp-calc .gp-table td:nth-child(2) { width: auto; min-width: 0; }
+.gp-calc .gp-table .gp-need { white-space: nowrap; }
+.gp-calc .gp-young { margin: 0.4em 0 0; font-weight: 700; color: var(--accent-deep); line-height: 1.7; }
+.gp-calc .gp-young:empty { display: none; }
+.lookup-table--left.lookup-table--text.lookup-table--4 { min-width: 520px; }
+.lookup-table--left.lookup-table--text.lookup-table--4 th:first-child { width: 18%; }
+.lookup-table-wrap:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.article-summary { margin: 0 0 1.4em; padding: 0.9em 1.1em; border: 1px solid var(--line); border-radius: 6px; background: var(--accent-tint); }
+.article-summary .article-summary-title { margin: 0 0 0.4em; font-weight: 700; font-size: 0.92rem; }
+.article-summary ul { margin: 0; padding-left: 1.2em; }
+.article-summary li { margin: 0.25em 0; line-height: 1.8; }
+.article-summary a { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 0.18em; }

@@ -284,7 +284,7 @@
   </url>
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -489,6 +489,12 @@
   <url>
     <loc>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/inuneko-hamigaki-items.html</loc>
     <lastmod>2026-10-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/morumotto-hajimete.html</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
