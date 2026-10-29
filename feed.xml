@@ -6,8 +6,16 @@
   <atom:link href="https://deskanimals114510-ai.github.io/tiny-wonders/feed.xml" rel="self" type="application/rss+xml" />
   <description>犬猫を中心にした動物の「なぜ?」豆知識と、笑える「ざんねん」な習性を、専門家の知見にもとづきやさしく解説する動物トリビアマガジンです。</description>
   <language>ja</language>
-  <lastBuildDate>Thu, 29 Oct 2026 12:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 30 Oct 2026 12:00:00 +0900</lastBuildDate>
   <generator>Tiny Wonders static feed generator</generator>
+  <item>
+    <title>カナリアとインコの違い:分類・声・手乗り・食事を出典つきで比べる</title>
+    <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/canary-inko-chigai.html</link>
+    <guid isPermaLink="true">https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/canary-inko-chigai.html</guid>
+    <pubDate>Fri, 30 Oct 2026 12:00:00 +0900</pubDate>
+    <category>動物とのくらし方</category>
+    <description>カナリアとセキセイインコの違いを出典つきで比較。声・手乗り・食事・温度など、資料で割れる点もそのまま並べます。</description>
+  </item>
   <item>
     <title>モルモットの飼い方入門:ビタミンC計算機つき・迎える前の確認</title>
     <link>https://deskanimals114510-ai.github.io/tiny-wonders/kurashi/morumotto-hajimete.html</link>
