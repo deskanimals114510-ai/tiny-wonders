@@ -3,6 +3,11 @@
 (function () {
   const GA_MEASUREMENT_ID = 'G-EXYBLFK9WX';
   const isLocalDev = ['localhost', '127.0.0.1', ''].includes(location.hostname);
+  // ?no_ga=1 を付けて開いた端末は、以後このサイトの計測を送らない(自分の確認作業をGA4から除くため)。
+  try {
+    if (new URLSearchParams(location.search).get('no_ga') === '1') localStorage.setItem('no_ga', '1');
+    if (localStorage.getItem('no_ga') === '1') return;
+  } catch (e) {}
   if (!GA_MEASUREMENT_ID || isLocalDev) return;
   const gaScript = document.createElement('script');
   gaScript.async = true;
